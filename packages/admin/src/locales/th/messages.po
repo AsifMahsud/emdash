@@ -1295,12 +1295,12 @@ msgid "admin"
 msgstr ""
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:117
-#: packages/admin/src/components/Sidebar.tsx:604
+#: packages/admin/src/components/Sidebar.tsx:606
 #: packages/admin/src/components/users/roleDefinitions.ts:42
 msgid "Admin"
 msgstr "ผู้ดูแลระบบ"
 
-#: packages/admin/src/components/Sidebar.tsx:552
+#: packages/admin/src/components/Sidebar.tsx:554
 msgid "Admin navigation"
 msgstr "การนำทางของผู้ดูแลระบบ"
 
@@ -2137,7 +2137,7 @@ msgstr ""
 msgid "Byline schema"
 msgstr ""
 
-#: packages/admin/src/components/Sidebar.tsx:459
+#: packages/admin/src/components/Sidebar.tsx:461
 msgid "Byline Schema"
 msgstr ""
 
@@ -2150,7 +2150,7 @@ msgstr ""
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1092
 #: packages/admin/src/components/settings/transfer/labels.ts:19
 #: packages/admin/src/components/settings/transfer/labels.ts:79
-#: packages/admin/src/components/Sidebar.tsx:429
+#: packages/admin/src/components/Sidebar.tsx:431
 #: packages/admin/src/routes/bylines.tsx:449
 msgid "Bylines"
 msgstr "ชื่อผู้เขียน"
@@ -2828,7 +2828,7 @@ msgstr ""
 #: packages/admin/src/components/ContentTypeEditor.tsx:584
 #: packages/admin/src/components/settings/transfer/labels.ts:34
 #: packages/admin/src/components/settings/transfer/labels.ts:88
-#: packages/admin/src/components/Sidebar.tsx:415
+#: packages/admin/src/components/Sidebar.tsx:417
 msgid "Comments"
 msgstr "ความคิดเห็น"
 
@@ -2919,7 +2919,7 @@ msgstr ""
 #: packages/admin/src/components/Dashboard.tsx:444
 #: packages/admin/src/components/PortableTextEditor.tsx:3036
 #: packages/admin/src/components/SectionEditor.tsx:215
-#: packages/admin/src/components/Sidebar.tsx:588
+#: packages/admin/src/components/Sidebar.tsx:590
 #: packages/admin/src/components/Widgets.tsx:899
 msgid "Content"
 msgstr "เนื้อหา"
@@ -3004,7 +3004,7 @@ msgstr ""
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:185
 #: packages/admin/src/components/ContentTypeList.tsx:131
-#: packages/admin/src/components/Sidebar.tsx:455
+#: packages/admin/src/components/Sidebar.tsx:457
 msgid "Content Types"
 msgstr "ประเภทเนื้อหา"
 
@@ -3601,8 +3601,8 @@ msgstr ""
 #: packages/admin/src/components/AdminCommandPalette.tsx:131
 #: packages/admin/src/components/ContentTypeList.tsx:387
 #: packages/admin/src/components/Dashboard.tsx:69
-#: packages/admin/src/components/Sidebar.tsx:394
-#: packages/admin/src/components/Sidebar.tsx:579
+#: packages/admin/src/components/Sidebar.tsx:396
+#: packages/admin/src/components/Sidebar.tsx:581
 msgid "Dashboard"
 msgstr "แดชบอร์ด"
 
@@ -5213,7 +5213,7 @@ msgstr "เปิดใช้งานผู้ใช้ไม่สำเร็
 msgid "Failed to execute import"
 msgstr "ดำเนินการนำเข้าไม่สำเร็จ"
 
-#: packages/admin/src/lib/api/client.ts:364
+#: packages/admin/src/lib/api/client.ts:365
 msgid "Failed to fetch auth mode"
 msgstr ""
 
@@ -5238,7 +5238,7 @@ msgstr ""
 msgid "Failed to fetch entry terms"
 msgstr "ดึงข้อมูลเทอมของรายการไม่สำเร็จ"
 
-#: packages/admin/src/lib/api/client.ts:347
+#: packages/admin/src/lib/api/client.ts:348
 msgid "Failed to fetch manifest"
 msgstr "ดึงข้อมูล manifest ไม่สำเร็จ"
 
@@ -6341,7 +6341,7 @@ msgstr "รูปภาพ"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:227
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:210
-#: packages/admin/src/components/Sidebar.tsx:481
+#: packages/admin/src/components/Sidebar.tsx:483
 #: packages/admin/src/components/WordPressImport.tsx:756
 msgid "Import"
 msgstr "นำเข้า"
@@ -7310,7 +7310,7 @@ msgstr ""
 msgid "Main Sidebar"
 msgstr "แถบด้านข้างหลัก"
 
-#: packages/admin/src/components/Sidebar.tsx:596
+#: packages/admin/src/components/Sidebar.tsx:598
 msgid "Manage"
 msgstr "จัดการ"
 
@@ -7441,7 +7441,7 @@ msgstr ""
 #: packages/admin/src/components/Settings.tsx:72
 #: packages/admin/src/components/settings/transfer/labels.ts:17
 #: packages/admin/src/components/settings/transfer/labels.ts:84
-#: packages/admin/src/components/Sidebar.tsx:406
+#: packages/admin/src/components/Sidebar.tsx:408
 #: packages/admin/src/components/WordPressImport.tsx:770
 #: packages/admin/src/components/WordPressImport.tsx:1163
 #: packages/admin/src/components/WordPressImport.tsx:1350
@@ -7586,7 +7586,7 @@ msgstr "อัปเดตลำดับเมนูแล้ว"
 #: packages/admin/src/components/AdminCommandPalette.tsx:161
 #: packages/admin/src/components/MenuList.tsx:104
 #: packages/admin/src/components/settings/transfer/labels.ts:28
-#: packages/admin/src/components/Sidebar.tsx:420
+#: packages/admin/src/components/Sidebar.tsx:422
 #: packages/admin/src/components/WordPressImport.tsx:1167
 msgid "Menus"
 msgstr "เมนู"
@@ -9085,8 +9085,8 @@ msgstr ""
 #: packages/admin/src/components/PluginManager.tsx:173
 #: packages/admin/src/components/PluginManager.tsx:182
 #: packages/admin/src/components/PluginManager.tsx:192
-#: packages/admin/src/components/Sidebar.tsx:463
-#: packages/admin/src/components/Sidebar.tsx:612
+#: packages/admin/src/components/Sidebar.tsx:465
+#: packages/admin/src/components/Sidebar.tsx:614
 msgid "Plugins"
 msgstr "ปลั๊กอิน"
 
@@ -9497,7 +9497,7 @@ msgstr "กำลังเปลี่ยนเส้นทางไปยัง
 #: packages/admin/src/components/Redirects.tsx:416
 #: packages/admin/src/components/settings/transfer/labels.ts:33
 #: packages/admin/src/components/settings/transfer/labels.ts:90
-#: packages/admin/src/components/Sidebar.tsx:423
+#: packages/admin/src/components/Sidebar.tsx:425
 msgid "Redirects"
 msgstr "การเปลี่ยนเส้นทาง"
 
@@ -9570,7 +9570,7 @@ msgstr "การลงทะเบียนถูกยกเลิกหรื
 
 #: packages/admin/src/components/PluginManager.tsx:210
 #: packages/admin/src/components/PluginManager.tsx:447
-#: packages/admin/src/components/Sidebar.tsx:472
+#: packages/admin/src/components/Sidebar.tsx:474
 msgid "Registry"
 msgstr "รีจิสทรี"
 
@@ -9845,7 +9845,7 @@ msgstr "ที่เก็บข้อมูล"
 msgid "Request a new link"
 msgstr "ขอลิงก์ใหม่"
 
-#: packages/admin/src/lib/api/client.ts:335
+#: packages/admin/src/lib/api/client.ts:336
 msgid "Request failed"
 msgstr ""
 
@@ -10652,7 +10652,7 @@ msgstr "ชื่อส่วน"
 #: packages/admin/src/components/Sections.tsx:134
 #: packages/admin/src/components/settings/transfer/labels.ts:32
 #: packages/admin/src/components/settings/transfer/labels.ts:93
-#: packages/admin/src/components/Sidebar.tsx:428
+#: packages/admin/src/components/Sidebar.tsx:430
 msgid "Sections"
 msgstr "ส่วน"
 
@@ -11010,7 +11010,7 @@ msgstr "กำลังตั้งค่า..."
 #: packages/admin/src/components/Header.tsx:102
 #: packages/admin/src/components/PluginManager.tsx:530
 #: packages/admin/src/components/Settings.tsx:46
-#: packages/admin/src/components/Sidebar.tsx:485
+#: packages/admin/src/components/Sidebar.tsx:487
 #: packages/admin/src/components/WordPressImport.tsx:1827
 msgid "Settings"
 msgstr "ตั้งค่า"
@@ -13208,7 +13208,7 @@ msgid "User not found"
 msgstr "ไม่พบผู้ใช้"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:211
-#: packages/admin/src/components/Sidebar.tsx:460
+#: packages/admin/src/components/Sidebar.tsx:462
 #: packages/admin/src/components/users/UserList.tsx:55
 msgid "Users"
 msgstr "ผู้ใช้"
@@ -13571,7 +13571,7 @@ msgstr "อัปเดตวิดเจ็ตแล้ว"
 #: packages/admin/src/components/PluginManager.tsx:478
 #: packages/admin/src/components/settings/transfer/labels.ts:31
 #: packages/admin/src/components/settings/transfer/labels.ts:91
-#: packages/admin/src/components/Sidebar.tsx:427
+#: packages/admin/src/components/Sidebar.tsx:429
 #: packages/admin/src/components/Widgets.tsx:388
 #: packages/admin/src/components/WordPressImport.tsx:1175
 msgid "Widgets"
