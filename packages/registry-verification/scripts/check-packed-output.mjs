@@ -4,7 +4,7 @@ import { createReadStream } from "node:fs";
 import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { extname, join } from "node:path";
 import { pipeline } from "node:stream/promises";
 import { fileURLToPath } from "node:url";
 import { createGunzip } from "node:zlib";
@@ -18,12 +18,20 @@ if (!packageManagerEntrypoint) {
 
 const temporaryDirectory = await mkdtemp(join(tmpdir(), "registry-verification-pack-"));
 
+const scriptExtensions = new Set([".js", ".cjs", ".mjs"]);
+const isScriptEntrypoint = scriptExtensions.has(extname(packageManagerEntrypoint).toLowerCase());
+
 try {
-	const output = execFileSync(
-		process.execPath,
-		[packageManagerEntrypoint, "pack", "--pack-destination", temporaryDirectory, "--json"],
-		{ cwd: new URL("..", import.meta.url), encoding: "utf8" },
-	);
+	const packArgs = ["pack", "--pack-destination", temporaryDirectory, "--json"];
+	const output = isScriptEntrypoint
+		? execFileSync(process.execPath, [packageManagerEntrypoint, ...packArgs], {
+				cwd: new URL("..", import.meta.url),
+				encoding: "utf8",
+			})
+		: execFileSync(packageManagerEntrypoint, packArgs, {
+				cwd: new URL("..", import.meta.url),
+				encoding: "utf8",
+			});
 	const { filename } = JSON.parse(output);
 	if (typeof filename !== "string") throw new Error("pnpm pack did not return a tarball filename");
 
