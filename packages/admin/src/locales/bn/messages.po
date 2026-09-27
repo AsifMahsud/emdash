@@ -258,12 +258,12 @@ msgid "{0, plural, one {field} other {fields}}"
 msgstr "{0, plural, one {ফিল্ড} other {ফিল্ড}}"
 
 #. placeholder {0}: stats.mediaCount
-#: packages/admin/src/components/Dashboard.tsx:388
+#: packages/admin/src/components/Dashboard.tsx:391
 msgid "{0, plural, one {Media file} other {Media files}}"
 msgstr "{0, plural, one {মিডিয়া ফাইল} other {মিডিয়া ফাইল}}"
 
 #. placeholder {0}: policyRejected - policyRejections.length
-#: packages/admin/src/components/Dashboard.tsx:203
+#: packages/admin/src/components/Dashboard.tsx:206
 msgid "{0, plural, one {One more blocked entry is not shown.} other {# more blocked entries are not shown.}}"
 msgstr "{0, plural, one {আরও একটি ব্লক করা এন্ট্রি দেখানো হচ্ছে না।} other {আরও #টি ব্লক করা এন্ট্রি দেখানো হচ্ছে না।}}"
 
@@ -278,7 +278,7 @@ msgid "{0, plural, one {Show # more} other {Show # more}}"
 msgstr "{0, plural, one {আরও # দেখান} other {আরও # দেখান}}"
 
 #. placeholder {0}: stats.userCount
-#: packages/admin/src/components/Dashboard.tsx:392
+#: packages/admin/src/components/Dashboard.tsx:395
 msgid "{0, plural, one {User} other {Users}}"
 msgstr "{0, plural, one {ব্যবহারকারী} other {ব্যবহারকারী}}"
 
@@ -618,11 +618,11 @@ msgstr "{needsNewCollections, plural, one {#টি নতুন কালেক�
 msgid "{needsNewFields, plural, one {Fields will be added to # existing collection} other {Fields will be added to # existing collections}}"
 msgstr "{needsNewFields, plural, one {বিদ্যমান #টি কালেকশনে ফিল্ড যোগ করা হবে} other {বিদ্যমান #টি কালেকশনে ফিল্ড যোগ করা হবে}}"
 
-#: packages/admin/src/components/Dashboard.tsx:143
+#: packages/admin/src/components/Dashboard.tsx:146
 msgid "{overdueCount, plural, one {One scheduled item is overdue and the scheduler heartbeat is stale. Run `npx emdash doctor` and verify the deployed Cron Trigger.} other {# scheduled items are overdue and the scheduler heartbeat is stale. Run `npx emdash doctor` and verify the deployed Cron Trigger.}}"
 msgstr "{overdueCount, plural, one {একটি নির্ধারিত আইটেমের সময় পেরিয়ে গেছে এবং শিডিউলারের হার্টবিট পুরোনো হয়ে গেছে। `npx emdash doctor` চালান এবং ডিপ্লয় করা Cron Trigger যাচাই করুন।} other {#টি নির্ধারিত আইটেমের সময় পেরিয়ে গেছে এবং শিডিউলারের হার্টবিট পুরোনো হয়ে গেছে। `npx emdash doctor` চালান এবং ডিপ্লয় করা Cron Trigger যাচাই করুন।}}"
 
-#: packages/admin/src/components/Dashboard.tsx:138
+#: packages/admin/src/components/Dashboard.tsx:141
 msgid "{overdueCount, plural, one {One scheduled item is overdue, but no scheduler run has completed. Run `npx emdash doctor` and verify the deployed Cron Trigger.} other {# scheduled items are overdue, but no scheduler run has completed. Run `npx emdash doctor` and verify the deployed Cron Trigger.}}"
 msgstr "{overdueCount, plural, one {একটি নির্ধারিত আইটেমের সময় পেরিয়ে গেছে, কিন্তু শিডিউলার এখনও একবারও সম্পূর্ণ চলেনি। `npx emdash doctor` চালান এবং ডিপ্লয় করা Cron Trigger যাচাই করুন।} other {#টি নির্ধারিত আইটেমের সময় পেরিয়ে গেছে, কিন্তু শিডিউলার এখনও একবারও সম্পূর্ণ চলেনি। `npx emdash doctor` চালান এবং ডিপ্লয় করা Cron Trigger যাচাই করুন।}}"
 
@@ -648,7 +648,7 @@ msgstr "{pluginName} সেটিংস"
 msgid "{plural} go live now; draft edits stay unpublished."
 msgstr ""
 
-#: packages/admin/src/components/Dashboard.tsx:157
+#: packages/admin/src/components/Dashboard.tsx:160
 msgid "{policyRejected, plural, one {Open the affected entry, resolve the policy reason, and schedule it again. A successful schedule or publish clears this notice.} other {Open the affected entries, resolve the policy reasons, and schedule them again. A successful schedule or publish clears each notice.}}"
 msgstr "{policyRejected, plural, one {সংশ্লিষ্ট এন্ট্রিটি খুলুন, নীতিগত কারণটির সমাধান করুন এবং আবার সময় নির্ধারণ করুন। সফলভাবে সময় নির্ধারণ বা প্রকাশ করলে এই নোটিশটি মুছে যাবে।} other {সংশ্লিষ্ট এন্ট্রিগুলো খুলুন, নীতিগত কারণগুলোর সমাধান করুন এবং সেগুলোর আবার সময় নির্ধারণ করুন। সফলভাবে সময় নির্ধারণ বা প্রকাশ করলে প্রতিটি নোটিশ মুছে যাবে।}}"
 
@@ -709,11 +709,11 @@ msgstr "{subLabel} ({label}, আইটেম {position})"
 msgid "{total, plural, one {# item} other {# items}}"
 msgstr "{total, plural, one {# আইটেম} other {# আইটেম}}"
 
-#: packages/admin/src/components/Dashboard.tsx:376
+#: packages/admin/src/components/Dashboard.tsx:379
 msgid "{totalDrafts, plural, one {Draft} other {Drafts}}"
 msgstr "{totalDrafts, plural, one {খসড়া} other {খসড়া}}"
 
-#: packages/admin/src/components/Dashboard.tsx:382
+#: packages/admin/src/components/Dashboard.tsx:385
 msgid "{totalScheduled, plural, one {Scheduled} other {Scheduled}}"
 msgstr "{totalScheduled, plural, one {নির্ধারিত} other {নির্ধারিত}}"
 
@@ -2925,7 +2925,7 @@ msgstr "কনটেন্ট"
 #: packages/admin/src/components/AdminCommandPalette.tsx:388
 #: packages/admin/src/components/comments/CommentDetail.tsx:103
 #: packages/admin/src/components/comments/CommentInbox.tsx:331
-#: packages/admin/src/components/Dashboard.tsx:444
+#: packages/admin/src/components/Dashboard.tsx:447
 #: packages/admin/src/components/PortableTextEditor.tsx:3038
 #: packages/admin/src/components/SectionEditor.tsx:215
 #: packages/admin/src/components/Sidebar.tsx:590
@@ -3162,7 +3162,7 @@ msgstr "সেকশন যোগ করা যায়নি"
 msgid "Could not load {pluralLower}."
 msgstr ""
 
-#: packages/admin/src/components/Dashboard.tsx:299
+#: packages/admin/src/components/Dashboard.tsx:302
 msgid "Could not load dashboard data"
 msgstr "ড্যাশবোর্ডের ডেটা লোড করা যায়নি"
 
@@ -3609,7 +3609,7 @@ msgstr "ডার্ক মোডের ভেরিয়েন্ট"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:131
 #: packages/admin/src/components/ContentTypeList.tsx:390
-#: packages/admin/src/components/Dashboard.tsx:69
+#: packages/admin/src/components/Dashboard.tsx:70
 #: packages/admin/src/components/Sidebar.tsx:396
 #: packages/admin/src/components/Sidebar.tsx:581
 msgid "Dashboard"
@@ -4111,7 +4111,8 @@ msgstr "খসড়ার পরিবর্তনগুলো বাতিল 
 msgid "Discarding..."
 msgstr "বাতিল করা হচ্ছে..."
 
-#: packages/admin/src/components/Dashboard.tsx:193
+#: packages/admin/src/components/CoreUpdateBanner.tsx:76
+#: packages/admin/src/components/Dashboard.tsx:196
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:282
 msgid "Dismiss"
 msgstr "সরিয়ে দিন"
@@ -4121,7 +4122,7 @@ msgstr "সরিয়ে দিন"
 msgid "Dismiss completed {0}"
 msgstr "সম্পন্ন {0} সরিয়ে দিন"
 
-#: packages/admin/src/components/Dashboard.tsx:283
+#: packages/admin/src/components/Dashboard.tsx:286
 msgid "Dismiss import suggestion"
 msgstr "ইমপোর্টের পরামর্শ সরিয়ে দিন"
 
@@ -4306,7 +4307,7 @@ msgid "draft, published, or archived"
 msgstr "খসড়া, প্রকাশিত বা আর্কাইভ করা"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:90
-#: packages/admin/src/components/Dashboard.tsx:478
+#: packages/admin/src/components/Dashboard.tsx:481
 msgid "Drafts"
 msgstr "খসড়া"
 
@@ -4660,6 +4661,11 @@ msgstr "এমবেড"
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:269
 msgid "EmDash {0}"
 msgstr "EmDash {0}"
+
+#. placeholder {0}: status.current
+#: packages/admin/src/components/CoreUpdateBanner.tsx:67
+msgid "EmDash {latest} is available (you're running {0})"
+msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1958
 msgid "EmDash does not keep the previous image."
@@ -5187,7 +5193,7 @@ msgstr "ব্যবহারকারীকে নিষ্ক্রিয় �
 msgid "Failed to discard changes"
 msgstr "পরিবর্তনগুলো বাতিল করতে ব্যর্থ হয়েছে"
 
-#: packages/admin/src/components/Dashboard.tsx:212
+#: packages/admin/src/components/Dashboard.tsx:215
 #: packages/admin/src/lib/api/dashboard.ts:71
 msgid "Failed to dismiss scheduled publication rejection"
 msgstr "নির্ধারিত প্রকাশনার প্রত্যাখ্যান বার্তা সরাতে ব্যর্থ হয়েছে"
@@ -5315,6 +5321,10 @@ msgstr "সেটআপের স্ট্যাটাস আনতে ব্য
 #: packages/admin/src/components/TaxonomySidebar.tsx:143
 msgid "Failed to fetch terms"
 msgstr "টার্মগুলো আনতে ব্যর্থ হয়েছে"
+
+#: packages/admin/src/lib/api/core-update.ts:29
+msgid "Failed to fetch update status"
+msgstr ""
 
 #: packages/admin/src/lib/api/current-user.ts:22
 #: packages/admin/src/lib/api/users.ts:88
@@ -6363,7 +6373,7 @@ msgstr "ইমপোর্ট"
 msgid "Import {0}"
 msgstr "{0} ইমপোর্ট করুন"
 
-#: packages/admin/src/components/Dashboard.tsx:275
+#: packages/admin/src/components/Dashboard.tsx:278
 msgid "Import a site package"
 msgstr "একটি সাইট প্যাকেজ ইমপোর্ট করুন"
 
@@ -7877,7 +7887,7 @@ msgstr "{label} অবস্থান {0}/{1}-এ সরানো হচ্ছ�
 msgid "Moving {label} was cancelled."
 msgstr "{label} সরানো বাতিল করা হয়েছে।"
 
-#: packages/admin/src/components/Dashboard.tsx:265
+#: packages/admin/src/components/Dashboard.tsx:268
 msgid "Moving from another EmDash site?"
 msgstr "অন্য কোনো EmDash সাইট থেকে আসছেন?"
 
@@ -8151,7 +8161,7 @@ msgstr "কোনো বাইলাইন পাওয়া যায়নি
 msgid "No bylines yet"
 msgstr ""
 
-#: packages/admin/src/components/Dashboard.tsx:450
+#: packages/admin/src/components/Dashboard.tsx:453
 msgid "No collections configured"
 msgstr "কোনো কালেকশন কনফিগার করা হয়নি"
 
@@ -8373,7 +8383,7 @@ msgstr "প্রিভিউ নেই"
 msgid "No public URL available"
 msgstr "কোনো পাবলিক URL উপলব্ধ নেই"
 
-#: packages/admin/src/components/Dashboard.tsx:529
+#: packages/admin/src/components/Dashboard.tsx:532
 msgid "No recent activity"
 msgstr "সাম্প্রতিক কোনো কার্যকলাপ নেই"
 
@@ -9252,7 +9262,7 @@ msgstr "পাবলিক রুট"
 msgid "Publication date"
 msgstr "প্রকাশের তারিখ"
 
-#: packages/admin/src/components/Dashboard.tsx:156
+#: packages/admin/src/components/Dashboard.tsx:159
 msgid "Publication policy blocked scheduled content"
 msgstr "প্রকাশনা নীতি নির্ধারিত কনটেন্ট আটকে দিয়েছে"
 
@@ -9295,7 +9305,7 @@ msgstr "কনটেন্ট প্রকাশ, অপ্রকাশিত, �
 #: packages/admin/src/components/ContentList.tsx:924
 #: packages/admin/src/components/ContentList.tsx:935
 #: packages/admin/src/components/ContentStatusBadge.tsx:59
-#: packages/admin/src/components/Dashboard.tsx:472
+#: packages/admin/src/components/Dashboard.tsx:475
 #: packages/admin/src/router.tsx:1310
 msgid "Published"
 msgstr "প্রকাশিত"
@@ -9467,7 +9477,7 @@ msgstr "অনুসন্ধান ও ক্যাশ পুনর্গঠন
 msgid "Receipt digest"
 msgstr "রসিদ ডাইজেস্ট"
 
-#: packages/admin/src/components/Dashboard.tsx:523
+#: packages/admin/src/components/Dashboard.tsx:526
 msgid "Recent Activity"
 msgstr "সাম্প্রতিক কার্যকলাপ"
 
@@ -9567,7 +9577,7 @@ msgstr "স্ট্যাটাস রিফ্রেশ করুন"
 msgid "Refresh status before continuing."
 msgstr "চালিয়ে যাওয়ার আগে স্ট্যাটাস রিফ্রেশ করুন।"
 
-#: packages/admin/src/components/Dashboard.tsx:300
+#: packages/admin/src/components/Dashboard.tsx:303
 msgid "Refresh the page or try again."
 msgstr "পেজ রিফ্রেশ করুন বা আবার চেষ্টা করুন।"
 
@@ -9619,6 +9629,10 @@ msgstr "রিলিজ CID"
 #: packages/admin/src/components/RegistryPluginDetail.tsx:689
 msgid "Release is too new to install"
 msgstr "রিলিজটি ইনস্টল করার জন্য খুব নতুন"
+
+#: packages/admin/src/components/CoreUpdateBanner.tsx:75
+msgid "Release notes"
+msgstr ""
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:325
 msgid "Reload after updating EmDash before trying again."
@@ -10403,7 +10417,7 @@ msgstr "{formattedSchedule}-এর জন্য নির্ধারিত"
 msgid "Scheduled publication"
 msgstr "নির্ধারিত প্রকাশনা"
 
-#: packages/admin/src/components/Dashboard.tsx:220
+#: packages/admin/src/components/Dashboard.tsx:223
 msgid "Scheduled publishing needs attention"
 msgstr "নির্ধারিত প্রকাশনায় মনোযোগ প্রয়োজন"
 
@@ -11501,7 +11515,7 @@ msgstr "স্ট্যাটাস"
 msgid "Status code"
 msgstr "স্ট্যাটাস কোড"
 
-#: packages/admin/src/components/Dashboard.tsx:576
+#: packages/admin/src/components/Dashboard.tsx:579
 msgid "Status: {status}"
 msgstr "স্ট্যাটাস: {status}"
 
@@ -12433,7 +12447,7 @@ msgstr "এই সাইট কোনো ইমপোর্ট গ্রহণ �
 msgid "This site has no content yet, so it can receive an import. Choose a .emdash package file. It is checked in your browser and uploaded in parts; nothing on this site changes until you review and confirm the import."
 msgstr "এই সাইটে এখনো কোনো কনটেন্ট নেই, তাই এটি ইমপোর্ট গ্রহণ করতে পারবে। একটি .emdash প্যাকেজ ফাইল বেছে নিন। এটি আপনার ব্রাউজারে যাচাই করা হয় এবং কয়েকটি অংশে আপলোড করা হয়; আপনি ইমপোর্ট পর্যালোচনা করে নিশ্চিত না করা পর্যন্ত এই সাইটে কিছুই পরিবর্তন হবে না।"
 
-#: packages/admin/src/components/Dashboard.tsx:266
+#: packages/admin/src/components/Dashboard.tsx:269
 msgid "This site has no content yet, so you can import a .emdash package exported from another EmDash site."
 msgstr "এই সাইটে এখনো কোনো কনটেন্ট নেই, তাই আপনি অন্য একটি EmDash সাইট থেকে এক্সপোর্ট করা .emdash প্যাকেজ ইমপোর্ট করতে পারেন।"
 
@@ -12892,7 +12906,7 @@ msgstr "অসমর্থিত উইজেট এলিমেন্ট টা
 msgid "Until {0}"
 msgstr "{0} পর্যন্ত"
 
-#: packages/admin/src/components/Dashboard.tsx:543
+#: packages/admin/src/components/Dashboard.tsx:546
 #: packages/admin/src/components/MediaUsedIn.tsx:320
 msgid "Untitled"
 msgstr "শিরোনামহীন"
@@ -12935,6 +12949,10 @@ msgstr "সাইটের সেটিংস আপডেট করুন"
 #: packages/admin/src/components/TaxonomyManager.tsx:759
 msgid "Update the {0} details"
 msgstr "{0}-এর বিবরণ আপডেট করুন"
+
+#: packages/admin/src/components/CoreUpdateBanner.tsx:68
+msgid "Update the emdash package in your project and redeploy to get the latest fixes."
+msgstr ""
 
 #. placeholder {0}: selected.displayName
 #: packages/admin/src/routes/bylines.tsx:674
@@ -13026,7 +13044,7 @@ msgstr "ফাইল আপলোড করুন"
 msgid "Upload images, videos, and documents to keep reusable assets in one place."
 msgstr "পুনরায় ব্যবহারযোগ্য অ্যাসেটগুলো এক জায়গায় রাখতে ছবি, ভিডিও এবং ডকুমেন্ট আপলোড করুন।"
 
-#: packages/admin/src/components/Dashboard.tsx:338
+#: packages/admin/src/components/Dashboard.tsx:341
 msgid "Upload Media"
 msgstr "মিডিয়া আপলোড করুন"
 
