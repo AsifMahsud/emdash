@@ -2722,7 +2722,7 @@ msgstr "بستن پنل"
 msgid "Close settings"
 msgstr ""
 
-#: packages/admin/src/components/ContentTypeList.tsx:385
+#: packages/admin/src/components/ContentTypeList.tsx:388
 #: packages/admin/src/components/PortableTextEditor.tsx:4152
 #: packages/admin/src/components/Redirects.tsx:487
 msgid "Code"
@@ -3610,7 +3610,7 @@ msgid "Dark mode variant"
 msgstr ""
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:131
-#: packages/admin/src/components/ContentTypeList.tsx:387
+#: packages/admin/src/components/ContentTypeList.tsx:390
 #: packages/admin/src/components/Dashboard.tsx:69
 #: packages/admin/src/components/Sidebar.tsx:396
 #: packages/admin/src/components/Sidebar.tsx:581
@@ -3734,7 +3734,7 @@ msgstr ""
 #. placeholder {0}: archive.name
 #. placeholder {0}: collection.label
 #. placeholder {0}: domain.domain
-#: packages/admin/src/components/ContentTypeList.tsx:370
+#: packages/admin/src/components/ContentTypeList.tsx:373
 #: packages/admin/src/components/RelationList.tsx:228
 #: packages/admin/src/components/RelationsPanel.tsx:210
 #: packages/admin/src/components/Sections.tsx:408
@@ -4433,7 +4433,7 @@ msgstr "ویرایش"
 #. placeholder {0}: block?.label || ""
 #. placeholder {0}: collection.label
 #. placeholder {0}: domain.domain
-#: packages/admin/src/components/ContentTypeList.tsx:361
+#: packages/admin/src/components/ContentTypeList.tsx:364
 #: packages/admin/src/components/PortableTextEditor.tsx:2186
 #: packages/admin/src/components/RelationFormPanel.tsx:83
 #: packages/admin/src/components/RelationList.tsx:221
