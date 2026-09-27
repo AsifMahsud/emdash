@@ -18,7 +18,7 @@ msgstr ""
 msgid " (default)"
 msgstr " (ডিফল্ট)"
 
-#: packages/admin/src/components/MenuEditor.tsx:524
+#: packages/admin/src/components/MenuEditor.tsx:527
 msgid " (opens in new window)"
 msgstr " (নতুন উইন্ডোতে খোলে)"
 
@@ -125,7 +125,7 @@ msgid "{0, plural, one {# folder loaded} other {# folders loaded}}"
 msgstr "{0, plural, one {#টি ফোল্ডার লোড হয়েছে} other {#টি ফোল্ডার লোড হয়েছে}}"
 
 #. placeholder {0}: menu.itemCount ?? 0
-#: packages/admin/src/components/MenuList.tsx:220
+#: packages/admin/src/components/MenuCard.tsx:46
 msgid "{0, plural, one {# item} other {# items}}"
 msgstr "{0, plural, one {# আইটেম} other {# আইটেম}}"
 
@@ -288,12 +288,6 @@ msgstr "{0, plural, one {ব্যবহারকারী} other {ব্যব�
 #: packages/admin/src/components/RegistryPluginDetail.tsx:715
 msgid "{0} {1} required — you have {2}."
 msgstr "{0} {1} প্রয়োজন — আপনার আছে {2}।"
-
-#. placeholder {0}: menu.name
-#. placeholder {1}: /** * Menu List component * * Displays all menus with ability to create, edit, and delete. */ import { Button, Dialog, Input, Toast } from "@cloudflare/kumo"; import { plural } from "@lingui/core/macro"; import { Trans } from "@lingui/react/macro"; import { useLingui } from "@lingui/react/macro"; import { Plus, Pencil, Trash } from "@phosphor-icons/react"; import { X } from "@phosphor-icons/react"; import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"; import { Link, useNavigate } from "@tanstack/react-router"; import * as React from "react"; import { fetchMenus, createMenu, deleteMenu } from "../lib/api"; import { fetchManifest } from "../lib/api/client.js"; import { ADMIN_NAV_ICONS } from "./admin-navigation-icons.js"; import { ConfirmDialog } from "./ConfirmDialog.js"; import { DialogError, getMutationError } from "./DialogError.js"; import { LocaleSwitcher, useI18nConfig } from "./LocaleSwitcher.js"; import { RouterLinkButton } from "./RouterLinkButton.js"; export function MenuList() { const { t } = useLingui(); const queryClient = useQueryClient(); const navigate = useNavigate(); const toastManager = Toast.useToastManager(); const [isCreateOpen, setIsCreateOpen] = React.useState(false); const [deleteMenuName, setDeleteMenuName] = React.useState<string | null>(null); const [createError, setCreateError] = React.useState<string | null>(null); const { data: manifest } = useQuery({ queryKey: ["manifest"], queryFn: fetchManifest, }); const i18n = useI18nConfig(manifest); const [activeLocale, setActiveLocale] = React.useState<string | undefined>(undefined); React.useEffect(() => { if (i18n && !activeLocale) setActiveLocale(i18n.defaultLocale); }, [i18n, activeLocale]); const { data: menus, isLoading } = useQuery({ queryKey: ["menus", activeLocale], queryFn: () => fetchMenus({ locale: activeLocale }), }); const createMutation = useMutation({ mutationFn: createMenu, onSuccess: (menu) => { void queryClient.invalidateQueries({ queryKey: ["menus"] }); setIsCreateOpen(false); toastManager.add({ title: t`Menu created`, description: t`Menu "${menu.label}" has been created.`, }); void navigate({ to: "/menus/$name", params: { name: menu.name }, search: { locale: menu.locale }, }); }, onError: (error: Error) => { setCreateError(error.message); }, }); const deleteMutation = useMutation({ mutationFn: (name: string) => deleteMenu(name, { locale: activeLocale }), onSuccess: () => { void queryClient.invalidateQueries({ queryKey: ["menus"] }); setDeleteMenuName(null); toastManager.add({ title: t`Menu deleted`, description: t`The menu has been deleted.`, }); }, }); const handleCreate = (e: React.FormEvent<HTMLFormElement>) => { e.preventDefault(); setCreateError(null); const formData = new FormData(e.currentTarget); const nameVal = formData.get("name"); const name = typeof nameVal === "string" ? nameVal : ""; const labelVal = formData.get("label"); const label = typeof labelVal === "string" ? labelVal : ""; createMutation.mutate({ name, label, locale: activeLocale }); }; if (isLoading) { return ( <div className="flex items-center justify-center h-64"> <div className="text-kumo-subtle">{t`Loading menus...`}</div> </div> ); } return ( <div className="space-y-6"> <div className="flex items-center justify-between gap-4 flex-wrap"> <div> <h1 className="text-2xl font-semibold leading-tight">{t`Menus`}</h1> <p className="mt-1 text-sm leading-5 text-pretty text-kumo-subtle"> {t`Manage navigation menus for your site`} </p> </div> <div className="flex items-center gap-2"> {i18n && activeLocale ? ( <LocaleSwitcher locales={i18n.locales} defaultLocale={i18n.defaultLocale} value={activeLocale} onChange={setActiveLocale} /> ) : null} </div> <Dialog.Root open={isCreateOpen} onOpenChange={(open) => { setIsCreateOpen(open); if (!open) setCreateError(null); }} > <Dialog.Trigger render={(props) => ( <Button {...props} icon={<Plus />}> {t`Create Menu`} </Button> )} /> <Dialog className="p-6" size="lg"> <div className="flex items-start justify-between gap-4 mb-4"> <Dialog.Title className="text-lg font-semibold leading-none tracking-tight"> {t`Create New Menu`} </Dialog.Title> <Dialog.Close aria-label={t`Close`} render={(props) => ( <Button {...props} variant="ghost" shape="square" aria-label={t`Close`} className="absolute end-4 top-4" > <X className="h-4 w-4" /> <span className="sr-only">{t`Close`}</span> </Button> )} /> </div> <form onSubmit={handleCreate} className="space-y-4"> <div> <Input label={t`Name`} name="name" required placeholder="primary" pattern="[a-z0-9\-]+" title={t`Only lowercase letters, numbers, and hyphens`} /> <p className="text-sm text-kumo-subtle mt-1"> {t`URL-friendly identifier (e.g., "primary", "footer")`} </p> </div> <div> <Input label={t`Label`} name="label" required placeholder={t`Primary Navigation`} /> <p className="text-sm text-kumo-subtle mt-1">{t`Display name for admin interface`}</p> </div> <DialogError message={createError || getMutationError(createMutation.error)} /> <div className="flex justify-end gap-2"> <Button type="button" variant="outline" onClick={() => setIsCreateOpen(false)}> {t`Cancel`} </Button> <Button type="submit" disabled={createMutation.isPending}> {createMutation.isPending ? t`Creating...` : t`Create`} </Button> </div> </form> </Dialog> </Dialog.Root> </div> {!menus || menus.length === 0 ? ( <div className="border rounded-lg p-12 text-center"> <ADMIN_NAV_ICONS.menus className="mx-auto h-12 w-12 text-kumo-subtle mb-4" /> <h3 className="text-lg font-semibold mb-2">{t`No menus yet`}</h3> <p className="text-kumo-subtle mb-4">{t`Create your first navigation menu to get started`}</p> <Button icon={<Plus />} onClick={() => setIsCreateOpen(true)}> {t`Create Menu`} </Button> </div> ) : ( <div className="grid gap-4"> {menus.map((menu) => ( <div key={menu.id} className="border rounded-lg p-6 flex items-center justify-between hover:bg-kumo-tint transition-colors" > <Link to="/menus/$name" params={{ name: menu.name }} search={{ locale: menu.locale }} className="flex-1" > <div> <h3 className="font-semibold text-lg"> {menu.label} {i18n ? ( <span className="ms-2 text-xs font-mono uppercase text-kumo-subtle"> {menu.locale} </span> ) : null} </h3> <p className="text-sm text-kumo-subtle"> <Trans> {menu.name} •{" "} {plural(menu.itemCount ?? 0, { one: "# item", other: "# items" })} </Trans> </p> </div> </Link> <div className="flex gap-2"> <RouterLinkButton to="/menus/$name" params={{ name: menu.name }} search={{ locale: menu.locale }} variant="outline" size="sm" icon={<Pencil />} > {t`Edit`} </RouterLinkButton> <Button variant="outline" size="sm" onClick={() => setDeleteMenuName(menu.name)} aria-label={t`Delete ${menu.name} menu`} > <Trash className="h-4 w-4" /> </Button> </div> </div> ))} </div> )} <ConfirmDialog open={deleteMenuName !== null} onClose={() => { setDeleteMenuName(null); deleteMutation.reset(); }} title={t`Delete Menu`} description={t`Are you sure you want to delete this menu? This will also delete all menu items. This action cannot be undone.`} confirmLabel={t`Delete`} pendingLabel={t`Deleting...`} isPending={deleteMutation.isPending} error={deleteMutation.error} onConfirm={() => deleteMenuName && deleteMutation.mutate(deleteMenuName)} /> </div> ); } 
-#: packages/admin/src/components/MenuList.tsx:218
-msgid "{0} • {1}"
-msgstr "{0} • {1}"
 
 #. placeholder {0}: byline.displayName
 #: packages/admin/src/components/BylineCreditsEditor.tsx:272
@@ -1071,7 +1065,7 @@ msgstr "সক্রিয় v{0}"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:174
 #: packages/admin/src/components/BylineCreditsEditor.tsx:506
-#: packages/admin/src/components/MenuEditor.tsx:441
+#: packages/admin/src/components/MenuEditor.tsx:443
 msgid "Add"
 msgstr "যোগ করুন"
 
@@ -1135,14 +1129,14 @@ msgstr "পরে কলাম যোগ করুন"
 msgid "Add column before"
 msgstr "আগে কলাম যোগ করুন"
 
-#: packages/admin/src/components/MenuEditor.tsx:378
-#: packages/admin/src/components/MenuEditor.tsx:496
+#: packages/admin/src/components/MenuEditor.tsx:380
+#: packages/admin/src/components/MenuEditor.tsx:499
 msgid "Add Content"
 msgstr "কনটেন্ট যোগ করুন"
 
-#: packages/admin/src/components/MenuEditor.tsx:390
-#: packages/admin/src/components/MenuEditor.tsx:397
-#: packages/admin/src/components/MenuEditor.tsx:499
+#: packages/admin/src/components/MenuEditor.tsx:392
+#: packages/admin/src/components/MenuEditor.tsx:399
+#: packages/admin/src/components/MenuEditor.tsx:502
 msgid "Add Custom Link"
 msgstr "কাস্টম লিঙ্ক যোগ করুন"
 
@@ -1201,7 +1195,7 @@ msgstr "আইটেম যোগ করুন"
 msgid "Add link"
 msgstr "লিঙ্ক যোগ করুন"
 
-#: packages/admin/src/components/MenuEditor.tsx:489
+#: packages/admin/src/components/MenuEditor.tsx:492
 msgid "Add links to build your navigation menu"
 msgstr "আপনার নেভিগেশন মেনু তৈরি করতে লিঙ্ক যোগ করুন"
 
@@ -1282,7 +1276,7 @@ msgstr "আপনার সোশ্যাল মিডিয়া প্রো
 msgid "Added"
 msgstr "যোগ করা হয়েছে"
 
-#: packages/admin/src/components/MenuEditor.tsx:441
+#: packages/admin/src/components/MenuEditor.tsx:443
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:315
 msgid "Adding..."
 msgstr "যোগ করা হচ্ছে..."
@@ -1714,7 +1708,7 @@ msgstr "আপনি কি নিশ্চিত যে আপনি \"{0}\" �
 msgid "Are you sure you want to delete the \"{0}\" field?"
 msgstr "আপনি কি নিশ্চিত যে আপনি \"{0}\" ফিল্ডটি মুছতে চান?"
 
-#: packages/admin/src/components/MenuList.tsx:257
+#: packages/admin/src/components/MenuList.tsx:232
 msgid "Are you sure you want to delete this menu? This will also delete all menu items. This action cannot be undone."
 msgstr "আপনি কি নিশ্চিত যে আপনি এই মেনুটি মুছতে চান? এতে মেনুর সব আইটেমও মুছে যাবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।"
 
@@ -1900,7 +1894,7 @@ msgstr "অবতার"
 #: packages/admin/src/components/FieldEditor.tsx:651
 #: packages/admin/src/components/MediaDetailPanel.tsx:1793
 #: packages/admin/src/components/MediaLibrary.tsx:811
-#: packages/admin/src/components/MenuEditor.tsx:362
+#: packages/admin/src/components/MenuEditor.tsx:367
 #: packages/admin/src/components/WordPressImport.tsx:1530
 #: packages/admin/src/components/WordPressImport.tsx:2547
 msgid "Back"
@@ -1932,6 +1926,10 @@ msgstr "প্রধান লাইব্রেরিতে ফিরে যা
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:416
 msgid "Back to marketplace"
 msgstr "মার্কেটপ্লেসে ফিরে যান"
+
+#: packages/admin/src/components/MenuEditor.tsx:365
+msgid "Back to menus"
+msgstr ""
 
 #: packages/admin/src/components/PluginSettings.tsx:118
 #: packages/admin/src/components/RegistryPluginDetail.tsx:908
@@ -2219,9 +2217,9 @@ msgstr "কনটেন্ট দেখতে পারেন"
 #: packages/admin/src/components/MediaDetailPanel.tsx:1835
 #: packages/admin/src/components/MediaFolderDialog.tsx:152
 #: packages/admin/src/components/MediaPickerModal.tsx:1588
-#: packages/admin/src/components/MenuEditor.tsx:438
-#: packages/admin/src/components/MenuEditor.tsx:626
-#: packages/admin/src/components/MenuList.tsx:175
+#: packages/admin/src/components/MenuEditor.tsx:440
+#: packages/admin/src/components/MenuEditor.tsx:629
+#: packages/admin/src/components/MenuList.tsx:182
 #: packages/admin/src/components/PluginManager.tsx:802
 #: packages/admin/src/components/PortableTextEditor.tsx:4834
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:367
@@ -2656,15 +2654,13 @@ msgstr "{siteName}-এ সাইন ইন করতে এই লিঙ্ক�
 #: packages/admin/src/components/MediaPickerModal.tsx:1001
 #: packages/admin/src/components/MediaPickerModal.tsx:1008
 #: packages/admin/src/components/MediaUploadDialog.tsx:255
-#: packages/admin/src/components/MenuEditor.tsx:400
-#: packages/admin/src/components/MenuEditor.tsx:406
-#: packages/admin/src/components/MenuEditor.tsx:410
-#: packages/admin/src/components/MenuEditor.tsx:579
-#: packages/admin/src/components/MenuEditor.tsx:585
-#: packages/admin/src/components/MenuEditor.tsx:589
-#: packages/admin/src/components/MenuList.tsx:139
+#: packages/admin/src/components/MenuEditor.tsx:402
+#: packages/admin/src/components/MenuEditor.tsx:408
+#: packages/admin/src/components/MenuEditor.tsx:412
+#: packages/admin/src/components/MenuEditor.tsx:582
+#: packages/admin/src/components/MenuEditor.tsx:588
+#: packages/admin/src/components/MenuEditor.tsx:592
 #: packages/admin/src/components/MenuList.tsx:145
-#: packages/admin/src/components/MenuList.tsx:149
 #: packages/admin/src/components/PortableTextEditor.tsx:2189
 #: packages/admin/src/components/PortableTextEditor.tsx:2195
 #: packages/admin/src/components/PortableTextEditor.tsx:2199
@@ -3278,7 +3274,7 @@ msgstr "সংখ্যা"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:530
 #: packages/admin/src/components/MediaFolderDialog.tsx:171
-#: packages/admin/src/components/MenuList.tsx:178
+#: packages/admin/src/components/MenuList.tsx:185
 #: packages/admin/src/components/Redirects.tsx:194
 #: packages/admin/src/components/Sections.tsx:212
 #: packages/admin/src/components/TaxonomyManager.tsx:891
@@ -3363,18 +3359,18 @@ msgstr "ক্রপ করা কপি তৈরি করুন"
 msgid "Create field"
 msgstr "ফিল্ড তৈরি করুন"
 
-#: packages/admin/src/components/MenuList.tsx:129
-#: packages/admin/src/components/MenuList.tsx:192
+#: packages/admin/src/components/MenuList.tsx:131
+msgid "Create menu"
+msgstr ""
+
+#: packages/admin/src/components/MenuList.tsx:119
+#: packages/admin/src/components/MenuList.tsx:208
 msgid "Create Menu"
 msgstr "মেনু তৈরি করুন"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:354
 msgid "Create new {singularLower}"
 msgstr ""
-
-#: packages/admin/src/components/MenuList.tsx:136
-msgid "Create New Menu"
-msgstr "নতুন মেনু তৈরি করুন"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:244
 msgid "Create New Token"
@@ -3459,7 +3455,7 @@ msgstr "আপনার অ্যাকাউন্ট তৈরি করুন
 msgid "Create your first content type"
 msgstr "আপনার প্রথম কনটেন্ট টাইপ তৈরি করুন"
 
-#: packages/admin/src/components/MenuList.tsx:190
+#: packages/admin/src/components/MenuList.tsx:201
 msgid "Create your first navigation menu to get started"
 msgstr "শুরু করতে আপনার প্রথম নেভিগেশন মেনু তৈরি করুন"
 
@@ -3530,7 +3526,7 @@ msgstr "কালেকশন ও ফিল্ড তৈরি করা হচ�
 msgid "Creating cropped copy..."
 msgstr "ক্রপ করা কপি তৈরি করা হচ্ছে..."
 
-#: packages/admin/src/components/MenuList.tsx:178
+#: packages/admin/src/components/MenuList.tsx:185
 #: packages/admin/src/components/Redirects.tsx:191
 #: packages/admin/src/components/RelationFormPanel.tsx:109
 #: packages/admin/src/components/Sections.tsx:212
@@ -3708,8 +3704,8 @@ msgstr "কোডে নির্ধারিত"
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:378
 #: packages/admin/src/components/MediaDetailPanel.tsx:1804
 #: packages/admin/src/components/MediaDetailPanel.tsx:1908
-#: packages/admin/src/components/MenuEditor.tsx:552
-#: packages/admin/src/components/MenuList.tsx:258
+#: packages/admin/src/components/MenuEditor.tsx:555
+#: packages/admin/src/components/MenuList.tsx:233
 #: packages/admin/src/components/Redirects.tsx:612
 #: packages/admin/src/components/RelationDeleteDialog.tsx:40
 #: packages/admin/src/components/Sections.tsx:308
@@ -3754,7 +3750,7 @@ msgid "Delete {0} field"
 msgstr "{0} ফিল্ড মুছুন"
 
 #. placeholder {0}: menu.name
-#: packages/admin/src/components/MenuList.tsx:240
+#: packages/admin/src/components/MenuCard.tsx:66
 msgid "Delete {0} menu"
 msgstr "{0} মেনু মুছুন"
 
@@ -3840,9 +3836,9 @@ msgstr "ছবি মুছুন"
 msgid "Delete media?"
 msgstr "মিডিয়া মুছবেন?"
 
-#: packages/admin/src/components/MenuList.tsx:256
-msgid "Delete Menu"
-msgstr "মেনু মুছুন"
+#: packages/admin/src/components/MenuList.tsx:231
+msgid "Delete menu"
+msgstr ""
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:550
 msgid "Delete permanently"
@@ -3928,7 +3924,7 @@ msgstr "\"{0}\" মুছলে সব বাইলাইন থেকে {1, pl
 #: packages/admin/src/components/MediaDetailPanel.tsx:1804
 #: packages/admin/src/components/MediaDetailPanel.tsx:1909
 #: packages/admin/src/components/MediaFolderDialog.tsx:185
-#: packages/admin/src/components/MenuList.tsx:259
+#: packages/admin/src/components/MenuList.tsx:234
 #: packages/admin/src/components/Redirects.tsx:613
 #: packages/admin/src/components/RelationDeleteDialog.tsx:41
 #: packages/admin/src/components/Sections.tsx:309
@@ -4152,10 +4148,6 @@ msgstr "ক্যাটাগরির তালিকা দেখান"
 #: packages/admin/src/routes/bylines.tsx:696
 msgid "Display name"
 msgstr "প্রদর্শিত নাম"
-
-#: packages/admin/src/components/MenuList.tsx:170
-msgid "Display name for admin interface"
-msgstr "অ্যাডমিন ইন্টারফেসের জন্য প্রদর্শিত নাম"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:438
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:446
@@ -4428,8 +4420,8 @@ msgstr ""
 
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:367
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:368
-#: packages/admin/src/components/MenuEditor.tsx:547
-#: packages/admin/src/components/MenuList.tsx:234
+#: packages/admin/src/components/MenuCard.tsx:59
+#: packages/admin/src/components/MenuEditor.tsx:550
 #: packages/admin/src/components/Sections.tsx:392
 #: packages/admin/src/components/Shell.tsx:86
 #: packages/admin/src/components/TranslationsPanel.tsx:95
@@ -4532,11 +4524,11 @@ msgstr "সম্পাদনা লক"
 msgid "Edit media alt text, captions, and focal points"
 msgstr "মিডিয়ার বিকল্প টেক্সট, ক্যাপশন এবং ফোকাল পয়েন্ট সম্পাদনা করুন"
 
-#: packages/admin/src/components/MenuEditor.tsx:576
+#: packages/admin/src/components/MenuEditor.tsx:579
 msgid "Edit Menu Item"
 msgstr "মেনু আইটেম সম্পাদনা করুন"
 
-#: packages/admin/src/components/MenuEditor.tsx:369
+#: packages/admin/src/components/MenuEditor.tsx:372
 msgid "Edit menu items"
 msgstr "মেনু আইটেম সম্পাদনা করুন"
 
@@ -4754,8 +4746,8 @@ msgstr "কোনো কনটেন্ট ভাষা কনফিগার �
 msgid "Enter a name."
 msgstr "একটি নাম লিখুন।"
 
-#: packages/admin/src/components/MenuEditor.tsx:423
-#: packages/admin/src/components/MenuEditor.tsx:604
+#: packages/admin/src/components/MenuEditor.tsx:425
+#: packages/admin/src/components/MenuEditor.tsx:607
 msgid "Enter a URL (https://…) or a relative path (/…)"
 msgstr "একটি URL (https://…) বা একটি রিলেটিভ পাথ (/…) লিখুন"
 
@@ -4830,9 +4822,9 @@ msgstr ""
 msgid "entry on the linking side"
 msgstr ""
 
-#: packages/admin/src/components/MenuEditor.tsx:155
-#: packages/admin/src/components/MenuEditor.tsx:193
-#: packages/admin/src/components/MenuEditor.tsx:233
+#: packages/admin/src/components/MenuEditor.tsx:156
+#: packages/admin/src/components/MenuEditor.tsx:194
+#: packages/admin/src/components/MenuEditor.tsx:234
 #: packages/admin/src/components/SetupWizard.tsx:606
 #: packages/admin/src/components/TaxonomyManager.tsx:1206
 #: packages/admin/src/components/Widgets.tsx:769
@@ -6022,6 +6014,10 @@ msgstr "শুরু করুন"
 msgid "GitHub"
 msgstr "GitHub"
 
+#: packages/admin/src/components/MenuList.tsx:134
+msgid "Give this navigation a label and a site identifier."
+msgstr ""
+
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:769
 msgid "Give this passkey a name to help you identify it later."
 msgstr "পরে সহজে চেনার জন্য এই পাসকির একটি নাম দিন।"
@@ -6191,7 +6187,7 @@ msgstr "কেউ সম্পাদনা করার সময় এন্�
 msgid "Holds an entry ID. Set a target collection under Content Types to pick entries instead."
 msgstr ""
 
-#: packages/admin/src/components/MenuEditor.tsx:416
+#: packages/admin/src/components/MenuEditor.tsx:418
 msgid "Home"
 msgstr "হোম"
 
@@ -6239,7 +6235,7 @@ msgstr "HTML"
 msgid "HTML source"
 msgstr "HTML সোর্স"
 
-#: packages/admin/src/components/MenuEditor.tsx:424
+#: packages/admin/src/components/MenuEditor.tsx:426
 msgid "https://example.com or /about"
 msgstr "https://example.com অথবা /about"
 
@@ -6755,15 +6751,15 @@ msgstr "ইটালিক"
 msgid "Item {0}"
 msgstr "আইটেম {0}"
 
-#: packages/admin/src/components/MenuEditor.tsx:175
+#: packages/admin/src/components/MenuEditor.tsx:176
 msgid "Item added"
 msgstr "আইটেম যোগ করা হয়েছে"
 
-#: packages/admin/src/components/MenuEditor.tsx:187
+#: packages/admin/src/components/MenuEditor.tsx:188
 msgid "Item deleted"
 msgstr "আইটেম মুছে ফেলা হয়েছে"
 
-#: packages/admin/src/components/MenuEditor.tsx:212
+#: packages/admin/src/components/MenuEditor.tsx:213
 msgid "Item updated"
 msgstr "আইটেম আপডেট হয়েছে"
 
@@ -6860,9 +6856,9 @@ msgstr "Kotlin"
 #: packages/admin/src/components/BylineFieldEditor.tsx:232
 #: packages/admin/src/components/FieldEditor.tsx:808
 #: packages/admin/src/components/FieldEditor.tsx:1206
-#: packages/admin/src/components/MenuEditor.tsx:416
-#: packages/admin/src/components/MenuEditor.tsx:596
-#: packages/admin/src/components/MenuList.tsx:169
+#: packages/admin/src/components/MenuEditor.tsx:418
+#: packages/admin/src/components/MenuEditor.tsx:599
+#: packages/admin/src/components/MenuList.tsx:153
 #: packages/admin/src/components/TaxonomyManager.tsx:1035
 #: packages/admin/src/components/Widgets.tsx:436
 #: packages/admin/src/routes/byline-schema.tsx:234
@@ -7150,11 +7146,11 @@ msgstr "মিডিয়া লোড হচ্ছে"
 msgid "Loading media usage tracking settings…"
 msgstr "মিডিয়া ব্যবহার ট্র্যাকিং সেটিংস লোড হচ্ছে…"
 
-#: packages/admin/src/components/MenuEditor.tsx:342
+#: packages/admin/src/components/MenuEditor.tsx:343
 msgid "Loading menu..."
 msgstr "মেনু লোড হচ্ছে..."
 
-#: packages/admin/src/components/MenuList.tsx:95
+#: packages/admin/src/components/MenuList.tsx:92
 msgid "Loading menus..."
 msgstr "মেনু লোড হচ্ছে..."
 
@@ -7352,7 +7348,7 @@ msgstr "আপনার উইজেট এলাকায় কনটেন্
 msgid "Manage installed plugins. Enable or disable plugins to control their functionality."
 msgstr "ইনস্টল করা প্লাগইন পরিচালনা করুন। প্লাগইনের কার্যকারিতা নিয়ন্ত্রণ করতে সেগুলো চালু বা বন্ধ করুন।"
 
-#: packages/admin/src/components/MenuList.tsx:106
+#: packages/admin/src/components/MenuList.tsx:103
 msgid "Manage navigation menus for your site"
 msgstr "আপনার সাইটের নেভিগেশন মেনু পরিচালনা করুন"
 
@@ -7561,32 +7557,32 @@ msgstr "মেনু"
 
 #. placeholder {0}: translated.label
 #. placeholder {1}: translated.locale.toUpperCase()
-#: packages/admin/src/components/MenuEditor.tsx:144
+#: packages/admin/src/components/MenuEditor.tsx:145
 msgid "Menu \"{0}\" ({1}) created."
 msgstr "মেনু \"{0}\" ({1}) তৈরি হয়েছে।"
 
 #. placeholder {0}: menu.label
-#: packages/admin/src/components/MenuList.tsx:56
+#: packages/admin/src/components/MenuList.tsx:52
 msgid "Menu \"{0}\" has been created."
 msgstr "মেনু \"{0}\" তৈরি করা হয়েছে।"
 
-#: packages/admin/src/components/MenuList.tsx:55
+#: packages/admin/src/components/MenuList.tsx:51
 msgid "Menu created"
 msgstr "মেনু তৈরি হয়েছে"
 
-#: packages/admin/src/components/MenuList.tsx:75
+#: packages/admin/src/components/MenuList.tsx:68
 msgid "Menu deleted"
 msgstr "মেনু মুছে ফেলা হয়েছে"
 
-#: packages/admin/src/components/MenuEditor.tsx:175
+#: packages/admin/src/components/MenuEditor.tsx:176
 msgid "Menu item has been added."
 msgstr "মেনু আইটেম যোগ করা হয়েছে।"
 
-#: packages/admin/src/components/MenuEditor.tsx:188
+#: packages/admin/src/components/MenuEditor.tsx:189
 msgid "Menu item has been deleted."
 msgstr "মেনু আইটেম মুছে ফেলা হয়েছে।"
 
-#: packages/admin/src/components/MenuEditor.tsx:213
+#: packages/admin/src/components/MenuEditor.tsx:214
 msgid "Menu item has been updated."
 msgstr "মেনু আইটেম আপডেট করা হয়েছে।"
 
@@ -7595,16 +7591,16 @@ msgstr "মেনু আইটেম আপডেট করা হয়েছ�
 msgid "Menu items"
 msgstr "মেনু আইটেম"
 
-#: packages/admin/src/components/MenuEditor.tsx:350
+#: packages/admin/src/components/MenuEditor.tsx:351
 msgid "Menu not found"
 msgstr "মেনু পাওয়া যায়নি"
 
-#: packages/admin/src/components/MenuEditor.tsx:228
+#: packages/admin/src/components/MenuEditor.tsx:229
 msgid "Menu order has been updated."
 msgstr "মেনুর ক্রম আপডেট করা হয়েছে।"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:161
-#: packages/admin/src/components/MenuList.tsx:104
+#: packages/admin/src/components/MenuList.tsx:101
 #: packages/admin/src/components/settings/transfer/labels.ts:28
 #: packages/admin/src/components/Sidebar.tsx:422
 #: packages/admin/src/components/WordPressImport.tsx:1171
@@ -7791,7 +7787,7 @@ msgstr "{0} উপরে সরান — উপলব্ধ নয়, এই �
 msgid "Move {title} to trash"
 msgstr "{title} ট্র্যাশে সরান"
 
-#: packages/admin/src/components/MenuEditor.tsx:540
+#: packages/admin/src/components/MenuEditor.tsx:543
 #: packages/admin/src/components/TaxonomyManager.tsx:346
 msgid "Move down"
 msgstr "নিচে সরান"
@@ -7834,7 +7830,7 @@ msgstr "ট্র্যাশে সরান"
 msgid "Move to Trash?"
 msgstr "ট্র্যাশে সরাবেন?"
 
-#: packages/admin/src/components/MenuEditor.tsx:531
+#: packages/admin/src/components/MenuEditor.tsx:534
 #: packages/admin/src/components/TaxonomyManager.tsx:338
 msgid "Move up"
 msgstr "উপরে সরান"
@@ -7905,7 +7901,7 @@ msgstr "আমার দারুণ ব্লগ"
 #: packages/admin/src/components/ContentTypeList.tsx:198
 #: packages/admin/src/components/MarketplaceBrowse.tsx:45
 #: packages/admin/src/components/MediaFolderDialog.tsx:131
-#: packages/admin/src/components/MenuList.tsx:157
+#: packages/admin/src/components/MenuList.tsx:162
 #: packages/admin/src/components/TaxonomyManager.tsx:780
 #: packages/admin/src/components/TaxonomyManager.tsx:1044
 #: packages/admin/src/components/TaxonomyManager.tsx:1406
@@ -8031,10 +8027,10 @@ msgstr "নতুন ট্যাক্সোনমি"
 msgid "New Taxonomy"
 msgstr "নতুন ট্যাক্সোনমি"
 
-#: packages/admin/src/components/MenuEditor.tsx:430
-#: packages/admin/src/components/MenuEditor.tsx:433
-#: packages/admin/src/components/MenuEditor.tsx:612
+#: packages/admin/src/components/MenuEditor.tsx:432
+#: packages/admin/src/components/MenuEditor.tsx:435
 #: packages/admin/src/components/MenuEditor.tsx:615
+#: packages/admin/src/components/MenuEditor.tsx:618
 msgid "New window"
 msgstr "নতুন উইন্ডো"
 
@@ -8320,11 +8316,11 @@ msgstr "এই প্রোভাইডার থেকে কোনো মি�
 msgid "No media found"
 msgstr "কোনো মিডিয়া পাওয়া যায়নি"
 
-#: packages/admin/src/components/MenuEditor.tsx:488
+#: packages/admin/src/components/MenuEditor.tsx:491
 msgid "No menu items yet"
 msgstr "এখনও কোনো মেনু আইটেম নেই"
 
-#: packages/admin/src/components/MenuList.tsx:189
+#: packages/admin/src/components/MenuList.tsx:199
 msgid "No menus yet"
 msgstr "এখনও কোনো মেনু নেই"
 
@@ -8337,7 +8333,7 @@ msgstr "সর্বনিম্ন সীমা নেই"
 msgid "No moderation (auto-approve all)"
 msgstr "মডারেশন নেই (সব স্বয়ংক্রিয়ভাবে অনুমোদন)"
 
-#: packages/admin/src/components/MenuEditor.tsx:329
+#: packages/admin/src/components/MenuEditor.tsx:330
 msgid "No parent (top level)"
 msgstr "প্যারেন্ট নেই (শীর্ষ স্তর)"
 
@@ -8553,7 +8549,7 @@ msgstr "শুধু ছবি ও ফাইল ফিল্ড, রিচ ট�
 msgid "Only image files can be dropped here."
 msgstr "এখানে শুধু ছবির ফাইল ড্রপ করা যাবে।"
 
-#: packages/admin/src/components/MenuList.tsx:162
+#: packages/admin/src/components/MenuList.tsx:168
 msgid "Only lowercase letters, numbers, and hyphens"
 msgstr "শুধু ছোট হাতের অক্ষর, সংখ্যা এবং হাইফেন"
 
@@ -8685,7 +8681,7 @@ msgstr "অথবা একটি এক্সপোর্ট ফাইল আ�
 msgid "or upload directly"
 msgstr "অথবা সরাসরি আপলোড করুন"
 
-#: packages/admin/src/components/MenuEditor.tsx:227
+#: packages/admin/src/components/MenuEditor.tsx:228
 msgid "Order saved"
 msgstr "ক্রম সংরক্ষিত"
 
@@ -8774,7 +8770,7 @@ msgstr "টেবিলের পরে অনুচ্ছেদ যোগ ক�
 msgid "Paragraph inserted before table"
 msgstr "টেবিলের আগে অনুচ্ছেদ যোগ করা হয়েছে"
 
-#: packages/admin/src/components/MenuEditor.tsx:618
+#: packages/admin/src/components/MenuEditor.tsx:621
 #: packages/admin/src/components/TaxonomyManager.tsx:816
 msgid "Parent"
 msgstr "প্যারেন্ট"
@@ -9204,9 +9200,13 @@ msgstr "পূর্ববর্তী পেজ"
 msgid "Previous screenshot"
 msgstr "পূর্ববর্তী স্ক্রিনশট"
 
-#: packages/admin/src/components/MenuList.tsx:169
-msgid "Primary Navigation"
-msgstr "প্রধান নেভিগেশন"
+#: packages/admin/src/components/MenuList.tsx:166
+msgid "primary"
+msgstr ""
+
+#: packages/admin/src/components/MenuList.tsx:156
+msgid "Primary navigation"
+msgstr ""
 
 #: packages/admin/src/components/ContentStatusBadge.tsx:69
 msgid "Private"
@@ -10240,10 +10240,10 @@ msgstr "Ruby"
 msgid "Rust"
 msgstr "Rust"
 
-#: packages/admin/src/components/MenuEditor.tsx:430
 #: packages/admin/src/components/MenuEditor.tsx:432
-#: packages/admin/src/components/MenuEditor.tsx:612
-#: packages/admin/src/components/MenuEditor.tsx:614
+#: packages/admin/src/components/MenuEditor.tsx:434
+#: packages/admin/src/components/MenuEditor.tsx:615
+#: packages/admin/src/components/MenuEditor.tsx:617
 msgid "Same window"
 msgstr "একই উইন্ডো"
 
@@ -10257,7 +10257,7 @@ msgstr "নমুনা কনটেন্ট"
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:417
 #: packages/admin/src/components/MediaDetailPanel.tsx:1866
 #: packages/admin/src/components/MediaFolderDialog.tsx:171
-#: packages/admin/src/components/MenuEditor.tsx:629
+#: packages/admin/src/components/MenuEditor.tsx:632
 #: packages/admin/src/components/Redirects.tsx:193
 #: packages/admin/src/components/SaveButton.tsx:32
 #: packages/admin/src/components/Widgets.tsx:983
@@ -10340,7 +10340,7 @@ msgstr ""
 #: packages/admin/src/components/FieldEditor.tsx:1329
 #: packages/admin/src/components/MediaDetailPanel.tsx:1866
 #: packages/admin/src/components/MediaFolderDialog.tsx:171
-#: packages/admin/src/components/MenuEditor.tsx:629
+#: packages/admin/src/components/MenuEditor.tsx:632
 #: packages/admin/src/components/PluginSettings.tsx:166
 #: packages/admin/src/components/PluginSettings.tsx:209
 #: packages/admin/src/components/Redirects.tsx:190
@@ -11110,6 +11110,10 @@ msgstr "টোকেন দেখান"
 msgid "Showing {pageShowingRange} of {0}"
 msgstr "{0}-এর মধ্যে {pageShowingRange} দেখানো হচ্ছে"
 
+#: packages/admin/src/components/MenuList.tsx:158
+msgid "Shown in the admin menu list."
+msgstr ""
+
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1097
 msgid "Shown to readers in this order."
 msgstr "পাঠকদের এই ক্রমে দেখানো হয়।"
@@ -11435,6 +11439,10 @@ msgstr "বর্গাকার"
 msgid "Square (1:1)"
 msgstr "বর্গাকার (1:1)"
 
+#: packages/admin/src/components/MenuList.tsx:171
+msgid "Stable identifier for your site, such as primary or footer."
+msgstr ""
+
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:529
 msgid "Start a new import"
 msgstr "নতুন ইমপোর্ট শুরু করুন"
@@ -11637,8 +11645,8 @@ msgstr "নিয়ন্ত্রণ নিন"
 msgid "Taking over..."
 msgstr "নিয়ন্ত্রণ নেওয়া হচ্ছে..."
 
-#: packages/admin/src/components/MenuEditor.tsx:427
-#: packages/admin/src/components/MenuEditor.tsx:609
+#: packages/admin/src/components/MenuEditor.tsx:429
+#: packages/admin/src/components/MenuEditor.tsx:612
 msgid "Target"
 msgstr "টার্গেট"
 
@@ -11898,7 +11906,7 @@ msgstr "macOS-এর পাসকি প্রম্পট"
 msgid "The marketplace is empty. Check back later for new plugins."
 msgstr "মার্কেটপ্লেস খালি। নতুন প্লাগইনের জন্য পরে আবার দেখুন।"
 
-#: packages/admin/src/components/MenuList.tsx:76
+#: packages/admin/src/components/MenuList.tsx:69
 msgid "The menu has been deleted."
 msgstr "মেনুটি মুছে ফেলা হয়েছে।"
 
@@ -12615,7 +12623,7 @@ msgstr "{0} অনুবাদ করুন"
 msgid "Translating..."
 msgstr "অনুবাদ করা হচ্ছে..."
 
-#: packages/admin/src/components/MenuEditor.tsx:143
+#: packages/admin/src/components/MenuEditor.tsx:144
 #: packages/admin/src/components/TaxonomyManager.tsx:1252
 #: packages/admin/src/components/TaxonomySidebar.tsx:777
 #: packages/admin/src/router.tsx:1465
@@ -13073,8 +13081,8 @@ msgstr "প্যাকেজ আপলোড করা হচ্ছে"
 #: packages/admin/src/components/BylineFieldEditor.tsx:54
 #: packages/admin/src/components/FieldEditor.tsx:467
 #: packages/admin/src/components/FieldEditor.tsx:1239
-#: packages/admin/src/components/MenuEditor.tsx:418
-#: packages/admin/src/components/MenuEditor.tsx:599
+#: packages/admin/src/components/MenuEditor.tsx:420
+#: packages/admin/src/components/MenuEditor.tsx:602
 msgid "URL"
 msgstr "URL"
 
@@ -13095,10 +13103,6 @@ msgstr "URL স্লাগ"
 #: packages/admin/src/components/FieldEditor.tsx:462
 msgid "URL-friendly identifier"
 msgstr "URL-বান্ধব শনাক্তকারী"
-
-#: packages/admin/src/components/MenuList.tsx:165
-msgid "URL-friendly identifier (e.g., \"primary\", \"footer\")"
-msgstr "URL-বান্ধব শনাক্তকারী (যেমন, \"primary\", \"footer\")"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1348
 msgid "URL:"
