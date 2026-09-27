@@ -138,6 +138,7 @@ import { recordSchedulerHeartbeatSafely } from "./scheduler-health.js";
 import { primeRegisteredCollections } from "./schema/collection-slugs-cache.js";
 import { isStoragelessField, isStoragelessFieldRow } from "./schema/types.js";
 import type { CollectionWithFields } from "./schema/types.js";
+import { AUTO_SEED_COMPLETE_OPTION } from "./seed/ownership.js";
 import { isMissingTableError } from "./utils/db-errors.js";
 import { hashString } from "./utils/hash.js";
 import { createInitLock, type InitLock, initWithLock } from "./utils/init-lock.js";
@@ -146,6 +147,7 @@ import { COMMIT, VERSION } from "./version.js";
 
 const LEADING_SLASH_PATTERN = /^\//;
 const LOCALE_CASING_REPAIR_OPTION = "emdash:repair_locale_casing";
+const SETUP_COMPLETE_OPTION = "emdash:setup_complete";
 
 const PLUGIN_COMMENT_STATUSES = new Set<string>(["approved", "pending", "spam"]);
 
@@ -1547,9 +1549,11 @@ export class EmDashRuntime {
 					trailingSlash?: "always" | "never" | "ignore";
 			  }
 			| undefined;
-		// "Already set up" by default so a read failure (e.g. tables absent on a
+		// "Already complete" by default so a read failure (e.g. tables absent on a
 		// pre-migration db) skips seeding rather than seeding a half-built db.
-		let seedGate = { collectionCount: 1, setupDone: true };
+		let seedComplete = true;
+		let setupDone = true;
+		let seedCollectionsReadable = false;
 
 		// Seeding must only touch the configured singleton, never a borrowed
 		// per-request db (playground / DO preview) or the loader-fallback db.
@@ -1596,17 +1600,26 @@ export class EmDashRuntime {
 		};
 
 		const readSiteInfo = async () => {
-			const siteOpts = await optionsRepo.getMany<string>([
+			const siteOpts = await optionsRepo.getMany([
 				"emdash:site_title",
 				"emdash:site_url",
 				"emdash:locale",
 				LOCALE_CASING_REPAIR_OPTION,
+				AUTO_SEED_COMPLETE_OPTION,
+				SETUP_COMPLETE_OPTION,
 			]);
-			storedLocaleCasingRepairVersion = siteOpts.get(LOCALE_CASING_REPAIR_OPTION);
+			const siteTitle = siteOpts.get("emdash:site_title");
+			const siteUrl = siteOpts.get("emdash:site_url");
+			const locale = siteOpts.get("emdash:locale");
+			const repairVersion = siteOpts.get(LOCALE_CASING_REPAIR_OPTION);
+			storedLocaleCasingRepairVersion =
+				typeof repairVersion === "string" ? repairVersion : undefined;
+			seedComplete = siteOpts.get(AUTO_SEED_COMPLETE_OPTION) === true;
+			setupDone = siteOpts.get(SETUP_COMPLETE_OPTION) === true;
 			return {
-				siteName: deps.siteInfo?.name ?? siteOpts.get("emdash:site_title") ?? undefined,
-				siteUrl: deps.siteInfo?.url ?? siteOpts.get("emdash:site_url") ?? undefined,
-				locale: deps.siteInfo?.locale ?? siteOpts.get("emdash:locale") ?? undefined,
+				siteName: deps.siteInfo?.name ?? (typeof siteTitle === "string" ? siteTitle : undefined),
+				siteUrl: deps.siteInfo?.url ?? (typeof siteUrl === "string" ? siteUrl : undefined),
+				locale: deps.siteInfo?.locale ?? (typeof locale === "string" ? locale : undefined),
 				// trailingSlash is a build-time Astro routing decision, not a
 				// user-editable setting, so it comes from the Astro config
 				// (virtual:emdash/config), not the options table.
@@ -1644,27 +1657,16 @@ export class EmDashRuntime {
 						// Selecting the slugs instead of COUNT(*) costs the same
 						// round trip and primes the registered-collections cache,
 						// so the first render on this isolate skips its own lookup.
-						const [collectionRows, setupOption] = await Promise.all([
-							readDb.selectFrom("_emdash_collections").select("slug").execute(),
-							readDb
-								.selectFrom("options")
-								.select("value")
-								.where("name", "=", "emdash:setup_complete")
-								.executeTakeFirst(),
-						]);
+						const collectionRows = await readDb
+							.selectFrom("_emdash_collections")
+							.select("slug")
+							.execute();
 						primeRegisteredCollections(collectionRows.map((row) => row.slug));
-						const setupDone = (() => {
-							try {
-								return !!setupOption && JSON.parse(setupOption.value) === true;
-							} catch {
-								return false;
-							}
-						})();
-						seedGate = { collectionCount: collectionRows.length, setupDone };
+						seedCollectionsReadable = true;
 					} catch (error) {
 						captureMissingManualSchema(error);
-						// Leave the "already set up" default so a read failure never
-						// triggers a seed onto a half-built db.
+						// Leave collections unreadable so a read failure never triggers
+						// a seed onto a half-built db.
 					}
 				}),
 			);
@@ -1694,7 +1696,7 @@ export class EmDashRuntime {
 		// wizard (the wizard and dev-bypass apply seeds explicitly). Run under a
 		// per-isolate lock keyed by the configured db so a reclaimed-and-rerun
 		// create() can't apply the seed a second time concurrently.
-		if (seedGate.collectionCount === 0 && !seedGate.setupDone) {
+		if (seedCollectionsReadable && !seedComplete && !setupDone) {
 			try {
 				const activation = await activateMediaUsageCapture(db, { writersDrained: true });
 				if (activation.outcome !== "active") {
@@ -1717,14 +1719,15 @@ export class EmDashRuntime {
 
 						const seed = await loadSeed();
 						const validation = validateSeed(seed);
-						if (validation.valid) {
-							const seedResult = await applySeed(db, seed, { onConflict: "skip" });
-							console.log("Auto-seeded default collections");
-							if (seedResult.taxonomies.skipped > 0) {
-								console.warn(
-									`[auto-seed] Kept ${seedResult.taxonomies.skipped} existing taxonomy definition(s) instead of the seed's. Edit them in the admin, or run \`emdash seed <file> --on-conflict update\` to replace them (this also overwrites other seeded records).`,
-								);
-							}
+						if (!validation.valid) return false;
+
+						const seedResult = await applySeed(db, seed, { onConflict: "skip" });
+						await new OptionsRepository(db).set(AUTO_SEED_COMPLETE_OPTION, true);
+						console.log("Auto-seeded default collections");
+						if (seedResult.taxonomies.skipped > 0) {
+							console.warn(
+								`[auto-seed] Kept ${seedResult.taxonomies.skipped} existing taxonomy definition(s) instead of the seed's. Edit them in the admin, or run \`emdash seed <file> --on-conflict update\` to replace them (this also overwrites other seeded records).`,
+							);
 						}
 						seedHolder.done.add(seedKey);
 						return true;
