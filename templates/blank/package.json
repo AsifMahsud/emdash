@@ -22,5 +22,6 @@
     "@astrojs/check": "catalog:"
   },
   "peerDependencies": {},
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "license": "MIT"
 }

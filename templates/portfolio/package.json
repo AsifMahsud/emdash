@@ -23,5 +23,6 @@
   },
   "devDependencies": {
     "@astrojs/check": "catalog:"
-  }
+  },
+  "license": "MIT"
 }
