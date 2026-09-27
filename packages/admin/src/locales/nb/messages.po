@@ -464,7 +464,7 @@ msgid "{added} updated · {0} failed"
 msgstr ""
 
 #. placeholder {0}: allowedHosts.join(", ")
-#: packages/admin/src/lib/api/marketplace.ts:465
+#: packages/admin/src/lib/api/marketplace.ts:466
 msgid "{base} to: {0}"
 msgstr "{base} til: {0}"
 
@@ -1015,8 +1015,8 @@ msgstr "Tilgang nektet"
 msgid "Access Denied"
 msgstr "Tilgang nektet"
 
-#: packages/admin/src/lib/api/marketplace.ts:432
-#: packages/admin/src/lib/api/marketplace.ts:442
+#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:443
 msgid "Access your media library"
 msgstr "Få tilgang til mediebiblioteket ditt"
 
@@ -2380,7 +2380,7 @@ msgstr ""
 msgid "Change schedule"
 msgstr ""
 
-#: packages/admin/src/lib/api/marketplace.ts:431
+#: packages/admin/src/lib/api/marketplace.ts:432
 msgid "Change where visitors are sent"
 msgstr ""
 
@@ -2903,13 +2903,13 @@ msgstr "Koble til og analyser"
 msgid "Connect to {0}"
 msgstr "Koble til {0}"
 
-#: packages/admin/src/lib/api/marketplace.ts:438
-#: packages/admin/src/lib/api/marketplace.ts:446
+#: packages/admin/src/lib/api/marketplace.ts:439
+#: packages/admin/src/lib/api/marketplace.ts:447
 msgid "Connect to any network host and load external plugin admin images (unrestricted)"
 msgstr ""
 
-#: packages/admin/src/lib/api/marketplace.ts:437
-#: packages/admin/src/lib/api/marketplace.ts:445
+#: packages/admin/src/lib/api/marketplace.ts:438
+#: packages/admin/src/lib/api/marketplace.ts:446
 msgid "Connect to network hosts and load external plugin admin images"
 msgstr ""
 
@@ -3471,7 +3471,7 @@ msgid "Create your first reusable content section to get started."
 msgstr "Opprett din første gjenbrukbare innholdsseksjon for å komme i gang."
 
 #: packages/admin/src/lib/api/marketplace.ts:419
-#: packages/admin/src/lib/api/marketplace.ts:441
+#: packages/admin/src/lib/api/marketplace.ts:442
 msgid "Create, update, and delete content"
 msgstr "Opprett, oppdater og slett innhold"
 
@@ -4533,7 +4533,7 @@ msgstr "Rediger lenke"
 msgid "Edit locking"
 msgstr ""
 
-#: packages/admin/src/lib/api/marketplace.ts:434
+#: packages/admin/src/lib/api/marketplace.ts:435
 msgid "Edit media alt text, captions, and focal points"
 msgstr ""
 
@@ -9437,7 +9437,7 @@ msgstr ""
 msgid "Read content entries"
 msgstr "Les innholdsoppføringer"
 
-#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:434
 msgid "Read media file contents"
 msgstr ""
 
@@ -9446,6 +9446,10 @@ msgid "Read media files"
 msgstr "Les mediefiler"
 
 #: packages/admin/src/lib/api/marketplace.ts:430
+msgid "Read public byline profiles and content credits"
+msgstr ""
+
+#: packages/admin/src/lib/api/marketplace.ts:431
 msgid "Read redirect rules"
 msgstr ""
 
@@ -9461,13 +9465,13 @@ msgstr ""
 msgid "Read site settings"
 msgstr "Les nettstedsinnstillinger"
 
-#: packages/admin/src/lib/api/marketplace.ts:436
-#: packages/admin/src/lib/api/marketplace.ts:444
+#: packages/admin/src/lib/api/marketplace.ts:437
+#: packages/admin/src/lib/api/marketplace.ts:445
 msgid "Read user accounts"
 msgstr "Les brukerkontoer"
 
 #: packages/admin/src/lib/api/marketplace.ts:417
-#: packages/admin/src/lib/api/marketplace.ts:440
+#: packages/admin/src/lib/api/marketplace.ts:441
 msgid "Read your content"
 msgstr "Les innholdet ditt"
 
@@ -13062,8 +13066,8 @@ msgstr "Last opp et bilde for å komme i gang"
 msgid "Upload and delete media"
 msgstr "Last opp og slett medier"
 
-#: packages/admin/src/lib/api/marketplace.ts:435
-#: packages/admin/src/lib/api/marketplace.ts:443
+#: packages/admin/src/lib/api/marketplace.ts:436
+#: packages/admin/src/lib/api/marketplace.ts:444
 msgid "Upload and manage media"
 msgstr "Last opp og administrer medier"
 

@@ -464,7 +464,7 @@ msgid "{added} updated · {0} failed"
 msgstr ""
 
 #. placeholder {0}: allowedHosts.join(", ")
-#: packages/admin/src/lib/api/marketplace.ts:465
+#: packages/admin/src/lib/api/marketplace.ts:466
 msgid "{base} to: {0}"
 msgstr "{base} zu: {0}"
 
@@ -1015,8 +1015,8 @@ msgstr "Zugriff verweigert"
 msgid "Access Denied"
 msgstr "Zugriff verweigert"
 
-#: packages/admin/src/lib/api/marketplace.ts:432
-#: packages/admin/src/lib/api/marketplace.ts:442
+#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:443
 msgid "Access your media library"
 msgstr "Auf Medienbibliothek zugreifen"
 
@@ -2380,7 +2380,7 @@ msgstr "Publikationsdatum ändern: {formattedValue}"
 msgid "Change schedule"
 msgstr "Planung ändern"
 
-#: packages/admin/src/lib/api/marketplace.ts:431
+#: packages/admin/src/lib/api/marketplace.ts:432
 msgid "Change where visitors are sent"
 msgstr "Ändern, wohin Besucher weitergeleitet werden"
 
@@ -2903,13 +2903,13 @@ msgstr "Verbinden & Analysieren"
 msgid "Connect to {0}"
 msgstr "Mit {0} verbinden"
 
-#: packages/admin/src/lib/api/marketplace.ts:438
-#: packages/admin/src/lib/api/marketplace.ts:446
+#: packages/admin/src/lib/api/marketplace.ts:439
+#: packages/admin/src/lib/api/marketplace.ts:447
 msgid "Connect to any network host and load external plugin admin images (unrestricted)"
 msgstr "Verbindung zu einem beliebigen Host herstellen und externe Bilder der Erweiterung im Adminbereich laden (unbeschränkt)"
 
-#: packages/admin/src/lib/api/marketplace.ts:437
-#: packages/admin/src/lib/api/marketplace.ts:445
+#: packages/admin/src/lib/api/marketplace.ts:438
+#: packages/admin/src/lib/api/marketplace.ts:446
 msgid "Connect to network hosts and load external plugin admin images"
 msgstr "Verbindung zu Hosts herstellen und externe Bilder der Erweiterung im Adminbereich laden"
 
@@ -3471,7 +3471,7 @@ msgid "Create your first reusable content section to get started."
 msgstr "Erstelle deinen ersten benutzerdefinierten Inhaltsabschnitt, um zu beginnen."
 
 #: packages/admin/src/lib/api/marketplace.ts:419
-#: packages/admin/src/lib/api/marketplace.ts:441
+#: packages/admin/src/lib/api/marketplace.ts:442
 msgid "Create, update, and delete content"
 msgstr "Erstelle, aktualisiere und entferne Inhalte"
 
@@ -4533,7 +4533,7 @@ msgstr "Link bearbeiten"
 msgid "Edit locking"
 msgstr "Bearbeitungssperre"
 
-#: packages/admin/src/lib/api/marketplace.ts:434
+#: packages/admin/src/lib/api/marketplace.ts:435
 msgid "Edit media alt text, captions, and focal points"
 msgstr "Alt-Text, Bildunterschriften und Fokuspunkte von Medien bearbeiten"
 
@@ -9437,7 +9437,7 @@ msgstr "Kommentartexte, E-Mail-Adressen der Verfasser, pseudonymisierte IP-Hashe
 msgid "Read content entries"
 msgstr "Inhaltseinträge lesen"
 
-#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:434
 msgid "Read media file contents"
 msgstr "Inhalte von Mediendateien lesen"
 
@@ -9446,6 +9446,10 @@ msgid "Read media files"
 msgstr "Mediendateien lesen"
 
 #: packages/admin/src/lib/api/marketplace.ts:430
+msgid "Read public byline profiles and content credits"
+msgstr ""
+
+#: packages/admin/src/lib/api/marketplace.ts:431
 msgid "Read redirect rules"
 msgstr "Weiterleitungsregeln lesen"
 
@@ -9461,13 +9465,13 @@ msgstr ""
 msgid "Read site settings"
 msgstr "Webseiten-Einstellungen lesen"
 
-#: packages/admin/src/lib/api/marketplace.ts:436
-#: packages/admin/src/lib/api/marketplace.ts:444
+#: packages/admin/src/lib/api/marketplace.ts:437
+#: packages/admin/src/lib/api/marketplace.ts:445
 msgid "Read user accounts"
 msgstr "Benutzerkonten lesen"
 
 #: packages/admin/src/lib/api/marketplace.ts:417
-#: packages/admin/src/lib/api/marketplace.ts:440
+#: packages/admin/src/lib/api/marketplace.ts:441
 msgid "Read your content"
 msgstr "Deine Inhalte lesen"
 
@@ -13062,8 +13066,8 @@ msgstr "Lade ein Bild hoch, um zu beginnen"
 msgid "Upload and delete media"
 msgstr "Mediendateien hochladen und entfernen"
 
-#: packages/admin/src/lib/api/marketplace.ts:435
-#: packages/admin/src/lib/api/marketplace.ts:443
+#: packages/admin/src/lib/api/marketplace.ts:436
+#: packages/admin/src/lib/api/marketplace.ts:444
 msgid "Upload and manage media"
 msgstr "Medien hochladen und verwalten"
 

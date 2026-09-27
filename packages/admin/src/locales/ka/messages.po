@@ -464,7 +464,7 @@ msgid "{added} updated · {0} failed"
 msgstr ""
 
 #. placeholder {0}: allowedHosts.join(", ")
-#: packages/admin/src/lib/api/marketplace.ts:465
+#: packages/admin/src/lib/api/marketplace.ts:466
 msgid "{base} to: {0}"
 msgstr "{base} → {0}"
 
@@ -1015,8 +1015,8 @@ msgstr "წვდომა აკრძალულია"
 msgid "Access Denied"
 msgstr "წვდომა აკრძალულია"
 
-#: packages/admin/src/lib/api/marketplace.ts:432
-#: packages/admin/src/lib/api/marketplace.ts:442
+#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:443
 msgid "Access your media library"
 msgstr "მედია ბიბლიოთეკაზე წვდომა"
 
@@ -2380,7 +2380,7 @@ msgstr "გამოქვეყნების თარიღის შეც�
 msgid "Change schedule"
 msgstr "განრიგის შეცვლა"
 
-#: packages/admin/src/lib/api/marketplace.ts:431
+#: packages/admin/src/lib/api/marketplace.ts:432
 msgid "Change where visitors are sent"
 msgstr "ვიზიტორების გადამისამართების სამიზნის შეცვლა"
 
@@ -2903,13 +2903,13 @@ msgstr "დაკავშირება და ანალიზი"
 msgid "Connect to {0}"
 msgstr "დაკავშირება {0}-თან"
 
-#: packages/admin/src/lib/api/marketplace.ts:438
-#: packages/admin/src/lib/api/marketplace.ts:446
+#: packages/admin/src/lib/api/marketplace.ts:439
+#: packages/admin/src/lib/api/marketplace.ts:447
 msgid "Connect to any network host and load external plugin admin images (unrestricted)"
 msgstr "ნებისმიერ ქსელურ ჰოსტთან დაკავშირება და გარე პლაგინის ადმინის სურათების ჩატვირთვა (შეზღუდვების გარეშე)"
 
-#: packages/admin/src/lib/api/marketplace.ts:437
-#: packages/admin/src/lib/api/marketplace.ts:445
+#: packages/admin/src/lib/api/marketplace.ts:438
+#: packages/admin/src/lib/api/marketplace.ts:446
 msgid "Connect to network hosts and load external plugin admin images"
 msgstr "ქსელურ ჰოსტებთან დაკავშირება და გარე პლაგინის ადმინის სურათების ჩატვირთვა"
 
@@ -3471,7 +3471,7 @@ msgid "Create your first reusable content section to get started."
 msgstr "დასაწყებად შექმენით პირველი ხელახლა გამოსაყენებელი შიგთავსის სექცია."
 
 #: packages/admin/src/lib/api/marketplace.ts:419
-#: packages/admin/src/lib/api/marketplace.ts:441
+#: packages/admin/src/lib/api/marketplace.ts:442
 msgid "Create, update, and delete content"
 msgstr "შიგთავსის შექმნა, განახლება და წაშლა"
 
@@ -4533,7 +4533,7 @@ msgstr "ბმულის რედაქტირება"
 msgid "Edit locking"
 msgstr "რედაქტირების ჩაკეტვა"
 
-#: packages/admin/src/lib/api/marketplace.ts:434
+#: packages/admin/src/lib/api/marketplace.ts:435
 msgid "Edit media alt text, captions, and focal points"
 msgstr "მედიის ალტ-ტექსტის, წარწერებისა და ფოკუსის წერტილების რედაქტირება"
 
@@ -9437,7 +9437,7 @@ msgstr "კომენტარების ტექსტის, ავტო
 msgid "Read content entries"
 msgstr "შიგთავსის ჩანაწერების წაკითხვა"
 
-#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:434
 msgid "Read media file contents"
 msgstr "მედია ფაილების შიგთავსის წაკითხვა"
 
@@ -9446,6 +9446,10 @@ msgid "Read media files"
 msgstr "მედია ფაილების წაკითხვა"
 
 #: packages/admin/src/lib/api/marketplace.ts:430
+msgid "Read public byline profiles and content credits"
+msgstr ""
+
+#: packages/admin/src/lib/api/marketplace.ts:431
 msgid "Read redirect rules"
 msgstr "გადამისამართების წესების წაკითხვა"
 
@@ -9461,13 +9465,13 @@ msgstr ""
 msgid "Read site settings"
 msgstr "საიტის პარამეტრების წაკითხვა"
 
-#: packages/admin/src/lib/api/marketplace.ts:436
-#: packages/admin/src/lib/api/marketplace.ts:444
+#: packages/admin/src/lib/api/marketplace.ts:437
+#: packages/admin/src/lib/api/marketplace.ts:445
 msgid "Read user accounts"
 msgstr "მომხმარებლის ანგარიშების წაკითხვა"
 
 #: packages/admin/src/lib/api/marketplace.ts:417
-#: packages/admin/src/lib/api/marketplace.ts:440
+#: packages/admin/src/lib/api/marketplace.ts:441
 msgid "Read your content"
 msgstr "საკუთარი შიგთავსის წაკითხვა"
 
@@ -13062,8 +13066,8 @@ msgstr "დასაწყებად ატვირთეთ სურათ�
 msgid "Upload and delete media"
 msgstr "მედიის ატვირთვა და წაშლა"
 
-#: packages/admin/src/lib/api/marketplace.ts:435
-#: packages/admin/src/lib/api/marketplace.ts:443
+#: packages/admin/src/lib/api/marketplace.ts:436
+#: packages/admin/src/lib/api/marketplace.ts:444
 msgid "Upload and manage media"
 msgstr "მედიის ატვირთვა და მართვა"
 

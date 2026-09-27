@@ -464,7 +464,7 @@ msgid "{added} updated · {0} failed"
 msgstr ""
 
 #. placeholder {0}: allowedHosts.join(", ")
-#: packages/admin/src/lib/api/marketplace.ts:465
+#: packages/admin/src/lib/api/marketplace.ts:466
 msgid "{base} to: {0}"
 msgstr "{base} เป็น: {0}"
 
@@ -1015,8 +1015,8 @@ msgstr ""
 msgid "Access Denied"
 msgstr "การเข้าถึงถูกปฏิเสธ"
 
-#: packages/admin/src/lib/api/marketplace.ts:432
-#: packages/admin/src/lib/api/marketplace.ts:442
+#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:443
 msgid "Access your media library"
 msgstr "เข้าถึงไลบรารีมีเดียของคุณ"
 
@@ -2380,7 +2380,7 @@ msgstr ""
 msgid "Change schedule"
 msgstr ""
 
-#: packages/admin/src/lib/api/marketplace.ts:431
+#: packages/admin/src/lib/api/marketplace.ts:432
 msgid "Change where visitors are sent"
 msgstr ""
 
@@ -2903,13 +2903,13 @@ msgstr "เชื่อมต่อและวิเคราะห์"
 msgid "Connect to {0}"
 msgstr "เชื่อมต่อกับ {0}"
 
-#: packages/admin/src/lib/api/marketplace.ts:438
-#: packages/admin/src/lib/api/marketplace.ts:446
+#: packages/admin/src/lib/api/marketplace.ts:439
+#: packages/admin/src/lib/api/marketplace.ts:447
 msgid "Connect to any network host and load external plugin admin images (unrestricted)"
 msgstr ""
 
-#: packages/admin/src/lib/api/marketplace.ts:437
-#: packages/admin/src/lib/api/marketplace.ts:445
+#: packages/admin/src/lib/api/marketplace.ts:438
+#: packages/admin/src/lib/api/marketplace.ts:446
 msgid "Connect to network hosts and load external plugin admin images"
 msgstr ""
 
@@ -3471,7 +3471,7 @@ msgid "Create your first reusable content section to get started."
 msgstr "สร้างส่วนเนื้อหาที่นำกลับมาใช้ใหม่ได้รายการแรกของคุณเพื่อเริ่มต้น"
 
 #: packages/admin/src/lib/api/marketplace.ts:419
-#: packages/admin/src/lib/api/marketplace.ts:441
+#: packages/admin/src/lib/api/marketplace.ts:442
 msgid "Create, update, and delete content"
 msgstr "สร้าง อัปเดต และลบเนื้อหา"
 
@@ -4533,7 +4533,7 @@ msgstr "แก้ไขลิงก์"
 msgid "Edit locking"
 msgstr ""
 
-#: packages/admin/src/lib/api/marketplace.ts:434
+#: packages/admin/src/lib/api/marketplace.ts:435
 msgid "Edit media alt text, captions, and focal points"
 msgstr ""
 
@@ -9434,7 +9434,7 @@ msgstr ""
 msgid "Read content entries"
 msgstr "อ่านรายการเนื้อหา"
 
-#: packages/admin/src/lib/api/marketplace.ts:433
+#: packages/admin/src/lib/api/marketplace.ts:434
 msgid "Read media file contents"
 msgstr ""
 
@@ -9443,6 +9443,10 @@ msgid "Read media files"
 msgstr "อ่านไฟล์มีเดีย"
 
 #: packages/admin/src/lib/api/marketplace.ts:430
+msgid "Read public byline profiles and content credits"
+msgstr ""
+
+#: packages/admin/src/lib/api/marketplace.ts:431
 msgid "Read redirect rules"
 msgstr ""
 
@@ -9458,13 +9462,13 @@ msgstr ""
 msgid "Read site settings"
 msgstr "อ่านการตั้งค่าเว็บไซต์"
 
-#: packages/admin/src/lib/api/marketplace.ts:436
-#: packages/admin/src/lib/api/marketplace.ts:444
+#: packages/admin/src/lib/api/marketplace.ts:437
+#: packages/admin/src/lib/api/marketplace.ts:445
 msgid "Read user accounts"
 msgstr "อ่านบัญชีผู้ใช้"
 
 #: packages/admin/src/lib/api/marketplace.ts:417
-#: packages/admin/src/lib/api/marketplace.ts:440
+#: packages/admin/src/lib/api/marketplace.ts:441
 msgid "Read your content"
 msgstr "อ่านเนื้อหาของคุณ"
 
@@ -13059,8 +13063,8 @@ msgstr "อัปโหลดรูปภาพเพื่อเริ่มต
 msgid "Upload and delete media"
 msgstr "อัปโหลดและลบมีเดีย"
 
-#: packages/admin/src/lib/api/marketplace.ts:435
-#: packages/admin/src/lib/api/marketplace.ts:443
+#: packages/admin/src/lib/api/marketplace.ts:436
+#: packages/admin/src/lib/api/marketplace.ts:444
 msgid "Upload and manage media"
 msgstr "อัปโหลดและจัดการมีเดีย"
 
