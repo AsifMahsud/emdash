@@ -45,7 +45,7 @@ msgstr ""
 msgid "(pre-release)"
 msgstr "(pre-release)"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:151
+#: packages/admin/src/components/settings/PasskeyItem.tsx:131
 msgid "(synced)"
 msgstr "(sinhronizovano)"
 
@@ -468,7 +468,7 @@ msgstr ""
 msgid "{base} to: {0}"
 msgstr "{base} na: {0}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:359
+#: packages/admin/src/components/RevisionHistory.tsx:361
 msgid "{changedCount, plural, one {# change from next revision} other {# changes from next revision}}"
 msgstr "{changedCount, plural, one {# promena iz sledeće revizije} few {# promene iz sledeće revizije} other {# promena iz sledeće revizije}}"
 
@@ -722,11 +722,11 @@ msgstr "{totalDrafts, plural, one {Nacrt} few {Nacrta} other {Nacrta}}"
 msgid "{totalScheduled, plural, one {Scheduled} other {Scheduled}}"
 msgstr "{totalScheduled, plural, one {Zakazano} few {Zakazana} other {Zakazano}}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:371
+#: packages/admin/src/components/RevisionHistory.tsx:373
 msgid "{unchangedCount, plural, one {Hide # unchanged} other {Hide # unchanged}}"
 msgstr "{unchangedCount, plural, one {Sakrij # nepromenjeno} few {Sakrij # nepromenjena} other {Sakrij # nepromenjenih}}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:372
+#: packages/admin/src/components/RevisionHistory.tsx:374
 msgid "{unchangedCount, plural, one {Show # unchanged} other {Show # unchanged}}"
 msgstr "{unchangedCount, plural, one {Prikaži # nepromenjeno} few {Prikaži # nepromenjena} other {Prikaži # nepromenjenih}}"
 
@@ -2267,7 +2267,7 @@ msgstr ""
 msgid "Cancel remaining"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:141
+#: packages/admin/src/components/settings/PasskeyItem.tsx:121
 msgid "Cancel rename"
 msgstr "Otkaži preimenovanje"
 
@@ -3007,7 +3007,7 @@ msgstr "Sadržaj vraćen u nacrt"
 msgid "Content search results"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:318
+#: packages/admin/src/components/RevisionHistory.tsx:320
 msgid "Content snapshot:"
 msgstr "Snimak sadržaja:"
 
@@ -3569,7 +3569,7 @@ msgstr "CSS"
 msgid "current"
 msgstr "trenutno"
 
-#: packages/admin/src/components/RevisionHistory.tsx:286
+#: packages/admin/src/components/RevisionHistory.tsx:288
 msgid "Current"
 msgstr "Trenutno"
 
@@ -4032,7 +4032,7 @@ msgstr "Kod uređaja"
 msgid "Device-bound"
 msgstr "Vezan za uređaj"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Device-bound passkey"
 msgstr "Passkey vezan za uređaj"
 
@@ -5527,7 +5527,7 @@ msgstr ""
 msgid "Failed to remove domain"
 msgstr "Uklanjanje domena nije uspelo"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:93
+#: packages/admin/src/components/settings/PasskeyItem.tsx:73
 #: packages/admin/src/components/settings/SecuritySettings.tsx:66
 msgid "Failed to remove passkey"
 msgstr "Uklanjanje passkey-a nije uspelo"
@@ -6945,7 +6945,7 @@ msgid "Last updated"
 msgstr "Poslednje ažurirano"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:388
-#: packages/admin/src/components/settings/PasskeyItem.tsx:154
+#: packages/admin/src/components/settings/PasskeyItem.tsx:134
 msgid "Last used"
 msgstr "Poslednje korišćeno"
 
@@ -8258,7 +8258,7 @@ msgstr ""
 msgid "No fields"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:349
+#: packages/admin/src/components/RevisionHistory.tsx:351
 msgid "No fields to compare"
 msgstr "Nema polja za poređenje"
 
@@ -8827,8 +8827,8 @@ msgstr "Passkey uspešno dodat"
 msgid "Passkey created"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:123
-#: packages/admin/src/components/settings/PasskeyItem.tsx:124
+#: packages/admin/src/components/settings/PasskeyItem.tsx:103
+#: packages/admin/src/components/settings/PasskeyItem.tsx:104
 msgid "Passkey name"
 msgstr "Naziv passkey-a"
 
@@ -9693,8 +9693,8 @@ msgstr ""
 #: packages/admin/src/components/PortableTextEditor.tsx:4846
 #: packages/admin/src/components/settings/GeneralSettings.tsx:236
 #: packages/admin/src/components/settings/GeneralSettings.tsx:296
-#: packages/admin/src/components/settings/PasskeyItem.tsx:180
-#: packages/admin/src/components/settings/PasskeyItem.tsx:202
+#: packages/admin/src/components/settings/PasskeyItem.tsx:160
+#: packages/admin/src/components/settings/PasskeyItem.tsx:182
 #: packages/admin/src/components/settings/SeoSettings.tsx:217
 msgid "Remove"
 msgstr "Ukloni"
@@ -9705,7 +9705,7 @@ msgstr "Ukloni"
 #: packages/admin/src/components/ContentEditor.tsx:2764
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:220
 #: packages/admin/src/components/MediaUploadDialog.tsx:162
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 #: packages/admin/src/components/TaxonomySidebar.tsx:457
 msgid "Remove {0}"
 msgstr "Ukloni {0}"
@@ -9769,11 +9769,11 @@ msgstr "Ukloni stavku {0}"
 msgid "Remove link"
 msgstr "Ukloni link"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 msgid "Remove passkey"
 msgstr "Ukloni passkey"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:196
+#: packages/admin/src/components/settings/PasskeyItem.tsx:176
 msgid "Remove passkey?"
 msgstr "Ukloniti passkey?"
 
@@ -9804,20 +9804,20 @@ msgstr ""
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:358
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:384
-#: packages/admin/src/components/settings/PasskeyItem.tsx:203
+#: packages/admin/src/components/settings/PasskeyItem.tsx:183
 msgid "Removing..."
 msgstr "Uklanjanje..."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:169
+#: packages/admin/src/components/settings/PasskeyItem.tsx:149
 msgid "Rename"
 msgstr "Preimenuj"
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename {0}"
 msgstr "Preimenuj {0}"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename passkey"
 msgstr "Preimenuj passkey"
 
@@ -10044,8 +10044,8 @@ msgstr "Vraćanje nije uspelo"
 msgid "Restore Revision?"
 msgstr "Vratiti reviziju?"
 
-#: packages/admin/src/components/RevisionHistory.tsx:303
-#: packages/admin/src/components/RevisionHistory.tsx:304
+#: packages/admin/src/components/RevisionHistory.tsx:305
+#: packages/admin/src/components/RevisionHistory.tsx:306
 msgid "Restore this version"
 msgstr "Vrati ovu verziju"
 
@@ -10356,7 +10356,7 @@ msgstr "Sačuvaj sadržaj kao nacrt pre objavljivanja"
 msgid "Save date"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:132
+#: packages/admin/src/components/settings/PasskeyItem.tsx:112
 msgid "Save name"
 msgstr "Sačuvaj naziv"
 
@@ -11641,7 +11641,7 @@ msgstr ""
 msgid "Synced"
 msgstr "Sinhronizovano"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Synced passkey"
 msgstr "Sinhronizovan Passkey"
 
@@ -12913,7 +12913,7 @@ msgstr ""
 msgid "Unlock aspect ratio"
 msgstr "Otključaj odnos stranica"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:147
+#: packages/admin/src/components/settings/PasskeyItem.tsx:127
 #: packages/admin/src/components/users/UserDetail.tsx:254
 msgid "Unnamed passkey"
 msgstr "Passkey bez naziva"
@@ -13824,11 +13824,11 @@ msgid "You no longer hold this entry"
 msgstr ""
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:199
+#: packages/admin/src/components/settings/PasskeyItem.tsx:179
 msgid "You won't be able to use \"{0}\" to sign in anymore. This action cannot be undone."
 msgstr "Više nećeš moći da koristiš \"{0}\" za prijavu. Ova radnja se ne može poništiti."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:200
+#: packages/admin/src/components/settings/PasskeyItem.tsx:180
 msgid "You won't be able to use this passkey to sign in anymore. This action cannot be undone."
 msgstr "Više nećeš moći da koristiš ovaj Passkey za prijavu. Ova radnja se ne može poništiti."
 

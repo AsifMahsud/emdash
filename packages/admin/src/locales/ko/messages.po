@@ -45,7 +45,7 @@ msgstr ""
 msgid "(pre-release)"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:151
+#: packages/admin/src/components/settings/PasskeyItem.tsx:131
 msgid "(synced)"
 msgstr "(동기화됨)"
 
@@ -468,7 +468,7 @@ msgstr ""
 msgid "{base} to: {0}"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:359
+#: packages/admin/src/components/RevisionHistory.tsx:361
 msgid "{changedCount, plural, one {# change from next revision} other {# changes from next revision}}"
 msgstr "{changedCount, plural, one {다음 리비전과 다른 변경 #건} other {다음 리비전과 다른 변경 #건}}"
 
@@ -722,11 +722,11 @@ msgstr ""
 msgid "{totalScheduled, plural, one {Scheduled} other {Scheduled}}"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:371
+#: packages/admin/src/components/RevisionHistory.tsx:373
 msgid "{unchangedCount, plural, one {Hide # unchanged} other {Hide # unchanged}}"
 msgstr "{unchangedCount, plural, one {변경되지 않은 항목 #개 숨기기} other {변경되지 않은 항목 #개 숨기기}}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:372
+#: packages/admin/src/components/RevisionHistory.tsx:374
 msgid "{unchangedCount, plural, one {Show # unchanged} other {Show # unchanged}}"
 msgstr "{unchangedCount, plural, one {변경되지 않은 항목 #개 보기} other {변경되지 않은 항목 #개 보기}}"
 
@@ -2267,7 +2267,7 @@ msgstr ""
 msgid "Cancel remaining"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:141
+#: packages/admin/src/components/settings/PasskeyItem.tsx:121
 msgid "Cancel rename"
 msgstr "이름 변경 취소"
 
@@ -3007,7 +3007,7 @@ msgstr ""
 msgid "Content search results"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:318
+#: packages/admin/src/components/RevisionHistory.tsx:320
 msgid "Content snapshot:"
 msgstr "콘텐츠 스냅샷:"
 
@@ -3569,7 +3569,7 @@ msgstr ""
 msgid "current"
 msgstr "현재"
 
-#: packages/admin/src/components/RevisionHistory.tsx:286
+#: packages/admin/src/components/RevisionHistory.tsx:288
 msgid "Current"
 msgstr "현재"
 
@@ -4032,7 +4032,7 @@ msgstr "장치 코드"
 msgid "Device-bound"
 msgstr "기기 전용"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Device-bound passkey"
 msgstr "기기 전용 패스키"
 
@@ -5524,7 +5524,7 @@ msgstr ""
 msgid "Failed to remove domain"
 msgstr "도메인을 제거하지 못했습니다."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:93
+#: packages/admin/src/components/settings/PasskeyItem.tsx:73
 #: packages/admin/src/components/settings/SecuritySettings.tsx:66
 msgid "Failed to remove passkey"
 msgstr "패스키를 제거하지 못했습니다."
@@ -6942,7 +6942,7 @@ msgid "Last updated"
 msgstr "최근 수정"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:388
-#: packages/admin/src/components/settings/PasskeyItem.tsx:154
+#: packages/admin/src/components/settings/PasskeyItem.tsx:134
 msgid "Last used"
 msgstr "마지막으로 사용됨"
 
@@ -8255,7 +8255,7 @@ msgstr ""
 msgid "No fields"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:349
+#: packages/admin/src/components/RevisionHistory.tsx:351
 msgid "No fields to compare"
 msgstr "비교할 필드가 없습니다."
 
@@ -8821,8 +8821,8 @@ msgstr "패스키가 성공적으로 추가되었습니다"
 msgid "Passkey created"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:123
-#: packages/admin/src/components/settings/PasskeyItem.tsx:124
+#: packages/admin/src/components/settings/PasskeyItem.tsx:103
+#: packages/admin/src/components/settings/PasskeyItem.tsx:104
 msgid "Passkey name"
 msgstr "패스키 이름"
 
@@ -9687,8 +9687,8 @@ msgstr ""
 #: packages/admin/src/components/PortableTextEditor.tsx:4846
 #: packages/admin/src/components/settings/GeneralSettings.tsx:236
 #: packages/admin/src/components/settings/GeneralSettings.tsx:296
-#: packages/admin/src/components/settings/PasskeyItem.tsx:180
-#: packages/admin/src/components/settings/PasskeyItem.tsx:202
+#: packages/admin/src/components/settings/PasskeyItem.tsx:160
+#: packages/admin/src/components/settings/PasskeyItem.tsx:182
 #: packages/admin/src/components/settings/SeoSettings.tsx:217
 msgid "Remove"
 msgstr "제거"
@@ -9699,7 +9699,7 @@ msgstr "제거"
 #: packages/admin/src/components/ContentEditor.tsx:2764
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:220
 #: packages/admin/src/components/MediaUploadDialog.tsx:162
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 #: packages/admin/src/components/TaxonomySidebar.tsx:457
 msgid "Remove {0}"
 msgstr "{0} 삭제"
@@ -9763,11 +9763,11 @@ msgstr "항목 {0} 삭제"
 msgid "Remove link"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 msgid "Remove passkey"
 msgstr "패스키 제거"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:196
+#: packages/admin/src/components/settings/PasskeyItem.tsx:176
 msgid "Remove passkey?"
 msgstr "패스키를 삭제하시겠습니까?"
 
@@ -9798,20 +9798,20 @@ msgstr ""
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:358
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:384
-#: packages/admin/src/components/settings/PasskeyItem.tsx:203
+#: packages/admin/src/components/settings/PasskeyItem.tsx:183
 msgid "Removing..."
 msgstr "제거 중..."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:169
+#: packages/admin/src/components/settings/PasskeyItem.tsx:149
 msgid "Rename"
 msgstr "이름 바꾸기"
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename {0}"
 msgstr "{0} 이름 바꾸기"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename passkey"
 msgstr "패스키 이름 바꾸기"
 
@@ -10038,8 +10038,8 @@ msgstr "복원 실패"
 msgid "Restore Revision?"
 msgstr "버전을 복원하시겠습니까?"
 
-#: packages/admin/src/components/RevisionHistory.tsx:303
-#: packages/admin/src/components/RevisionHistory.tsx:304
+#: packages/admin/src/components/RevisionHistory.tsx:305
+#: packages/admin/src/components/RevisionHistory.tsx:306
 msgid "Restore this version"
 msgstr "이 버전으로 복원"
 
@@ -10350,7 +10350,7 @@ msgstr "게시하기 전에 콘텐츠를 초안으로 저장"
 msgid "Save date"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:132
+#: packages/admin/src/components/settings/PasskeyItem.tsx:112
 msgid "Save name"
 msgstr "이름 저장"
 
@@ -11635,7 +11635,7 @@ msgstr ""
 msgid "Synced"
 msgstr "동기화됨"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Synced passkey"
 msgstr "동기화된 패스키"
 
@@ -12907,7 +12907,7 @@ msgstr ""
 msgid "Unlock aspect ratio"
 msgstr "종횡비 잠금 해제"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:147
+#: packages/admin/src/components/settings/PasskeyItem.tsx:127
 #: packages/admin/src/components/users/UserDetail.tsx:254
 msgid "Unnamed passkey"
 msgstr "이름이 없는 패스키"
@@ -13818,11 +13818,11 @@ msgid "You no longer hold this entry"
 msgstr ""
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:199
+#: packages/admin/src/components/settings/PasskeyItem.tsx:179
 msgid "You won't be able to use \"{0}\" to sign in anymore. This action cannot be undone."
 msgstr "더 이상 \"{0}\"을(를) 사용하여 로그인할 수 없습니다. 이 작업은 취소할 수 없습니다."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:200
+#: packages/admin/src/components/settings/PasskeyItem.tsx:180
 msgid "You won't be able to use this passkey to sign in anymore. This action cannot be undone."
 msgstr "더 이상 이 패스키를 사용하여 로그인할 수 없습니다. 이 작업은 취소할 수 없습니다."
 

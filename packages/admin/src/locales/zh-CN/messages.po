@@ -45,7 +45,7 @@ msgstr ""
 msgid "(pre-release)"
 msgstr "（预发布）"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:151
+#: packages/admin/src/components/settings/PasskeyItem.tsx:131
 msgid "(synced)"
 msgstr "（已同步）"
 
@@ -468,7 +468,7 @@ msgstr ""
 msgid "{base} to: {0}"
 msgstr "{base} 到：{0}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:359
+#: packages/admin/src/components/RevisionHistory.tsx:361
 msgid "{changedCount, plural, one {# change from next revision} other {# changes from next revision}}"
 msgstr "{changedCount, plural, one {# 个变更来自下一个修订版本} other {# 个变更来自下一个修订版本}}"
 
@@ -722,11 +722,11 @@ msgstr ""
 msgid "{totalScheduled, plural, one {Scheduled} other {Scheduled}}"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:371
+#: packages/admin/src/components/RevisionHistory.tsx:373
 msgid "{unchangedCount, plural, one {Hide # unchanged} other {Hide # unchanged}}"
 msgstr "{unchangedCount, plural, one {隐藏 # 个未变更} other {隐藏 # 个未变更}}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:372
+#: packages/admin/src/components/RevisionHistory.tsx:374
 msgid "{unchangedCount, plural, one {Show # unchanged} other {Show # unchanged}}"
 msgstr "{unchangedCount, plural, one {显示 # 个未变更} other {显示 # 个未变更}}"
 
@@ -2267,7 +2267,7 @@ msgstr ""
 msgid "Cancel remaining"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:141
+#: packages/admin/src/components/settings/PasskeyItem.tsx:121
 msgid "Cancel rename"
 msgstr "取消重命名"
 
@@ -3007,7 +3007,7 @@ msgstr "内容已恢复为草稿"
 msgid "Content search results"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:318
+#: packages/admin/src/components/RevisionHistory.tsx:320
 msgid "Content snapshot:"
 msgstr "内容快照："
 
@@ -3569,7 +3569,7 @@ msgstr "CSS"
 msgid "current"
 msgstr "当前"
 
-#: packages/admin/src/components/RevisionHistory.tsx:286
+#: packages/admin/src/components/RevisionHistory.tsx:288
 msgid "Current"
 msgstr "当前版本"
 
@@ -4032,7 +4032,7 @@ msgstr "设备代码"
 msgid "Device-bound"
 msgstr "设备绑定"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Device-bound passkey"
 msgstr "设备绑定通行密钥"
 
@@ -5527,7 +5527,7 @@ msgstr ""
 msgid "Failed to remove domain"
 msgstr "移除域名失败"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:93
+#: packages/admin/src/components/settings/PasskeyItem.tsx:73
 #: packages/admin/src/components/settings/SecuritySettings.tsx:66
 msgid "Failed to remove passkey"
 msgstr "移除通行密钥失败"
@@ -6945,7 +6945,7 @@ msgid "Last updated"
 msgstr "最后更新"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:388
-#: packages/admin/src/components/settings/PasskeyItem.tsx:154
+#: packages/admin/src/components/settings/PasskeyItem.tsx:134
 msgid "Last used"
 msgstr "最后使用"
 
@@ -8258,7 +8258,7 @@ msgstr ""
 msgid "No fields"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:349
+#: packages/admin/src/components/RevisionHistory.tsx:351
 msgid "No fields to compare"
 msgstr "无字段可比较"
 
@@ -8827,8 +8827,8 @@ msgstr "通行密钥添加成功"
 msgid "Passkey created"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:123
-#: packages/admin/src/components/settings/PasskeyItem.tsx:124
+#: packages/admin/src/components/settings/PasskeyItem.tsx:103
+#: packages/admin/src/components/settings/PasskeyItem.tsx:104
 msgid "Passkey name"
 msgstr "通行密钥名称"
 
@@ -9693,8 +9693,8 @@ msgstr ""
 #: packages/admin/src/components/PortableTextEditor.tsx:4846
 #: packages/admin/src/components/settings/GeneralSettings.tsx:236
 #: packages/admin/src/components/settings/GeneralSettings.tsx:296
-#: packages/admin/src/components/settings/PasskeyItem.tsx:180
-#: packages/admin/src/components/settings/PasskeyItem.tsx:202
+#: packages/admin/src/components/settings/PasskeyItem.tsx:160
+#: packages/admin/src/components/settings/PasskeyItem.tsx:182
 #: packages/admin/src/components/settings/SeoSettings.tsx:217
 msgid "Remove"
 msgstr "移除"
@@ -9705,7 +9705,7 @@ msgstr "移除"
 #: packages/admin/src/components/ContentEditor.tsx:2764
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:220
 #: packages/admin/src/components/MediaUploadDialog.tsx:162
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 #: packages/admin/src/components/TaxonomySidebar.tsx:457
 msgid "Remove {0}"
 msgstr "移除 {0}"
@@ -9769,11 +9769,11 @@ msgstr "移除项目 {0}"
 msgid "Remove link"
 msgstr "移除链接"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 msgid "Remove passkey"
 msgstr "移除通行密钥"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:196
+#: packages/admin/src/components/settings/PasskeyItem.tsx:176
 msgid "Remove passkey?"
 msgstr "移除通行密钥？"
 
@@ -9804,20 +9804,20 @@ msgstr ""
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:358
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:384
-#: packages/admin/src/components/settings/PasskeyItem.tsx:203
+#: packages/admin/src/components/settings/PasskeyItem.tsx:183
 msgid "Removing..."
 msgstr "正在移除..."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:169
+#: packages/admin/src/components/settings/PasskeyItem.tsx:149
 msgid "Rename"
 msgstr "重命名"
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename {0}"
 msgstr "重命名 {0}"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename passkey"
 msgstr "重命名通行密钥"
 
@@ -10044,8 +10044,8 @@ msgstr "恢复失败"
 msgid "Restore Revision?"
 msgstr "恢复修订版本？"
 
-#: packages/admin/src/components/RevisionHistory.tsx:303
-#: packages/admin/src/components/RevisionHistory.tsx:304
+#: packages/admin/src/components/RevisionHistory.tsx:305
+#: packages/admin/src/components/RevisionHistory.tsx:306
 msgid "Restore this version"
 msgstr "恢复此版本"
 
@@ -10356,7 +10356,7 @@ msgstr "发布前将内容保存为草稿"
 msgid "Save date"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:132
+#: packages/admin/src/components/settings/PasskeyItem.tsx:112
 msgid "Save name"
 msgstr "保存名称"
 
@@ -11641,7 +11641,7 @@ msgstr ""
 msgid "Synced"
 msgstr "已同步"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Synced passkey"
 msgstr "已同步通行密钥"
 
@@ -12913,7 +12913,7 @@ msgstr ""
 msgid "Unlock aspect ratio"
 msgstr "解锁宽高比"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:147
+#: packages/admin/src/components/settings/PasskeyItem.tsx:127
 #: packages/admin/src/components/users/UserDetail.tsx:254
 msgid "Unnamed passkey"
 msgstr "未命名通行密钥"
@@ -13824,11 +13824,11 @@ msgid "You no longer hold this entry"
 msgstr ""
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:199
+#: packages/admin/src/components/settings/PasskeyItem.tsx:179
 msgid "You won't be able to use \"{0}\" to sign in anymore. This action cannot be undone."
 msgstr "您将无法再使用「{0}」登录。此操作无法撤销。"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:200
+#: packages/admin/src/components/settings/PasskeyItem.tsx:180
 msgid "You won't be able to use this passkey to sign in anymore. This action cannot be undone."
 msgstr "您将无法再使用此通行密钥登录。此操作无法撤销。"
 

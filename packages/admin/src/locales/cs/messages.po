@@ -45,7 +45,7 @@ msgstr ""
 msgid "(pre-release)"
 msgstr "(předběžná verze)"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:151
+#: packages/admin/src/components/settings/PasskeyItem.tsx:131
 msgid "(synced)"
 msgstr "(synchronizováno)"
 
@@ -468,7 +468,7 @@ msgstr ""
 msgid "{base} to: {0}"
 msgstr "{base} na adresy: {0}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:359
+#: packages/admin/src/components/RevisionHistory.tsx:361
 msgid "{changedCount, plural, one {# change from next revision} other {# changes from next revision}}"
 msgstr "{changedCount, plural, one {# změna oproti další revizi} few {# změny oproti další revizi} many {# změny oproti další revizi} other {# změn oproti další revizi}}"
 
@@ -722,11 +722,11 @@ msgstr "{totalDrafts, plural, one {Koncept} few {Koncepty} many {Konceptu} other
 msgid "{totalScheduled, plural, one {Scheduled} other {Scheduled}}"
 msgstr "{totalScheduled, plural, one {Naplánováno} few {Naplánováno} many {Naplánováno} other {Naplánováno}}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:371
+#: packages/admin/src/components/RevisionHistory.tsx:373
 msgid "{unchangedCount, plural, one {Hide # unchanged} other {Hide # unchanged}}"
 msgstr "{unchangedCount, plural, one {Skrýt # nezměněné} few {Skrýt # nezměněné} many {Skrýt # nezměněného} other {Skrýt # nezměněných}}"
 
-#: packages/admin/src/components/RevisionHistory.tsx:372
+#: packages/admin/src/components/RevisionHistory.tsx:374
 msgid "{unchangedCount, plural, one {Show # unchanged} other {Show # unchanged}}"
 msgstr "{unchangedCount, plural, one {Zobrazit # nezměněné} few {Zobrazit # nezměněné} many {Zobrazit # nezměněného} other {Zobrazit # nezměněných}}"
 
@@ -2267,7 +2267,7 @@ msgstr ""
 msgid "Cancel remaining"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:141
+#: packages/admin/src/components/settings/PasskeyItem.tsx:121
 msgid "Cancel rename"
 msgstr "Zrušit přejmenování"
 
@@ -3007,7 +3007,7 @@ msgstr "Obsah byl vrácen do konceptu"
 msgid "Content search results"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:318
+#: packages/admin/src/components/RevisionHistory.tsx:320
 msgid "Content snapshot:"
 msgstr "Snímek obsahu:"
 
@@ -3569,7 +3569,7 @@ msgstr "CSS"
 msgid "current"
 msgstr "aktuální"
 
-#: packages/admin/src/components/RevisionHistory.tsx:286
+#: packages/admin/src/components/RevisionHistory.tsx:288
 msgid "Current"
 msgstr "Aktuální"
 
@@ -4032,7 +4032,7 @@ msgstr "Kód zařízení"
 msgid "Device-bound"
 msgstr "Vázáno na zařízení"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Device-bound passkey"
 msgstr "Přístupový klíč vázaný na zařízení"
 
@@ -5527,7 +5527,7 @@ msgstr ""
 msgid "Failed to remove domain"
 msgstr "Nepodařilo se odebrat doménu"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:93
+#: packages/admin/src/components/settings/PasskeyItem.tsx:73
 #: packages/admin/src/components/settings/SecuritySettings.tsx:66
 msgid "Failed to remove passkey"
 msgstr "Nepodařilo se odebrat přístupový klíč"
@@ -6945,7 +6945,7 @@ msgid "Last updated"
 msgstr "Poslední aktualizace"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:388
-#: packages/admin/src/components/settings/PasskeyItem.tsx:154
+#: packages/admin/src/components/settings/PasskeyItem.tsx:134
 msgid "Last used"
 msgstr "Naposledy použito"
 
@@ -8258,7 +8258,7 @@ msgstr ""
 msgid "No fields"
 msgstr ""
 
-#: packages/admin/src/components/RevisionHistory.tsx:349
+#: packages/admin/src/components/RevisionHistory.tsx:351
 msgid "No fields to compare"
 msgstr "Žádná pole k porovnání"
 
@@ -8827,8 +8827,8 @@ msgstr "Přístupový klíč byl přidán"
 msgid "Passkey created"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:123
-#: packages/admin/src/components/settings/PasskeyItem.tsx:124
+#: packages/admin/src/components/settings/PasskeyItem.tsx:103
+#: packages/admin/src/components/settings/PasskeyItem.tsx:104
 msgid "Passkey name"
 msgstr "Název přístupového klíče"
 
@@ -9693,8 +9693,8 @@ msgstr ""
 #: packages/admin/src/components/PortableTextEditor.tsx:4846
 #: packages/admin/src/components/settings/GeneralSettings.tsx:236
 #: packages/admin/src/components/settings/GeneralSettings.tsx:296
-#: packages/admin/src/components/settings/PasskeyItem.tsx:180
-#: packages/admin/src/components/settings/PasskeyItem.tsx:202
+#: packages/admin/src/components/settings/PasskeyItem.tsx:160
+#: packages/admin/src/components/settings/PasskeyItem.tsx:182
 #: packages/admin/src/components/settings/SeoSettings.tsx:217
 msgid "Remove"
 msgstr "Odebrat"
@@ -9705,7 +9705,7 @@ msgstr "Odebrat"
 #: packages/admin/src/components/ContentEditor.tsx:2764
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:220
 #: packages/admin/src/components/MediaUploadDialog.tsx:162
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 #: packages/admin/src/components/TaxonomySidebar.tsx:457
 msgid "Remove {0}"
 msgstr "Odebrat {0}"
@@ -9769,11 +9769,11 @@ msgstr "Odebrat položku {0}"
 msgid "Remove link"
 msgstr "Odebrat odkaz"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:181
+#: packages/admin/src/components/settings/PasskeyItem.tsx:161
 msgid "Remove passkey"
 msgstr "Odebrat přístupový klíč"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:196
+#: packages/admin/src/components/settings/PasskeyItem.tsx:176
 msgid "Remove passkey?"
 msgstr "Odebrat přístupový klíč?"
 
@@ -9804,20 +9804,20 @@ msgstr ""
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:358
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:384
-#: packages/admin/src/components/settings/PasskeyItem.tsx:203
+#: packages/admin/src/components/settings/PasskeyItem.tsx:183
 msgid "Removing..."
 msgstr "Odebírání…"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:169
+#: packages/admin/src/components/settings/PasskeyItem.tsx:149
 msgid "Rename"
 msgstr "Přejmenovat"
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename {0}"
 msgstr "Přejmenovat {0}"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:170
+#: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename passkey"
 msgstr "Přejmenovat přístupový klíč"
 
@@ -10044,8 +10044,8 @@ msgstr "Obnovení selhalo"
 msgid "Restore Revision?"
 msgstr "Obnovit revizi?"
 
-#: packages/admin/src/components/RevisionHistory.tsx:303
-#: packages/admin/src/components/RevisionHistory.tsx:304
+#: packages/admin/src/components/RevisionHistory.tsx:305
+#: packages/admin/src/components/RevisionHistory.tsx:306
 msgid "Restore this version"
 msgstr "Obnovit tuto verzi"
 
@@ -10356,7 +10356,7 @@ msgstr "Uložit obsah jako koncept před publikováním"
 msgid "Save date"
 msgstr ""
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:132
+#: packages/admin/src/components/settings/PasskeyItem.tsx:112
 msgid "Save name"
 msgstr "Uložit název"
 
@@ -11641,7 +11641,7 @@ msgstr ""
 msgid "Synced"
 msgstr "Synchronizováno"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:98
+#: packages/admin/src/components/settings/PasskeyItem.tsx:78
 msgid "Synced passkey"
 msgstr "Synchronizovaný přístupový klíč"
 
@@ -12913,7 +12913,7 @@ msgstr ""
 msgid "Unlock aspect ratio"
 msgstr "Odemknout poměr stran"
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:147
+#: packages/admin/src/components/settings/PasskeyItem.tsx:127
 #: packages/admin/src/components/users/UserDetail.tsx:254
 msgid "Unnamed passkey"
 msgstr "Nepojmenovaný přístupový klíč"
@@ -13824,11 +13824,11 @@ msgid "You no longer hold this entry"
 msgstr ""
 
 #. placeholder {0}: passkey.name
-#: packages/admin/src/components/settings/PasskeyItem.tsx:199
+#: packages/admin/src/components/settings/PasskeyItem.tsx:179
 msgid "You won't be able to use \"{0}\" to sign in anymore. This action cannot be undone."
 msgstr "Pro přihlášení už nebude možné použít „{0}“. Tuto akci nelze vrátit zpět."
 
-#: packages/admin/src/components/settings/PasskeyItem.tsx:200
+#: packages/admin/src/components/settings/PasskeyItem.tsx:180
 msgid "You won't be able to use this passkey to sign in anymore. This action cannot be undone."
 msgstr "Tento přístupový klíč už nebude možné použít k přihlášení. Tuto akci nelze vrátit zpět."
 
