@@ -90,7 +90,7 @@ msgid "{0, plural, one {# comment imported} other {# comments imported}}"
 msgstr ""
 
 #. placeholder {0}: result.affected
-#: packages/admin/src/router.tsx:2266
+#: packages/admin/src/router.tsx:2265
 msgid "{0, plural, one {# comment updated} other {# comments updated}}"
 msgstr ""
 
@@ -139,7 +139,7 @@ msgid "{0, plural, one {# link} other {# links}}"
 msgstr ""
 
 #. placeholder {0}: tagMatches?.matchCount ?? 0
-#: packages/admin/src/components/TaxonomyManager.tsx:1381
+#: packages/admin/src/components/TaxonomyManager.tsx:1388
 msgid "{0, plural, one {# matching tag} other {# matching tags}}"
 msgstr ""
 
@@ -457,13 +457,13 @@ msgstr ""
 msgid "{0}/160 characters"
 msgstr "{0}/۱۶۰ حرف"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:391
-msgid "{added} posts tagged"
+#: packages/admin/src/components/BulkTagDialog.tsx:426
+msgid "{added} posts updated"
 msgstr ""
 
 #. placeholder {0}: failed.length
-#: packages/admin/src/components/BulkTagDialog.tsx:388
-msgid "{added} tagged · {0} failed"
+#: packages/admin/src/components/BulkTagDialog.tsx:423
+msgid "{added} updated · {0} failed"
 msgstr ""
 
 #. placeholder {0}: allowedHosts.join(", ")
@@ -515,7 +515,7 @@ msgstr ""
 
 #. placeholder {0}: hasMore ? "+" : ""
 #. placeholder {1}: hasMore ? "+" : ""
-#: packages/admin/src/components/ContentList.tsx:1267
+#: packages/admin/src/components/ContentList.tsx:1273
 msgid "{filteredCount, plural, one {#{0} item} other {#{1} items}}"
 msgstr ""
 
@@ -550,7 +550,7 @@ msgstr ""
 msgid "{label} options"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1256
+#: packages/admin/src/components/ContentList.tsx:1262
 msgid "{matchCount, plural, one {# item matching \"{searchQuery}\"} other {# items matching \"{searchQuery}\"}}"
 msgstr ""
 
@@ -652,6 +652,10 @@ msgstr "{pluginName} به مجوزهای زیر نیاز دارد:"
 msgid "{pluginName} Settings"
 msgstr ""
 
+#: packages/admin/src/components/BulkTagDialog.tsx:487
+msgid "{plural} go live now; draft edits stay unpublished."
+msgstr ""
+
 #: packages/admin/src/components/Dashboard.tsx:157
 msgid "{policyRejected, plural, one {Open the affected entry, resolve the policy reason, and schedule it again. A successful schedule or publish clears this notice.} other {Open the affected entries, resolve the policy reasons, and schedule them again. A successful schedule or publish clears each notice.}}"
 msgstr ""
@@ -669,7 +673,7 @@ msgid "{readingTime, plural, one {# min read} other {# min read}}"
 msgstr ""
 
 #. placeholder {0}: results.length
-#: packages/admin/src/components/BulkTagDialog.tsx:403
+#: packages/admin/src/components/BulkTagDialog.tsx:438
 msgid "{ready} of {0} ready"
 msgstr ""
 
@@ -697,11 +701,11 @@ msgstr ""
 msgid "{rows} × {columns} table pasted"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:503
+#: packages/admin/src/components/ContentList.tsx:506
 msgid "{selectedCount, plural, one {# selected} other {# selected}}"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:575
+#: packages/admin/src/components/ContentList.tsx:580
 msgid "{selectedCount, plural, one {Move # item to trash? You can restore it later.} other {Move # items to trash? You can restore them later.}}"
 msgstr ""
 
@@ -709,7 +713,7 @@ msgstr ""
 msgid "{subLabel} ({label}, item {position})"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1262
+#: packages/admin/src/components/ContentList.tsx:1268
 msgid "{total, plural, one {# item} other {# items}}"
 msgstr ""
 
@@ -779,8 +783,8 @@ msgstr ""
 msgid "<0>{name}</0> now holds this entry, so your changes are no longer being saved. Take it back to carry on."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:390
-msgid "1 post tagged"
+#: packages/admin/src/components/BulkTagDialog.tsx:425
+msgid "1 post updated"
 msgstr ""
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:37
@@ -1010,7 +1014,7 @@ msgstr ""
 msgid "Access denied"
 msgstr ""
 
-#: packages/admin/src/router.tsx:2286
+#: packages/admin/src/router.tsx:2285
 msgid "Access Denied"
 msgstr ""
 
@@ -1040,12 +1044,12 @@ msgid "ACF Fields"
 msgstr ""
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:337
-#: packages/admin/src/components/ContentList.tsx:696
-#: packages/admin/src/components/ContentList.tsx:828
+#: packages/admin/src/components/ContentList.tsx:702
+#: packages/admin/src/components/ContentList.tsx:834
 #: packages/admin/src/components/ContentTypeList.tsx:210
 #: packages/admin/src/components/RelationList.tsx:102
-#: packages/admin/src/components/TaxonomyManager.tsx:1402
-#: packages/admin/src/components/TaxonomyManager.tsx:1455
+#: packages/admin/src/components/TaxonomyManager.tsx:1409
+#: packages/admin/src/components/TaxonomyManager.tsx:1462
 #: packages/admin/src/routes/byline-schema.tsx:249
 #: packages/admin/src/routes/bylines.tsx:512
 msgid "Actions"
@@ -1073,14 +1077,27 @@ msgstr ""
 msgid "Add"
 msgstr "افزودن"
 
+#. placeholder {0}: (soleBulkTagTaxonomy.labelSingular || soleBulkTagTaxonomy.label).toLowerCase()
 #. placeholder {0}: field.item_label
 #. placeholder {0}: option.byline.displayName
-#. placeholder {0}: taxonomyDef.labelSingular || t`Term`
 #: packages/admin/src/components/BylineCreditsEditor.tsx:503
+#: packages/admin/src/components/ContentList.tsx:553
 #: packages/admin/src/components/PortableTextEditor.tsx:2414
 #: packages/admin/src/components/TaxonomyManager.tsx:755
 #: packages/admin/src/components/TaxonomyManager.tsx:1329
 msgid "Add {0}"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:562
+msgid "Add {singularLower} to {ready} posts"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:561
+msgid "Add {singularLower} to 1 post"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:263
+msgid "Add {singularLower} to posts"
 msgstr ""
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:160
@@ -1194,7 +1211,7 @@ msgstr "لینک‌ها را برای ساخت فهرست ناوبری خود ب
 msgid "Add MIME type or extension"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:441
+#: packages/admin/src/components/ContentList.tsx:444
 msgid "Add New"
 msgstr "افزودن جدید"
 
@@ -1242,24 +1259,16 @@ msgstr ""
 msgid "Add Sub-Field"
 msgstr "افزودن زیرفیلد"
 
-#: packages/admin/src/components/ContentList.tsx:549
 #: packages/admin/src/components/TaxonomyManager.tsx:1313
 msgid "Add tag"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:527
-msgid "Add tag to {ready} posts"
-msgstr ""
-
-#: packages/admin/src/components/BulkTagDialog.tsx:526
-msgid "Add tag to 1 post"
-msgstr ""
-
-#: packages/admin/src/components/BulkTagDialog.tsx:252
-msgid "Add tag to posts"
+#: packages/admin/src/components/ContentList.tsx:554
+msgid "Add term"
 msgstr ""
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1320
+#: packages/admin/src/components/TaxonomyManager.tsx:1336
 msgid "Add to posts"
 msgstr ""
 
@@ -1271,7 +1280,7 @@ msgstr ""
 msgid "Add your social media profiles. These are available to your site's theme and can be displayed in headers, footers, or author bios."
 msgstr "پروفایل‌های شبکه‌های اجتماعی خود را بیفزایید. این‌ها برای قالب وبسایت شما در دسترس هستند و می‌توانند در هدر، فوتر یا بیوگرافی نگارنده نمایش داده شوند."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:59
+#: packages/admin/src/components/BulkTagDialog.tsx:65
 msgid "Added"
 msgstr ""
 
@@ -1280,7 +1289,7 @@ msgstr ""
 msgid "Adding..."
 msgstr "در حال افزودن..."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:524
+#: packages/admin/src/components/BulkTagDialog.tsx:559
 msgid "Adding…"
 msgstr ""
 
@@ -1361,12 +1370,12 @@ msgstr ""
 msgid "Alignment"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:453
+#: packages/admin/src/components/ContentList.tsx:456
 msgid "All"
 msgstr "همه"
 
-#: packages/admin/src/components/ContentList.tsx:978
-#: packages/admin/src/components/ContentList.tsx:982
+#: packages/admin/src/components/ContentList.tsx:984
+#: packages/admin/src/components/ContentList.tsx:988
 msgid "All authors"
 msgstr ""
 
@@ -1404,7 +1413,7 @@ msgstr "همه نقش‌ها"
 msgid "All Sources"
 msgstr "همه منابع"
 
-#: packages/admin/src/components/ContentList.tsx:917
+#: packages/admin/src/components/ContentList.tsx:923
 #: packages/admin/src/components/Redirects.tsx:391
 msgid "All statuses"
 msgstr "همه وضعیت‌ها"
@@ -1448,13 +1457,13 @@ msgstr "دامنه‌های مجاز"
 msgid "Allowed types"
 msgstr ""
 
+#: packages/admin/src/components/BulkTagDialog.tsx:67
+msgid "Already assigned or duplicate"
+msgstr ""
+
 #: packages/admin/src/components/SignupPage.tsx:455
 msgid "Already have an account?"
 msgstr "آیا از قبل حساب کاربری دارید؟"
-
-#: packages/admin/src/components/BulkTagDialog.tsx:61
-msgid "Already tagged or duplicate"
-msgstr ""
 
 #: packages/admin/src/components/PluginManager.tsx:796
 msgid "Also delete plugin storage data"
@@ -1547,20 +1556,20 @@ msgstr ""
 #: packages/admin/src/router.tsx:551
 #: packages/admin/src/router.tsx:565
 #: packages/admin/src/router.tsx:579
-#: packages/admin/src/router.tsx:814
-#: packages/admin/src/router.tsx:1183
-#: packages/admin/src/router.tsx:1283
-#: packages/admin/src/router.tsx:1317
-#: packages/admin/src/router.tsx:1341
-#: packages/admin/src/router.tsx:1365
-#: packages/admin/src/router.tsx:1423
-#: packages/admin/src/router.tsx:1442
-#: packages/admin/src/router.tsx:1475
-#: packages/admin/src/router.tsx:1496
-#: packages/admin/src/router.tsx:2231
-#: packages/admin/src/router.tsx:2247
-#: packages/admin/src/router.tsx:2272
-#: packages/admin/src/router.tsx:2865
+#: packages/admin/src/router.tsx:813
+#: packages/admin/src/router.tsx:1182
+#: packages/admin/src/router.tsx:1282
+#: packages/admin/src/router.tsx:1316
+#: packages/admin/src/router.tsx:1340
+#: packages/admin/src/router.tsx:1364
+#: packages/admin/src/router.tsx:1422
+#: packages/admin/src/router.tsx:1441
+#: packages/admin/src/router.tsx:1474
+#: packages/admin/src/router.tsx:1495
+#: packages/admin/src/router.tsx:2230
+#: packages/admin/src/router.tsx:2246
+#: packages/admin/src/router.tsx:2271
+#: packages/admin/src/router.tsx:2864
 #: packages/admin/src/routes/byline-schema.tsx:103
 #: packages/admin/src/routes/byline-schema.tsx:123
 #: packages/admin/src/routes/byline-schema.tsx:139
@@ -1682,7 +1691,7 @@ msgstr ""
 msgid "Arbitrary JSON data"
 msgstr "داده JSON دلخواه"
 
-#: packages/admin/src/components/ContentList.tsx:921
+#: packages/admin/src/components/ContentList.tsx:927
 #: packages/admin/src/components/ContentStatusBadge.tsx:65
 msgid "Archived"
 msgstr ""
@@ -1858,7 +1867,7 @@ msgstr ""
 msgid "Automatic backups need a storage backend (R2, S3, or local storage). Configure storage in your EmDash config to enable them."
 msgstr ""
 
-#: packages/admin/src/router.tsx:1280
+#: packages/admin/src/router.tsx:1279
 msgid "Autosave failed"
 msgstr ""
 
@@ -1888,7 +1897,7 @@ msgstr ""
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:665
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:702
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:748
-#: packages/admin/src/components/BulkTagDialog.tsx:463
+#: packages/admin/src/components/BulkTagDialog.tsx:498
 #: packages/admin/src/components/editor/BlockMenu.tsx:266
 #: packages/admin/src/components/FieldEditor.tsx:651
 #: packages/admin/src/components/MediaDetailPanel.tsx:1793
@@ -2189,15 +2198,15 @@ msgstr "می‌تواند محتوای خود را منتشر کند"
 msgid "Can view content"
 msgstr "می‌تواند محتوا را مشاهده کند"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:290
-#: packages/admin/src/components/BulkTagDialog.tsx:468
+#: packages/admin/src/components/BulkTagDialog.tsx:323
+#: packages/admin/src/components/BulkTagDialog.tsx:503
 #: packages/admin/src/components/BylineCreditsEditor.tsx:1021
 #: packages/admin/src/components/BylineFieldEditor.tsx:315
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:348
 #: packages/admin/src/components/ConfirmDialog.tsx:102
-#: packages/admin/src/components/ContentList.tsx:584
-#: packages/admin/src/components/ContentList.tsx:1437
-#: packages/admin/src/components/ContentList.tsx:1619
+#: packages/admin/src/components/ContentList.tsx:589
+#: packages/admin/src/components/ContentList.tsx:1443
+#: packages/admin/src/components/ContentList.tsx:1625
 #: packages/admin/src/components/ContentPickerModal.tsx:386
 #: packages/admin/src/components/ContentSettingsPanel.tsx:317
 #: packages/admin/src/components/ContentSettingsPanel.tsx:497
@@ -2378,8 +2387,12 @@ msgstr ""
 msgid "Changes apply everywhere this byline appears."
 msgstr ""
 
-#: packages/admin/src/router.tsx:1357
+#: packages/admin/src/router.tsx:1356
 msgid "Changes discarded"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:477
+msgid "Changes were saved, but cached pages may still show old {pluralLower}. Retry the cache refresh."
 msgstr ""
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:172
@@ -2491,8 +2504,8 @@ msgstr ""
 msgid "Choose a credential manager on this device, another device, or a security key."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1104
 #: packages/admin/src/components/ContentList.tsx:1110
+#: packages/admin/src/components/ContentList.tsx:1116
 msgid "Choose a date range"
 msgstr ""
 
@@ -2509,12 +2522,8 @@ msgstr ""
 msgid "Choose a non-empty {0} image."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:299
-msgid "Choose a tag"
-msgstr ""
-
-#: packages/admin/src/components/BulkTagDialog.tsx:172
-msgid "Choose a tag and enter between 1 and 50 posts."
+#: packages/admin/src/components/BulkTagDialog.tsx:183
+msgid "Choose a term and enter between 1 and 50 posts."
 msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:231
@@ -2567,12 +2576,16 @@ msgstr ""
 msgid "Choose your preferred admin language"
 msgstr "زبان مدیریت مورد نظر خود را انتخاب کنید"
 
+#: packages/admin/src/components/BulkTagDialog.tsx:332
+msgid "Choose…"
+msgstr ""
+
 #: packages/admin/src/components/BylineCreditsEditor.tsx:660
 msgid "Choosing a byline replaces this automatic credit."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:610
-#: packages/admin/src/components/ContentList.tsx:1118
+#: packages/admin/src/components/ContentList.tsx:615
+#: packages/admin/src/components/ContentList.tsx:1124
 msgid "Clear"
 msgstr ""
 
@@ -2580,7 +2593,7 @@ msgstr ""
 msgid "Clear completed"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1023
+#: packages/admin/src/components/ContentList.tsx:1029
 #: packages/admin/src/components/MediaLibrary.tsx:1084
 #: packages/admin/src/components/users/UserList.tsx:122
 #: packages/admin/src/routes/bylines.tsx:631
@@ -2589,7 +2602,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaLibrary.tsx:1084
 #: packages/admin/src/components/MediaLibrary.tsx:1119
-#: packages/admin/src/components/TaxonomyManager.tsx:1425
+#: packages/admin/src/components/TaxonomyManager.tsx:1432
 msgid "Clear search"
 msgstr ""
 
@@ -2625,7 +2638,7 @@ msgstr ""
 msgid "Click this link to sign in to {siteName}:"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:262
+#: packages/admin/src/components/BulkTagDialog.tsx:273
 #: packages/admin/src/components/BylineFieldEditor.tsx:212
 #: packages/admin/src/components/BylineFieldEditor.tsx:218
 #: packages/admin/src/components/BylineFieldEditor.tsx:222
@@ -2943,7 +2956,7 @@ msgstr "خطاهای محتوا ({0})"
 msgid "Content found:"
 msgstr "محتوای یافت‌شده:"
 
-#: packages/admin/src/router.tsx:1416
+#: packages/admin/src/router.tsx:1415
 msgid "Content has been scheduled for publishing"
 msgstr ""
 
@@ -2955,7 +2968,7 @@ msgstr "محتوا به بازبینی انتخاب‌شده به‌روزرسا
 msgid "Content ID:"
 msgstr "شناسه محتوا:"
 
-#: packages/admin/src/router.tsx:1311
+#: packages/admin/src/router.tsx:1310
 msgid "Content is now live"
 msgstr ""
 
@@ -2980,11 +2993,11 @@ msgstr ""
 msgid "Content refers to media that is not in the package"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1335
+#: packages/admin/src/router.tsx:1334
 msgid "Content removed from public view"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1435
+#: packages/admin/src/router.tsx:1434
 msgid "Content reverted to draft"
 msgstr ""
 
@@ -3127,8 +3140,8 @@ msgstr ""
 msgid "Copying media"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:229
-msgid "Could not add tag"
+#: packages/admin/src/components/BulkTagDialog.tsx:240
+msgid "Could not add {singularLower}"
 msgstr ""
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:111
@@ -3143,12 +3156,16 @@ msgstr ""
 msgid "Could not copy automatically. Please select the URL above and copy manually."
 msgstr "کپی خودکار ممکن نبود. لطفاً آدرس بالا را انتخاب کرده و به‌صورت دستی کپی کنید."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:164
-msgid "Could not create tag"
+#: packages/admin/src/components/BulkTagDialog.tsx:175
+msgid "Could not create {singularLower}"
 msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3813
 msgid "Could not insert section"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:363
+msgid "Could not load {pluralLower}."
 msgstr ""
 
 #: packages/admin/src/components/Dashboard.tsx:299
@@ -3163,15 +3180,11 @@ msgstr "بارگذاری تصویر از آدرس ممکن نبود"
 msgid "Could not load media."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:328
-msgid "Could not load tags."
-msgstr ""
-
 #: packages/admin/src/components/MediaPickerModal.tsx:1202
 msgid "Could not load this folder."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:182
+#: packages/admin/src/components/BulkTagDialog.tsx:193
 msgid "Could not review posts"
 msgstr ""
 
@@ -3260,8 +3273,8 @@ msgstr ""
 msgid "Couldn't verify how many values reference \"{0}\". Deleting will still remove every stored value for this field — but the count above could not be checked."
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1400
-#: packages/admin/src/components/TaxonomyManager.tsx:1454
+#: packages/admin/src/components/TaxonomyManager.tsx:1407
+#: packages/admin/src/components/TaxonomyManager.tsx:1461
 msgid "Count"
 msgstr "تعداد"
 
@@ -3293,6 +3306,10 @@ msgstr ""
 #. placeholder {0}: resolvedEntryLocale.toUpperCase()
 #: packages/admin/src/components/TaxonomySidebar.tsx:856
 msgid "Create {0} translation"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:320
+msgid "Create {singularLower}"
 msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:1066
@@ -3353,13 +3370,13 @@ msgstr ""
 msgid "Create Menu"
 msgstr "ساخت فهرست"
 
+#: packages/admin/src/components/BulkTagDialog.tsx:354
+msgid "Create new {singularLower}"
+msgstr ""
+
 #: packages/admin/src/components/MenuList.tsx:136
 msgid "Create New Menu"
 msgstr "ساخت فهرستی جدید"
-
-#: packages/admin/src/components/BulkTagDialog.tsx:321
-msgid "Create new tag"
-msgstr ""
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:244
 msgid "Create New Token"
@@ -3418,10 +3435,6 @@ msgstr "ساخت بخش"
 msgid "Create sections in the Sections library to use them here"
 msgstr "بخش‌ها را در کتابخانه بخش‌ها بسازید تا اینجا استفاده شوند"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:287
-msgid "Create tag"
-msgstr ""
-
 #: packages/admin/src/components/TaxonomyManager.tsx:1013
 #: packages/admin/src/components/TaxonomyManager.tsx:1101
 msgid "Create Taxonomy"
@@ -3452,7 +3465,7 @@ msgstr ""
 msgid "Create your first navigation menu to get started"
 msgstr "اولین فهرست ناوبری خود را بسازید تا شروع شود"
 
-#: packages/admin/src/components/ContentList.tsx:724
+#: packages/admin/src/components/ContentList.tsx:730
 msgid "Create your first one"
 msgstr "اولین مورد خود را بسازید"
 
@@ -3477,7 +3490,7 @@ msgstr ""
 msgid "Create, update, delete content"
 msgstr "ساخت، به‌روزرسانی، حذف محتوا"
 
-#: packages/admin/src/components/ContentList.tsx:927
+#: packages/admin/src/components/ContentList.tsx:933
 #: packages/admin/src/components/ContentSettingsPanel.tsx:990
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:373
 #: packages/admin/src/components/users/UserDetail.tsx:219
@@ -3495,7 +3508,7 @@ msgid "Created {0}"
 msgstr "ساخته شده در {0}"
 
 #. placeholder {0}: result.locale?.toUpperCase() ?? t`new`
-#: packages/admin/src/router.tsx:1467
+#: packages/admin/src/router.tsx:1466
 msgid "Created {0} translation"
 msgstr ""
 
@@ -3613,7 +3626,7 @@ msgid "Database-owned definitions available to blocks fields."
 msgstr ""
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:334
-#: packages/admin/src/components/ContentList.tsx:685
+#: packages/admin/src/components/ContentList.tsx:691
 msgid "Date"
 msgstr "تاریخ"
 
@@ -3626,7 +3639,7 @@ msgstr "تاریخ و زمان"
 msgid "Date and time picker"
 msgstr "انتخابگر تاریخ و زمان"
 
-#: packages/admin/src/components/ContentList.tsx:1000
+#: packages/admin/src/components/ContentList.tsx:1006
 msgid "Date field to filter on"
 msgstr ""
 
@@ -3634,7 +3647,7 @@ msgstr ""
 msgid "Date Format"
 msgstr "قالب تاریخ"
 
-#: packages/admin/src/components/ContentList.tsx:1050
+#: packages/admin/src/components/ContentList.tsx:1056
 msgid "Date range"
 msgstr ""
 
@@ -3704,8 +3717,8 @@ msgstr ""
 #: packages/admin/src/components/Sections.tsx:308
 #: packages/admin/src/components/Sections.tsx:407
 #: packages/admin/src/components/settings/BackupSettings.tsx:367
-#: packages/admin/src/components/TaxonomyManager.tsx:1524
-#: packages/admin/src/components/TaxonomyManager.tsx:1540
+#: packages/admin/src/components/TaxonomyManager.tsx:1532
+#: packages/admin/src/components/TaxonomyManager.tsx:1548
 #: packages/admin/src/components/Widgets.tsx:716
 #: packages/admin/src/routes/byline-schema.tsx:378
 #: packages/admin/src/routes/bylines.tsx:819
@@ -3754,7 +3767,7 @@ msgstr ""
 
 #. placeholder {0}: deleteTarget?.displayName ?? t`byline`
 #. placeholder {0}: taxonomyDef.labelSingular || "Term"
-#: packages/admin/src/components/TaxonomyManager.tsx:1520
+#: packages/admin/src/components/TaxonomyManager.tsx:1528
 #: packages/admin/src/routes/bylines.tsx:846
 msgid "Delete {0}?"
 msgstr "حذف {0}؟"
@@ -3838,11 +3851,11 @@ msgid "Delete permanently"
 msgstr "حذف دائمی"
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:182
-#: packages/admin/src/components/ContentList.tsx:1630
+#: packages/admin/src/components/ContentList.tsx:1636
 msgid "Delete Permanently"
 msgstr "حذف دائمی"
 
-#: packages/admin/src/components/ContentList.tsx:1610
+#: packages/admin/src/components/ContentList.tsx:1616
 msgid "Delete Permanently?"
 msgstr "حذف دائمی؟"
 
@@ -3884,11 +3897,11 @@ msgstr ""
 msgid "Delete tag {0}"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1362
+#: packages/admin/src/components/TaxonomyManager.tsx:1369
 msgid "Delete taxonomy"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1538
+#: packages/admin/src/components/TaxonomyManager.tsx:1546
 msgid "Delete Taxonomy"
 msgstr ""
 
@@ -3896,12 +3909,12 @@ msgstr ""
 msgid "Delete Widget Area?"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:825
+#: packages/admin/src/components/ContentList.tsx:831
 msgid "Deleted"
 msgstr "حذف‌شده"
 
 #. placeholder {0}: taxonomyDef.label
-#: packages/admin/src/components/TaxonomyManager.tsx:1539
+#: packages/admin/src/components/TaxonomyManager.tsx:1547
 msgid "Deleting \"{0}\" also deletes every term in it, in all languages, and removes those terms from the content filed under them. The entries themselves are kept. This cannot be undone."
 msgstr ""
 
@@ -3922,8 +3935,8 @@ msgstr ""
 #: packages/admin/src/components/RelationDeleteDialog.tsx:41
 #: packages/admin/src/components/Sections.tsx:309
 #: packages/admin/src/components/settings/BackupSettings.tsx:368
-#: packages/admin/src/components/TaxonomyManager.tsx:1525
-#: packages/admin/src/components/TaxonomyManager.tsx:1541
+#: packages/admin/src/components/TaxonomyManager.tsx:1533
+#: packages/admin/src/components/TaxonomyManager.tsx:1549
 #: packages/admin/src/components/Widgets.tsx:717
 #: packages/admin/src/routes/bylines.tsx:849
 msgid "Deleting..."
@@ -4213,9 +4226,9 @@ msgstr "حساب کاربری ندارید؟ <0>ثبت‌نام</0>"
 msgid "Don’t map"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:468
+#: packages/admin/src/components/BulkTagDialog.tsx:503
 #: packages/admin/src/components/BylineCreditsEditor.tsx:920
-#: packages/admin/src/components/ContentList.tsx:1126
+#: packages/admin/src/components/ContentList.tsx:1132
 #: packages/admin/src/components/MediaUploadDialog.tsx:353
 #: packages/admin/src/components/users/InviteUserModal.tsx:142
 #: packages/admin/src/components/WordPressImport.tsx:2148
@@ -4284,7 +4297,7 @@ msgstr "در حال دریافت"
 msgid "Downloading the package"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:919
+#: packages/admin/src/components/ContentList.tsx:925
 #: packages/admin/src/components/ContentStatusBadge.tsx:61
 msgid "Draft"
 msgstr "پیش‌نویس"
@@ -4379,7 +4392,7 @@ msgstr "فایل برون‌ریزی وردپرس خود را اینجا رها 
 msgid "Duplicate"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1410
+#: packages/admin/src/components/ContentList.tsx:1416
 msgid "Duplicate {title}"
 msgstr "تکثیر {title}"
 
@@ -4456,7 +4469,7 @@ msgstr ""
 msgid "Edit {label}"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1402
+#: packages/admin/src/components/ContentList.tsx:1408
 msgid "Edit {title}"
 msgstr "ویرایش {title}"
 
@@ -4822,7 +4835,7 @@ msgstr ""
 #: packages/admin/src/components/SetupWizard.tsx:606
 #: packages/admin/src/components/TaxonomyManager.tsx:1206
 #: packages/admin/src/components/Widgets.tsx:769
-#: packages/admin/src/router.tsx:3139
+#: packages/admin/src/router.tsx:3138
 msgid "Error"
 msgstr "خطا"
 
@@ -4875,12 +4888,12 @@ msgstr ""
 msgid "example.com"
 msgstr ""
 
-#: packages/admin/src/components/settings/MediaUsageSettings.tsx:478
-msgid "Existing content is indexed. New changes are tracked automatically."
+#: packages/admin/src/components/BulkTagDialog.tsx:265
+msgid "Existing {pluralLower} stay in place."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:254
-msgid "Existing tags stay in place."
+#: packages/admin/src/components/settings/MediaUsageSettings.tsx:478
+msgid "Existing content is indexed. New changes are tracked automatically."
 msgstr ""
 
 #: packages/admin/src/components/WordPressImport.tsx:2030
@@ -4970,7 +4983,7 @@ msgstr "فیسبوک"
 msgid "Fail"
 msgstr "ناموفق"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:63
+#: packages/admin/src/components/BulkTagDialog.tsx:69
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:306
 #: packages/admin/src/components/WordPressImport.tsx:2150
 msgid "Failed"
@@ -5063,14 +5076,14 @@ msgid "Failed to create term"
 msgstr "ساخت اصطلاح ناموفق بود"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:781
-#: packages/admin/src/router.tsx:1472
+#: packages/admin/src/router.tsx:1471
 msgid "Failed to create translation"
 msgstr ""
 
 #: packages/admin/src/router.tsx:535
 #: packages/admin/src/router.tsx:564
 #: packages/admin/src/router.tsx:647
-#: packages/admin/src/router.tsx:1495
+#: packages/admin/src/router.tsx:1494
 msgid "Failed to delete"
 msgstr ""
 
@@ -5095,7 +5108,7 @@ msgid "Failed to delete collection"
 msgstr ""
 
 #: packages/admin/src/lib/api/comments.ts:111
-#: packages/admin/src/router.tsx:2246
+#: packages/admin/src/router.tsx:2245
 msgid "Failed to delete comment"
 msgstr ""
 
@@ -5177,7 +5190,7 @@ msgstr ""
 msgid "Failed to disable user"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1364
+#: packages/admin/src/router.tsx:1363
 msgid "Failed to discard changes"
 msgstr ""
 
@@ -5313,8 +5326,8 @@ msgstr ""
 #: packages/admin/src/lib/api/current-user.ts:22
 #: packages/admin/src/lib/api/users.ts:88
 #: packages/admin/src/lib/api/users.ts:93
-#: packages/admin/src/router.tsx:1058
-#: packages/admin/src/router.tsx:2177
+#: packages/admin/src/router.tsx:1057
+#: packages/admin/src/router.tsx:2176
 msgid "Failed to fetch user"
 msgstr ""
 
@@ -5470,7 +5483,7 @@ msgstr ""
 msgid "Failed to lock the entry"
 msgstr ""
 
-#: packages/admin/src/router.tsx:2271
+#: packages/admin/src/router.tsx:2270
 msgid "Failed to perform bulk action"
 msgstr ""
 
@@ -5483,7 +5496,7 @@ msgid "Failed to prepare import"
 msgstr ""
 
 #: packages/admin/src/router.tsx:603
-#: packages/admin/src/router.tsx:1316
+#: packages/admin/src/router.tsx:1315
 msgid "Failed to publish"
 msgstr ""
 
@@ -5554,9 +5567,9 @@ msgstr ""
 msgid "Failed to rewrite URLs"
 msgstr ""
 
-#: packages/admin/src/router.tsx:809
-#: packages/admin/src/router.tsx:1180
-#: packages/admin/src/router.tsx:2864
+#: packages/admin/src/router.tsx:808
+#: packages/admin/src/router.tsx:1179
+#: packages/admin/src/router.tsx:2863
 msgid "Failed to save"
 msgstr "ذخیره ناموفق بود"
 
@@ -5575,7 +5588,7 @@ msgstr ""
 msgid "Failed to save settings"
 msgstr "ذخیره تنظیمات ناموفق بود"
 
-#: packages/admin/src/router.tsx:1422
+#: packages/admin/src/router.tsx:1421
 msgid "Failed to schedule"
 msgstr ""
 
@@ -5615,11 +5628,11 @@ msgstr ""
 msgid "Failed to uninstall plugin"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1340
+#: packages/admin/src/router.tsx:1339
 msgid "Failed to unpublish"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1441
+#: packages/admin/src/router.tsx:1440
 msgid "Failed to unschedule"
 msgstr ""
 
@@ -5670,7 +5683,7 @@ msgstr ""
 msgid "Failed to update settings"
 msgstr ""
 
-#: packages/admin/src/router.tsx:2230
+#: packages/admin/src/router.tsx:2229
 msgid "Failed to update status"
 msgstr ""
 
@@ -5794,7 +5807,7 @@ msgstr "نام فایل پس از بارگذاری قابل تغییر نیست"
 msgid "Files upload as soon as you add them."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:974
+#: packages/admin/src/components/ContentList.tsx:980
 msgid "Filter by author"
 msgstr ""
 
@@ -5810,7 +5823,7 @@ msgstr "فیلتر بر اساس قابلیت"
 msgid "Filter by collection"
 msgstr "فیلتر بر اساس مجموعه"
 
-#: packages/admin/src/components/ContentList.tsx:1096
+#: packages/admin/src/components/ContentList.tsx:1102
 msgid "Filter by date range: {rangeLabel}"
 msgstr ""
 
@@ -5822,7 +5835,7 @@ msgstr ""
 msgid "Filter by source"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:956
+#: packages/admin/src/components/ContentList.tsx:962
 #: packages/admin/src/components/Redirects.tsx:392
 msgid "Filter by status"
 msgstr ""
@@ -5884,7 +5897,7 @@ msgstr ""
 msgid "Folder name must be between 1 and 200 characters"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1900
+#: packages/admin/src/router.tsx:1899
 msgid "Folder no longer exists"
 msgstr ""
 
@@ -5941,7 +5954,7 @@ msgid "Freeform"
 msgstr ""
 
 #. placeholder {0}: formatter.format(from)
-#: packages/admin/src/components/ContentList.tsx:1047
+#: packages/admin/src/components/ContentList.tsx:1053
 msgid "From {0}"
 msgstr ""
 
@@ -6017,7 +6030,7 @@ msgid "Go"
 msgstr ""
 
 #: packages/admin/src/components/WordPressImport.tsx:2438
-#: packages/admin/src/router.tsx:3159
+#: packages/admin/src/router.tsx:3158
 msgid "Go to Dashboard"
 msgstr "رفتن به داشبورد"
 
@@ -6234,7 +6247,7 @@ msgstr "https://example.com یا /about"
 msgid "https://example.com or /page"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:368
+#: packages/admin/src/components/BulkTagDialog.tsx:403
 msgid "https://example.com/blog/my-post"
 msgstr ""
 
@@ -7054,8 +7067,8 @@ msgstr "نمای زنده"
 msgid "Load more"
 msgstr "بارگذاری بیشتر"
 
-#: packages/admin/src/components/ContentList.tsx:804
-#: packages/admin/src/components/ContentList.tsx:868
+#: packages/admin/src/components/ContentList.tsx:810
+#: packages/admin/src/components/ContentList.tsx:874
 #: packages/admin/src/components/MediaLibrary.tsx:1352
 #: packages/admin/src/components/users/UserList.tsx:162
 msgid "Load More"
@@ -7068,8 +7081,12 @@ msgstr "بارگذاری بیشتر"
 msgid "Load more folders"
 msgstr ""
 
-#: packages/admin/src/router.tsx:3114
+#: packages/admin/src/router.tsx:3113
 msgid "Loading"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:359
+msgid "Loading {pluralLower}…"
 msgstr ""
 
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:59
@@ -7093,8 +7110,8 @@ msgstr "در حال بارگذاری مجموعه‌ها..."
 msgid "Loading comments..."
 msgstr "در حال بارگذاری دیدگاه‌ها..."
 
-#: packages/admin/src/router.tsx:3116
-#: packages/admin/src/router.tsx:3128
+#: packages/admin/src/router.tsx:3115
+#: packages/admin/src/router.tsx:3127
 msgid "Loading configuration..."
 msgstr ""
 
@@ -7177,12 +7194,8 @@ msgstr "در حال بارگذاری تنظیمات..."
 msgid "Loading setup..."
 msgstr "در حال بارگذاری راه‌اندازی..."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:325
-msgid "Loading tags…"
-msgstr ""
-
-#: packages/admin/src/components/TaxonomyManager.tsx:1388
-#: packages/admin/src/components/TaxonomyManager.tsx:1459
+#: packages/admin/src/components/TaxonomyManager.tsx:1395
+#: packages/admin/src/components/TaxonomyManager.tsx:1466
 msgid "Loading terms..."
 msgstr "در حال بارگذاری اصطلاحات..."
 
@@ -7198,10 +7211,10 @@ msgstr ""
 msgid "Loading widgets..."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:706
-#: packages/admin/src/components/ContentList.tsx:804
-#: packages/admin/src/components/ContentList.tsx:838
-#: packages/admin/src/components/ContentList.tsx:868
+#: packages/admin/src/components/ContentList.tsx:712
+#: packages/admin/src/components/ContentList.tsx:810
+#: packages/admin/src/components/ContentList.tsx:844
+#: packages/admin/src/components/ContentList.tsx:874
 #: packages/admin/src/components/ContentPickerModal.tsx:371
 #: packages/admin/src/components/MarketplaceBrowse.tsx:200
 #: packages/admin/src/components/MediaDetailPanel.tsx:596
@@ -7237,8 +7250,8 @@ msgstr ""
 msgid "Local time"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:678
-#: packages/admin/src/components/ContentList.tsx:821
+#: packages/admin/src/components/ContentList.tsx:684
+#: packages/admin/src/components/ContentList.tsx:827
 #: packages/admin/src/components/LocaleSwitcher.tsx:61
 msgid "Locale"
 msgstr "منطقه"
@@ -7398,11 +7411,11 @@ msgstr ""
 msgid "Marketplace"
 msgstr "فروشگاه"
 
-#: packages/admin/src/router.tsx:2525
+#: packages/admin/src/router.tsx:2524
 msgid "Marketplace browsing is no longer available."
 msgstr ""
 
-#: packages/admin/src/router.tsx:2500
+#: packages/admin/src/router.tsx:2499
 msgid "Marketplace browsing is no longer available. Manage installed plugins from Plugins."
 msgstr ""
 
@@ -7688,7 +7701,7 @@ msgstr ""
 #. placeholder {0}: taxonomyDef.label
 #: packages/admin/src/components/BylineCreditsEditor.tsx:862
 #: packages/admin/src/components/TaxonomyManager.tsx:322
-#: packages/admin/src/components/TaxonomyManager.tsx:1341
+#: packages/admin/src/components/TaxonomyManager.tsx:1348
 #: packages/admin/src/routes/bylines.tsx:577
 msgid "More actions for {0}"
 msgstr ""
@@ -7713,7 +7726,7 @@ msgstr ""
 msgid "More table actions"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:428
+#: packages/admin/src/components/BulkTagDialog.tsx:463
 msgid "More than one post matches this link"
 msgstr ""
 
@@ -7731,7 +7744,7 @@ msgstr ""
 msgid "Move \"{0}\" up"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1431
+#: packages/admin/src/components/ContentList.tsx:1437
 msgid "Move \"{title}\" to trash? You can restore it later."
 msgstr "انتقال «{title}» به سطل زباله؟ می‌توانید بعداً بازیابی کنید."
 
@@ -7773,7 +7786,7 @@ msgstr ""
 msgid "Move {0} up — unavailable, its parent has no translation in this locale"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1422
+#: packages/admin/src/components/ContentList.tsx:1428
 msgid "Move {title} to trash"
 msgstr "انتقال {title} به سطل زباله"
 
@@ -7803,19 +7816,19 @@ msgstr ""
 msgid "Move this site to another EmDash installation, or import a site package into this one."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:568
+#: packages/admin/src/components/ContentList.tsx:573
 msgid "Move to trash"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:595
-#: packages/admin/src/components/ContentList.tsx:1444
+#: packages/admin/src/components/ContentList.tsx:600
+#: packages/admin/src/components/ContentList.tsx:1450
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1297
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1317
 msgid "Move to Trash"
 msgstr "انتقال به سطل زباله"
 
-#: packages/admin/src/components/ContentList.tsx:573
-#: packages/admin/src/components/ContentList.tsx:1429
+#: packages/admin/src/components/ContentList.tsx:578
+#: packages/admin/src/components/ContentList.tsx:1435
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1302
 msgid "Move to Trash?"
 msgstr "انتقال به سطل زباله؟"
@@ -7894,8 +7907,8 @@ msgstr "وبلاگ عالی من"
 #: packages/admin/src/components/MenuList.tsx:157
 #: packages/admin/src/components/TaxonomyManager.tsx:780
 #: packages/admin/src/components/TaxonomyManager.tsx:1044
-#: packages/admin/src/components/TaxonomyManager.tsx:1399
-#: packages/admin/src/components/TaxonomyManager.tsx:1453
+#: packages/admin/src/components/TaxonomyManager.tsx:1406
+#: packages/admin/src/components/TaxonomyManager.tsx:1460
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:37
 #: packages/admin/src/components/users/UserDetail.tsx:148
 #: packages/admin/src/components/Widgets.tsx:430
@@ -7935,7 +7948,7 @@ msgstr ""
 msgid "Never"
 msgstr "هرگز"
 
-#: packages/admin/src/router.tsx:1467
+#: packages/admin/src/router.tsx:1466
 msgid "new"
 msgstr ""
 
@@ -7945,6 +7958,10 @@ msgstr "جدید"
 
 #: packages/admin/src/components/ContentEditor.tsx:1448
 msgid "New {itemLabel}"
+msgstr ""
+
+#: packages/admin/src/components/BulkTagDialog.tsx:308
+msgid "New {singularLower} name"
 msgstr ""
 
 #: packages/admin/src/routes/bylines.tsx:473
@@ -8005,11 +8022,7 @@ msgstr "بخش جدید"
 msgid "new tab"
 msgstr "زبانه جدید"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:275
-msgid "New tag name"
-msgstr ""
-
-#: packages/admin/src/components/TaxonomyManager.tsx:1352
+#: packages/admin/src/components/TaxonomyManager.tsx:1359
 msgid "New taxonomy"
 msgstr ""
 
@@ -8039,7 +8052,7 @@ msgid "Next"
 msgstr "بعدی"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:396
-#: packages/admin/src/components/ContentList.tsx:792
+#: packages/admin/src/components/ContentList.tsx:798
 #: packages/admin/src/components/MediaLibrary.tsx:1316
 #: packages/admin/src/components/MediaPickerModal.tsx:1546
 msgid "Next page"
@@ -8059,7 +8072,7 @@ msgstr ""
 msgid "Next, the browser's passkey window will open"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1467
+#: packages/admin/src/components/ContentList.tsx:1473
 #: packages/admin/src/components/users/UserDetail.tsx:236
 #: packages/admin/src/routes/byline-schema.tsx:422
 msgid "No"
@@ -8070,13 +8083,13 @@ msgid "No (shared across translations)"
 msgstr ""
 
 #. placeholder {0}: collectionLabel.toLowerCase()
-#: packages/admin/src/components/ContentList.tsx:717
+#: packages/admin/src/components/ContentList.tsx:723
 msgid "No {0} yet."
 msgstr "هنوز {0} موجود نیست."
 
 #. placeholder {0}: taxonomyDef.label.toLowerCase()
-#: packages/admin/src/components/TaxonomyManager.tsx:1391
-#: packages/admin/src/components/TaxonomyManager.tsx:1462
+#: packages/admin/src/components/TaxonomyManager.tsx:1398
+#: packages/admin/src/components/TaxonomyManager.tsx:1469
 msgid "No {0} yet. Create one to get started."
 msgstr "هنوز {0} موجود نیست. برای شروع یکی بسازید."
 
@@ -8197,7 +8210,7 @@ msgstr "ارائه‌دهنده ایمیلی پیکربندی نشده. این �
 msgid "No EmDash users found"
 msgstr "کاربر EmDash یافت نشد"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:429
+#: packages/admin/src/components/BulkTagDialog.tsx:464
 msgid "No exact match on this site"
 msgstr ""
 
@@ -8288,7 +8301,7 @@ msgstr ""
 msgid "No matching passkey found for this account."
 msgstr "شاه‌کلید مطابقی برای این حساب کاربری یافت نشد."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1416
+#: packages/admin/src/components/TaxonomyManager.tsx:1423
 msgid "No matching tags"
 msgstr ""
 
@@ -8388,8 +8401,8 @@ msgstr ""
 msgid "No results"
 msgstr "بدون نتایج"
 
-#: packages/admin/src/components/ContentList.tsx:714
-#: packages/admin/src/components/ContentList.tsx:733
+#: packages/admin/src/components/ContentList.tsx:720
+#: packages/admin/src/components/ContentList.tsx:739
 msgid "No results for \"{activeSearch}\""
 msgstr ""
 
@@ -8469,11 +8482,11 @@ msgstr "هیچ‌کدام (سطح بالا)"
 msgid "Not compatible with this environment"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:64
+#: packages/admin/src/components/BulkTagDialog.tsx:70
 msgid "Not matched"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1466
+#: packages/admin/src/components/ContentList.tsx:1472
 #: packages/admin/src/components/PluginSettings.tsx:341
 msgid "Not set"
 msgstr ""
@@ -8726,7 +8739,7 @@ msgstr ""
 msgid "Package downloaded"
 msgstr ""
 
-#: packages/admin/src/router.tsx:3154
+#: packages/admin/src/router.tsx:3153
 msgid "Page Not Found"
 msgstr ""
 
@@ -8894,11 +8907,11 @@ msgstr ""
 msgid "Period"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1613
+#: packages/admin/src/components/ContentList.tsx:1619
 msgid "Permanently delete \"{title}\"? This cannot be undone."
 msgstr "حذف دائمی «{title}»؟ این عمل قابل بازگشت نیست."
 
-#: packages/admin/src/components/ContentList.tsx:1602
+#: packages/admin/src/components/ContentList.tsx:1608
 msgid "Permanently delete {title}"
 msgstr "حذف دائمی {title}"
 
@@ -9051,8 +9064,8 @@ msgstr ""
 msgid "Plugin registry configuration error"
 msgstr ""
 
-#: packages/admin/src/router.tsx:2460
-#: packages/admin/src/router.tsx:2491
+#: packages/admin/src/router.tsx:2459
+#: packages/admin/src/router.tsx:2490
 msgid "Plugin registry is not configured."
 msgstr ""
 
@@ -9110,7 +9123,7 @@ msgstr ""
 msgid "Post"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:363
+#: packages/admin/src/components/BulkTagDialog.tsx:398
 msgid "Post URLs (one per line)"
 msgstr ""
 
@@ -9177,7 +9190,7 @@ msgid "Previous"
 msgstr "قبلی"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:377
-#: packages/admin/src/components/ContentList.tsx:780
+#: packages/admin/src/components/ContentList.tsx:786
 #: packages/admin/src/components/MediaLibrary.tsx:1315
 #: packages/admin/src/components/MediaPickerModal.tsx:1545
 msgid "Previous page"
@@ -9244,7 +9257,7 @@ msgstr ""
 msgid "visualEditing.publish"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:514
+#: packages/admin/src/components/ContentList.tsx:517
 #: packages/admin/src/components/ContentSettingsPanel.tsx:900
 #: packages/admin/src/components/ContentSettingsPanel.tsx:903
 msgid "Publish"
@@ -9275,11 +9288,11 @@ msgstr ""
 msgid "Publish, unpublish, schedule, and unschedule content"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:918
-#: packages/admin/src/components/ContentList.tsx:929
+#: packages/admin/src/components/ContentList.tsx:924
+#: packages/admin/src/components/ContentList.tsx:935
 #: packages/admin/src/components/ContentStatusBadge.tsx:59
 #: packages/admin/src/components/Dashboard.tsx:472
-#: packages/admin/src/router.tsx:1311
+#: packages/admin/src/router.tsx:1310
 msgid "Published"
 msgstr "منتشرشده"
 
@@ -9430,7 +9443,7 @@ msgstr ""
 msgid "Reading the package"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:57
+#: packages/admin/src/components/BulkTagDialog.tsx:63
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:481
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:492
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:301
@@ -9959,7 +9972,7 @@ msgstr ""
 msgid "Restore"
 msgstr "بازیابی"
 
-#: packages/admin/src/components/ContentList.tsx:1590
+#: packages/admin/src/components/ContentList.tsx:1596
 msgid "Restore {title}"
 msgstr "بازیابی {title}"
 
@@ -9985,7 +9998,7 @@ msgstr "بازیابی این نسخه از {0}؟ محتوای فعلی با د�
 msgid "Restoring..."
 msgstr "در حال بازیابی..."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:408
+#: packages/admin/src/components/BulkTagDialog.tsx:443
 msgid "Results"
 msgstr ""
 
@@ -10010,7 +10023,7 @@ msgstr ""
 #: packages/admin/src/components/SandboxedContentEditorPanel.tsx:239
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:122
 #: packages/admin/src/lib/content-editor-panels.tsx:201
-#: packages/admin/src/router.tsx:3142
+#: packages/admin/src/router.tsx:3141
 #: packages/admin/src/routes/byline-schema.tsx:280
 msgid "Retry"
 msgstr "تلاش مجدد"
@@ -10022,7 +10035,7 @@ msgstr "تلاش مجدد"
 msgid "Retry {0}"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:505
+#: packages/admin/src/components/BulkTagDialog.tsx:540
 msgid "Retry cache refresh"
 msgstr ""
 
@@ -10035,12 +10048,12 @@ msgstr ""
 msgid "Retry failed"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:486
+#: packages/admin/src/components/BulkTagDialog.tsx:521
 msgid "Retry failures"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:335
-msgid "Retry loading tags"
+#: packages/admin/src/components/BulkTagDialog.tsx:370
+msgid "Retry loading {pluralLower}"
 msgstr ""
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:417
@@ -10060,7 +10073,7 @@ msgstr ""
 msgid "Reusable content blocks you can insert into any content"
 msgstr "بلوک‌های محتوای قابل استفاده مجدد که می‌توانید در هر محتوایی درج کنید"
 
-#: packages/admin/src/router.tsx:1358
+#: packages/admin/src/router.tsx:1357
 msgid "Reverted to published version"
 msgstr ""
 
@@ -10080,8 +10093,8 @@ msgstr ""
 msgid "Review New Permissions"
 msgstr "بررسی مجوزهای جدید"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:408
-#: packages/admin/src/components/BulkTagDialog.tsx:537
+#: packages/admin/src/components/BulkTagDialog.tsx:443
+#: packages/admin/src/components/BulkTagDialog.tsx:572
 msgid "Review posts"
 msgstr ""
 
@@ -10105,7 +10118,7 @@ msgstr ""
 msgid "Review Verified Update"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:537
+#: packages/admin/src/components/BulkTagDialog.tsx:572
 msgid "Reviewing…"
 msgstr ""
 
@@ -10371,9 +10384,9 @@ msgstr ""
 msgid "Schedule publication"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:920
+#: packages/admin/src/components/ContentList.tsx:926
 #: packages/admin/src/components/ContentStatusBadge.tsx:63
-#: packages/admin/src/router.tsx:1415
+#: packages/admin/src/router.tsx:1414
 msgid "Scheduled"
 msgstr "زمان‌بندی‌شده"
 
@@ -10456,12 +10469,12 @@ msgid "Search"
 msgstr "جستجو"
 
 #. placeholder {0}: collectionLabel.toLowerCase()
-#: packages/admin/src/components/ContentList.tsx:475
+#: packages/admin/src/components/ContentList.tsx:478
 msgid "Search {0}"
 msgstr "جستجوی {0}"
 
 #. placeholder {0}: collectionLabel.toLowerCase()
-#: packages/admin/src/components/ContentList.tsx:474
+#: packages/admin/src/components/ContentList.tsx:477
 msgid "Search {0}..."
 msgstr "جستجوی {0}..."
 
@@ -10584,11 +10597,11 @@ msgstr "جستجوی بخش‌ها..."
 msgid "Search source or destination..."
 msgstr "جستجوی مبدأ یا مقصد..."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1375
+#: packages/admin/src/components/TaxonomyManager.tsx:1382
 msgid "Search tags"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1374
+#: packages/admin/src/components/TaxonomyManager.tsx:1381
 msgid "Search tags…"
 msgstr ""
 
@@ -10732,7 +10745,7 @@ msgstr "انتخاب"
 msgid "Select {label}"
 msgstr "انتخاب {label}"
 
-#: packages/admin/src/components/ContentList.tsx:1322
+#: packages/admin/src/components/ContentList.tsx:1328
 msgid "Select {title}"
 msgstr ""
 
@@ -10769,7 +10782,7 @@ msgstr ""
 msgid "Select all"
 msgstr "انتخاب همه"
 
-#: packages/admin/src/components/ContentList.tsx:646
+#: packages/admin/src/components/ContentList.tsx:652
 msgid "Select all on this page"
 msgstr ""
 
@@ -10849,8 +10862,8 @@ msgstr ""
 msgid "Select table"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:554
-msgid "Select up to 50 posts to add a tag."
+#: packages/admin/src/components/ContentList.tsx:559
+msgid "Select up to 50 posts at a time."
 msgstr ""
 
 #: packages/admin/src/components/WordPressImport.tsx:1752
@@ -10880,7 +10893,7 @@ msgstr ""
 msgid "Selected media"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:343
+#: packages/admin/src/components/BulkTagDialog.tsx:378
 msgid "Selected posts"
 msgstr ""
 
@@ -10984,7 +10997,7 @@ msgstr ""
 msgid "Set to 0 to never close comments automatically."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:525
+#: packages/admin/src/components/ContentList.tsx:528
 msgid "Set to draft"
 msgstr ""
 
@@ -11462,7 +11475,7 @@ msgstr ""
 msgid "Starting…"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:671
+#: packages/admin/src/components/ContentList.tsx:677
 #: packages/admin/src/components/ContentTypeEditor.tsx:136
 #: packages/admin/src/components/Redirects.tsx:489
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:382
@@ -11594,11 +11607,6 @@ msgstr ""
 msgid "Tables cannot be pasted inside lists or quotes. Paste the table into its own paragraph and try again."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:298
-#: packages/admin/src/components/BulkTagDialog.tsx:399
-msgid "Tag"
-msgstr ""
-
 #: packages/admin/src/components/settings/GeneralSettings.tsx:180
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:375
 #: packages/admin/src/components/SetupWizard.tsx:148
@@ -11614,14 +11622,6 @@ msgstr "برچسب‌ها"
 #: packages/admin/src/components/WordPressImport.tsx:1817
 msgid "Tags ({0})"
 msgstr "برچسب‌ها ({0})"
-
-#: packages/admin/src/components/BulkTagDialog.tsx:452
-msgid "Tags go live now; draft edits stay unpublished."
-msgstr ""
-
-#: packages/admin/src/components/BulkTagDialog.tsx:442
-msgid "Tags were saved, but cached pages may still show old tags. Retry the cache refresh."
-msgstr ""
 
 #: packages/admin/src/components/EntryLockNotice.tsx:54
 #: packages/admin/src/components/EntryLockNotice.tsx:92
@@ -11652,12 +11652,16 @@ msgstr "دسته‌بندی‌ها"
 msgid "Taxonomies Manage"
 msgstr ""
 
+#: packages/admin/src/components/BulkTagDialog.tsx:284
+msgid "Taxonomy"
+msgstr ""
+
 #. placeholder {0}: blocker.name
 #: packages/admin/src/components/settings/transfer/labels.ts:110
 msgid "Taxonomy “{0}” is used by content on this site"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1552
+#: packages/admin/src/components/TaxonomyManager.tsx:1560
 msgid "Taxonomy created"
 msgstr "دسته‌بندی ساخته شد"
 
@@ -11689,6 +11693,7 @@ msgstr ""
 msgid "Template:"
 msgstr "قالب:"
 
+#: packages/admin/src/components/BulkTagDialog.tsx:109
 #: packages/admin/src/components/TaxonomyManager.tsx:754
 #: packages/admin/src/components/TaxonomyManager.tsx:755
 #: packages/admin/src/components/TaxonomyManager.tsx:1329
@@ -11710,6 +11715,7 @@ msgstr ""
 msgid "Term deleted"
 msgstr "اصطلاح حذف شد"
 
+#: packages/admin/src/components/BulkTagDialog.tsx:111
 #: packages/admin/src/components/settings/transfer/labels.ts:18
 msgid "Terms"
 msgstr ""
@@ -11976,7 +11982,7 @@ msgstr ""
 msgid "The package’s file index is not valid."
 msgstr ""
 
-#: packages/admin/src/router.tsx:3156
+#: packages/admin/src/router.tsx:3155
 msgid "The page you're looking for doesn't exist."
 msgstr ""
 
@@ -12159,7 +12165,7 @@ msgid "This entry changed somewhere else after you opened it."
 msgstr ""
 
 #: packages/admin/src/components/ContentEditor.tsx:1210
-#: packages/admin/src/router.tsx:984
+#: packages/admin/src/router.tsx:983
 msgid "This entry changed somewhere else. Save anyway, or reload to get the newer version."
 msgstr ""
 
@@ -12460,7 +12466,7 @@ msgid "This will move the item to trash. You can restore it later from the trash
 msgstr "این مورد به سطل زباله منتقل خواهد شد. می‌توانید بعداً آن را از سطل زباله بازیابی کنید."
 
 #. placeholder {0}: deleteTarget?.label
-#: packages/admin/src/components/TaxonomyManager.tsx:1522
+#: packages/admin/src/components/TaxonomyManager.tsx:1530
 msgid "This will permanently delete \"{0}\" and remove it from all content."
 msgstr "این «{0}» را برای همیشه حذف کرده و از همه محتوا حذف می‌کند."
 
@@ -12498,8 +12504,8 @@ msgstr "منطقه زمانی"
 msgid "Timezone for displaying dates (e.g., America/New_York)"
 msgstr "منطقه زمانی برای نمایش تاریخ‌ها (مثلاً America/New_York)"
 
-#: packages/admin/src/components/ContentList.tsx:656
-#: packages/admin/src/components/ContentList.tsx:817
+#: packages/admin/src/components/ContentList.tsx:662
+#: packages/admin/src/components/ContentList.tsx:823
 #: packages/admin/src/components/SectionEditor.tsx:272
 #: packages/admin/src/components/Sections.tsx:170
 #: packages/admin/src/components/Widgets.tsx:891
@@ -12608,7 +12614,7 @@ msgstr ""
 #: packages/admin/src/components/MenuEditor.tsx:143
 #: packages/admin/src/components/TaxonomyManager.tsx:1252
 #: packages/admin/src/components/TaxonomySidebar.tsx:777
-#: packages/admin/src/router.tsx:1466
+#: packages/admin/src/router.tsx:1465
 msgid "Translation created"
 msgstr ""
 
@@ -12625,11 +12631,11 @@ msgstr "زباله‌دان"
 #: packages/admin/src/components/comments/CommentInbox.tsx:249
 #: packages/admin/src/components/comments/CommentInbox.tsx:290
 #: packages/admin/src/components/comments/CommentInbox.tsx:538
-#: packages/admin/src/components/ContentList.tsx:459
+#: packages/admin/src/components/ContentList.tsx:462
 msgid "Trash"
 msgstr "زباله‌دان"
 
-#: packages/admin/src/components/ContentList.tsx:845
+#: packages/admin/src/components/ContentList.tsx:851
 msgid "Trash is empty"
 msgstr "سطل زباله خالی است"
 
@@ -12839,7 +12845,7 @@ msgstr "شاه‌کلید بدون نام"
 msgid "Unpublish {itemLabel}"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1335
+#: packages/admin/src/router.tsx:1334
 msgid "Unpublished"
 msgstr ""
 
@@ -12855,7 +12861,7 @@ msgstr ""
 msgid "Unsaved content may leave your site"
 msgstr ""
 
-#: packages/admin/src/router.tsx:1434
+#: packages/admin/src/router.tsx:1433
 msgid "Unscheduled"
 msgstr ""
 
@@ -12870,7 +12876,7 @@ msgid "Unsupported widget element type: {0}"
 msgstr ""
 
 #. placeholder {0}: formatter.format(to)
-#: packages/admin/src/components/ContentList.tsx:1049
+#: packages/admin/src/components/ContentList.tsx:1055
 msgid "Until {0}"
 msgstr ""
 
@@ -12932,7 +12938,7 @@ msgstr "این قانون    تغییر مسیر را به‌روزرسانی ک
 msgid "Update to v{0}"
 msgstr "به‌روزرسانی به v{0}"
 
-#: packages/admin/src/components/ContentList.tsx:928
+#: packages/admin/src/components/ContentList.tsx:934
 #: packages/admin/src/components/ContentSettingsPanel.tsx:997
 #: packages/admin/src/components/RegistryPluginDetail.tsx:580
 msgid "Updated"
@@ -13142,7 +13148,7 @@ msgstr ""
 msgid "Use another device"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1123
+#: packages/admin/src/components/ContentList.tsx:1129
 msgid "Use as end date"
 msgstr ""
 
@@ -13325,7 +13331,7 @@ msgstr "مشاهده وضعیت ارائه‌دهنده ایمیل و ارسال
 msgid "View mode"
 msgstr "حالت نمایش"
 
-#: packages/admin/src/components/ContentList.tsx:1394
+#: packages/admin/src/components/ContentList.tsx:1400
 msgid "View published {title}"
 msgstr "مشاهده {title} منتشرشده"
 
@@ -13633,7 +13639,7 @@ msgstr ""
 msgid "WordPress Username"
 msgstr "نام کاربری وردپرس"
 
-#: packages/admin/src/components/ContentList.tsx:502
+#: packages/admin/src/components/ContentList.tsx:505
 msgid "Working on {selectedCount} items…"
 msgstr ""
 
@@ -13669,7 +13675,7 @@ msgstr ""
 msgid "Yearly"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1469
+#: packages/admin/src/components/ContentList.tsx:1475
 #: packages/admin/src/components/users/UserDetail.tsx:236
 #: packages/admin/src/routes/byline-schema.tsx:420
 #: packages/admin/src/routes/byline-schema.tsx:422
@@ -13733,7 +13739,7 @@ msgstr ""
 msgid "You need Admin permissions to transfer this site."
 msgstr ""
 
-#: packages/admin/src/router.tsx:2287
+#: packages/admin/src/router.tsx:2286
 msgid "You need Editor permissions to moderate comments."
 msgstr ""
 
