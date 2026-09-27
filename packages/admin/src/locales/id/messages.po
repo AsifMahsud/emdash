@@ -83,7 +83,7 @@ msgid "{0, plural, one {# collection} other {# collections}}"
 msgstr "{0, plural, other {# koleksi}}"
 
 #. placeholder {0}: result.comments.imported
-#: packages/admin/src/components/WordPressImport.tsx:2279
+#: packages/admin/src/components/WordPressImport.tsx:2283
 msgid "{0, plural, one {# comment imported} other {# comments imported}}"
 msgstr "{0, plural, one {# komentar diimpor} other {# komentar diimpor}}"
 
@@ -98,12 +98,12 @@ msgid "{0, plural, one {# comment} other {# comments}}"
 msgstr "{0, plural, other {# komentar}}"
 
 #. placeholder {0}: result.errors.length
-#: packages/admin/src/components/WordPressImport.tsx:2290
+#: packages/admin/src/components/WordPressImport.tsx:2294
 msgid "{0, plural, one {# content error} other {# content errors}}"
 msgstr "{0, plural, other {# kesalahan konten}}"
 
 #. placeholder {0}: result.imported
-#: packages/admin/src/components/WordPressImport.tsx:2231
+#: packages/admin/src/components/WordPressImport.tsx:2235
 msgid "{0, plural, one {# content item imported} other {# content items imported}}"
 msgstr "{0, plural, other {# item konten diimpor}}"
 
@@ -147,22 +147,22 @@ msgid "{0, plural, one {# MCP tool} other {# MCP tools}}"
 msgstr "{0, plural, other {# alat MCP}}"
 
 #. placeholder {0}: mediaResult.failed.length
-#: packages/admin/src/components/WordPressImport.tsx:2295
+#: packages/admin/src/components/WordPressImport.tsx:2299
 msgid "{0, plural, one {# media error} other {# media errors}}"
 msgstr "{0, plural, other {# kesalahan media}}"
 
 #. placeholder {0}: mediaResult.imported.length
-#: packages/admin/src/components/WordPressImport.tsx:2247
+#: packages/admin/src/components/WordPressImport.tsx:2251
 msgid "{0, plural, one {# media file imported} other {# media files imported}}"
 msgstr "{0, plural, other {# file media diimpor}}"
 
 #. placeholder {0}: result.menus.created
-#: packages/admin/src/components/WordPressImport.tsx:2271
+#: packages/admin/src/components/WordPressImport.tsx:2275
 msgid "{0, plural, one {# menu imported} other {# menus imported}}"
 msgstr "{0, plural, one {# menu diimpor} other {# menu diimpor}}"
 
 #. placeholder {0}: navMenus.length
-#: packages/admin/src/components/WordPressImport.tsx:1919
+#: packages/admin/src/components/WordPressImport.tsx:1923
 msgid "{0, plural, one {# menu will be imported} other {# menus will be imported}}"
 msgstr "{0, plural, other {# menu akan diimpor}}"
 
@@ -178,7 +178,7 @@ msgid "{0, plural, one {# permission} other {# permissions}}"
 msgstr "{0, plural, other {# izin}}"
 
 #. placeholder {0}: mapping.postCount
-#: packages/admin/src/components/WordPressImport.tsx:2502
+#: packages/admin/src/components/WordPressImport.tsx:2506
 msgid "{0, plural, one {# post} other {# posts}}"
 msgstr "{0, plural, other {# pos}}"
 
@@ -213,17 +213,17 @@ msgid "{0, plural, one {# selected} other {# selected}}"
 msgstr "{0} dipilih"
 
 #. placeholder {0}: result.skipped
-#: packages/admin/src/components/WordPressImport.tsx:2239
+#: packages/admin/src/components/WordPressImport.tsx:2243
 msgid "{0, plural, one {# skipped (already exists)} other {# skipped (already exist)}}"
 msgstr "{0, plural, other {# dilewati (sudah ada)}}"
 
 #. placeholder {0}: result.taxonomyAssignments
-#: packages/admin/src/components/WordPressImport.tsx:2263
+#: packages/admin/src/components/WordPressImport.tsx:2267
 msgid "{0, plural, one {# taxonomy assignment} other {# taxonomy assignments}}"
 msgstr "{0, plural, one {# penetapan taksonomi} other {# penetapan taksonomi}}"
 
 #. placeholder {0}: result.taxonomiesCreated.length
-#: packages/admin/src/components/WordPressImport.tsx:2255
+#: packages/admin/src/components/WordPressImport.tsx:2259
 msgid "{0, plural, one {# taxonomy created} other {# taxonomies created}}"
 msgstr "{0, plural, one {# taksonomi dibuat} other {# taksonomi dibuat}}"
 
@@ -311,7 +311,7 @@ msgid "{0} can't be moved here — its parent has no translation in this locale,
 msgstr "{0} tidak dapat dipindahkan ke sini — induknya tidak memiliki terjemahan dalam bahasa ini, sehingga daftar ini bukan grup tempatnya berada."
 
 #. placeholder {0}: bestMatch?.detected.siteTitle || "WordPress site"
-#: packages/admin/src/components/WordPressImport.tsx:1319
+#: packages/admin/src/components/WordPressImport.tsx:1323
 msgid "{0} detected"
 msgstr "{0} terdeteksi"
 
@@ -347,12 +347,12 @@ msgstr "{0} sekarang aktif"
 
 #. placeholder {0}: postType.count
 #. placeholder {1}: postType.suggestedCollection
-#: packages/admin/src/components/WordPressImport.tsx:1989
+#: packages/admin/src/components/WordPressImport.tsx:1993
 msgid "{0} items → {1}"
 msgstr "{0} item → {1}"
 
 #. placeholder {0}: analysis.postTypes .filter((pt) => selections[pt.name]?.enabled) .reduce((sum, pt) => sum + pt.count, 0)
-#: packages/admin/src/components/WordPressImport.tsx:1912
+#: packages/admin/src/components/WordPressImport.tsx:1916
 msgid "{0} items will be imported"
 msgstr "{0} item akan diimpor"
 
@@ -491,15 +491,15 @@ msgstr ""
 msgid "{completedCount} of {0} uploads complete"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2088
+#: packages/admin/src/components/WordPressImport.tsx:2092
 msgid "{count, plural, one {# file} other {# files}}"
 msgstr "{count, plural, other {# file}}"
 
-#: packages/admin/src/components/WordPressImport.tsx:2367
+#: packages/admin/src/components/WordPressImport.tsx:2371
 msgid "{count, plural, one {# item} other {# items}}"
 msgstr "{count, plural, other {# item}}"
 
-#: packages/admin/src/components/WordPressImport.tsx:2159
+#: packages/admin/src/components/WordPressImport.tsx:2163
 msgid "{current} of {total}"
 msgstr "{current} dari {total}"
 
@@ -552,11 +552,11 @@ msgstr ""
 msgid "{matchCount, plural, one {# item matching \"{searchQuery}\"} other {# items matching \"{searchQuery}\"}}"
 msgstr "{matchCount, plural, other {# item yang cocok dengan \"{searchQuery}\"}}"
 
-#: packages/admin/src/components/WordPressImport.tsx:2489
+#: packages/admin/src/components/WordPressImport.tsx:2493
 msgid "{matchedCount} of {totalCount} assigned"
 msgstr "{matchedCount} dari {totalCount} ditetapkan"
 
-#: packages/admin/src/components/WordPressImport.tsx:2477
+#: packages/admin/src/components/WordPressImport.tsx:2481
 msgid "{matchedCount} of {totalCount} authors matched by email"
 msgstr "{matchedCount} dari {totalCount} penulis cocok berdasarkan email"
 
@@ -616,11 +616,11 @@ msgstr ""
 msgid "{name}: this site already has some"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1895
+#: packages/admin/src/components/WordPressImport.tsx:1899
 msgid "{needsNewCollections, plural, one {# new collection will be created} other {# new collections will be created}}"
 msgstr "{needsNewCollections, plural, other {# koleksi baru akan dibuat}}"
 
-#: packages/admin/src/components/WordPressImport.tsx:1904
+#: packages/admin/src/components/WordPressImport.tsx:1908
 msgid "{needsNewFields, plural, one {Fields will be added to # existing collection} other {Fields will be added to # existing collections}}"
 msgstr "{needsNewFields, plural, other {Field akan ditambahkan ke # koleksi yang ada}}"
 
@@ -743,21 +743,21 @@ msgstr "/halaman-baru atau /artikel/[slug]"
 msgid "/old-page or /blog/[slug]"
 msgstr "/halaman-lama atau /blog/[slug]"
 
-#: packages/admin/src/components/WordPressImport.tsx:2109
+#: packages/admin/src/components/WordPressImport.tsx:2113
 msgid "• Files are downloaded from your WordPress site"
 msgstr "• File diunduh dari situs WordPress Anda"
 
-#: packages/admin/src/components/WordPressImport.tsx:2110
+#: packages/admin/src/components/WordPressImport.tsx:2114
 msgid "• Uploaded to your EmDash media storage"
 msgstr "• Diunggah ke penyimpanan media EmDash Anda"
 
-#: packages/admin/src/components/WordPressImport.tsx:2111
+#: packages/admin/src/components/WordPressImport.tsx:2115
 msgid "• URLs in your content are updated automatically"
 msgstr "• URL dalam konten Anda diperbarui secara otomatis"
 
 #: packages/admin/src/components/SetupWizard.tsx:288
 #: packages/admin/src/components/SetupWizard.tsx:339
-#: packages/admin/src/components/WordPressImport.tsx:1617
+#: packages/admin/src/components/WordPressImport.tsx:1621
 msgid "← Back"
 msgstr "← Kembali"
 
@@ -785,11 +785,11 @@ msgstr ""
 msgid "1 year"
 msgstr "1 tahun"
 
-#: packages/admin/src/components/WordPressImport.tsx:1538
+#: packages/admin/src/components/WordPressImport.tsx:1542
 msgid "1. Log into your WordPress admin"
 msgstr "1. Masuk ke admin WordPress Anda"
 
-#: packages/admin/src/components/WordPressImport.tsx:1291
+#: packages/admin/src/components/WordPressImport.tsx:1295
 msgid "1. Log into your WordPress admin dashboard"
 msgstr "1. Masuk ke dasbor admin WordPress Anda"
 
@@ -801,7 +801,7 @@ msgstr ""
 msgid "2. Go to <0>Tools → Export</0>"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1539
+#: packages/admin/src/components/WordPressImport.tsx:1543
 msgid "2. Go to Users → Profile"
 msgstr "2. Buka Pengguna → Profil"
 
@@ -809,11 +809,11 @@ msgstr "2. Buka Pengguna → Profil"
 msgid "3:2"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1540
+#: packages/admin/src/components/WordPressImport.tsx:1544
 msgid "3. Scroll to \"Application Passwords\""
 msgstr "3. Gulir ke \"Kata Sandi Aplikasi\""
 
-#: packages/admin/src/components/WordPressImport.tsx:1295
+#: packages/admin/src/components/WordPressImport.tsx:1299
 msgid "3. Select \"All content\""
 msgstr "3. Pilih \"Semua konten\""
 
@@ -841,11 +841,11 @@ msgstr "308 Permanen (Ketat)"
 msgid "4:3"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1296
+#: packages/admin/src/components/WordPressImport.tsx:1300
 msgid "4. Click \"Download Export File\""
 msgstr "4. Klik \"Unduh File Ekspor\""
 
-#: packages/admin/src/components/WordPressImport.tsx:1541
+#: packages/admin/src/components/WordPressImport.tsx:1545
 msgid "4. Enter \"EmDash\" and click \"Add New\""
 msgstr "4. Masukkan \"EmDash\" dan klik \"Tambah Baru\""
 
@@ -861,11 +861,11 @@ msgstr "410 Konten Dihapus (Gone)"
 msgid "451 Unavailable for legal reasons"
 msgstr "451 Tidak Tersedia karena Alasan Hukum"
 
-#: packages/admin/src/components/WordPressImport.tsx:1542
+#: packages/admin/src/components/WordPressImport.tsx:1546
 msgid "5. Copy the generated password"
 msgstr "5. Salin kata sandi yang dibuat"
 
-#: packages/admin/src/components/WordPressImport.tsx:1297
+#: packages/admin/src/components/WordPressImport.tsx:1301
 msgid "5. Upload the file here"
 msgstr "5. Unggah file di sini"
 
@@ -1033,7 +1033,7 @@ msgstr "Akun sudah ada"
 msgid "Account Info"
 msgstr "Info Akun"
 
-#: packages/admin/src/components/WordPressImport.tsx:1176
+#: packages/admin/src/components/WordPressImport.tsx:1180
 msgid "ACF Fields"
 msgstr "Bidang ACF"
 
@@ -1144,7 +1144,7 @@ msgstr "Tambah Domain"
 msgid "Add Field"
 msgstr "Tambah Field"
 
-#: packages/admin/src/components/WordPressImport.tsx:2000
+#: packages/admin/src/components/WordPressImport.tsx:2004
 msgid "Add fields"
 msgstr "Tambah field"
 
@@ -1282,7 +1282,7 @@ msgstr "Menambahkan..."
 msgid "Adding…"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1769
+#: packages/admin/src/components/WordPressImport.tsx:1773
 msgid "Additional data to import."
 msgstr "Data tambahan untuk diimpor."
 
@@ -1290,7 +1290,7 @@ msgstr "Data tambahan untuk diimpor."
 msgid "Additional details"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1499
+#: packages/admin/src/components/WordPressImport.tsx:1503
 msgid "admin"
 msgstr "admin"
 
@@ -1385,7 +1385,7 @@ msgstr "Semua koleksi"
 msgid "All comments require approval"
 msgstr "Semua komentar memerlukan persetujuan"
 
-#: packages/admin/src/components/WordPressImport.tsx:2534
+#: packages/admin/src/components/WordPressImport.tsx:2538
 msgid "All imported content will be unassigned. You can reassign authors later from the content editor."
 msgstr "Semua konten yang diimpor tidak akan ditetapkan. Anda dapat menetapkan ulang penulis nanti dari editor konten."
 
@@ -1493,7 +1493,7 @@ msgstr ""
 msgid "Alt text set"
 msgstr "Teks alt diatur"
 
-#: packages/admin/src/components/WordPressImport.tsx:1411
+#: packages/admin/src/components/WordPressImport.tsx:1415
 msgid "Alternatively, you can export from WordPress (Tools → Export) and upload the file."
 msgstr "Alternatifnya, ekspor dari WordPress (Alat → Ekspor) dan unggah filenya."
 
@@ -1578,11 +1578,11 @@ msgstr "Terjadi kesalahan yang tidak terduga."
 msgid "An unknown error occurred"
 msgstr "Terjadi kesalahan tak dikenal"
 
-#: packages/admin/src/components/WordPressImport.tsx:1591
+#: packages/admin/src/components/WordPressImport.tsx:1595
 msgid "Analyzing export file..."
 msgstr "Menganalisis file ekspor..."
 
-#: packages/admin/src/components/WordPressImport.tsx:828
+#: packages/admin/src/components/WordPressImport.tsx:830
 msgid "Analyzing WordPress site..."
 msgstr "Menganalisis situs WordPress..."
 
@@ -1618,7 +1618,7 @@ msgstr "Token API"
 msgid "Appears on posts and pages"
 msgstr "Tampil pada pos dan halaman"
 
-#: packages/admin/src/components/WordPressImport.tsx:1506
+#: packages/admin/src/components/WordPressImport.tsx:1510
 msgid "Application Password"
 msgstr "Kata Sandi Aplikasi"
 
@@ -1721,7 +1721,7 @@ msgstr ""
 msgid "Aspect ratio"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2472
+#: packages/admin/src/components/WordPressImport.tsx:2476
 msgid "Assign WordPress authors to EmDash users. Posts will be attributed to the selected user."
 msgstr "Tetapkan penulis WordPress ke pengguna EmDash. Pos akan diatribusikan ke pengguna yang dipilih."
 
@@ -1787,7 +1787,7 @@ msgstr "Autentikasi dibatalkan atau waktu telah habis. Silakan coba lagi."
 msgid "Author"
 msgstr "Penulis"
 
-#: packages/admin/src/components/WordPressImport.tsx:2487
+#: packages/admin/src/components/WordPressImport.tsx:2491
 msgid "Author Mapping"
 msgstr "Pemetaan Penulis"
 
@@ -1892,8 +1892,8 @@ msgstr "Avatar"
 #: packages/admin/src/components/MediaDetailPanel.tsx:1793
 #: packages/admin/src/components/MediaLibrary.tsx:811
 #: packages/admin/src/components/MenuEditor.tsx:362
-#: packages/admin/src/components/WordPressImport.tsx:1526
-#: packages/admin/src/components/WordPressImport.tsx:2543
+#: packages/admin/src/components/WordPressImport.tsx:1530
+#: packages/admin/src/components/WordPressImport.tsx:2547
 msgid "Back"
 msgstr "Kembali"
 
@@ -2068,8 +2068,8 @@ msgstr "Jelajahi dan pasang plugin untuk memperluas situs Anda."
 msgid "Browse files"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1142
-#: packages/admin/src/components/WordPressImport.tsx:1610
+#: packages/admin/src/components/WordPressImport.tsx:1146
+#: packages/admin/src/components/WordPressImport.tsx:1614
 msgid "Browse Files"
 msgstr "Jelajahi File"
 
@@ -2228,7 +2228,7 @@ msgstr "Dapat melihat konten"
 #: packages/admin/src/components/TaxonomyManager.tsx:1098
 #: packages/admin/src/components/users/InviteUserModal.tsx:198
 #: packages/admin/src/components/Widgets.tsx:451
-#: packages/admin/src/components/WordPressImport.tsx:1933
+#: packages/admin/src/components/WordPressImport.tsx:1937
 #: packages/admin/src/routes/bylines.tsx:824
 msgid "Cancel"
 msgstr "Batal"
@@ -2301,11 +2301,11 @@ msgid "Categories"
 msgstr "Kategori"
 
 #. placeholder {0}: analysis.categories
-#: packages/admin/src/components/WordPressImport.tsx:1801
+#: packages/admin/src/components/WordPressImport.tsx:1805
 msgid "Categories ({0})"
 msgstr "Kategori ({0})"
 
-#: packages/admin/src/components/WordPressImport.tsx:1164
+#: packages/admin/src/components/WordPressImport.tsx:1168
 msgid "Categories & Tags"
 msgstr "Kategori & Tag"
 
@@ -2420,7 +2420,7 @@ msgstr ""
 msgid "Check registry.policy.minimumReleaseAgeExclude in astro.config.mjs, then restart EmDash."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1113
+#: packages/admin/src/components/WordPressImport.tsx:1117
 msgid "Check Site"
 msgstr "Periksa Situs"
 
@@ -2434,7 +2434,7 @@ msgstr ""
 msgid "Check your email"
 msgstr "Periksa email Anda"
 
-#: packages/admin/src/components/WordPressImport.tsx:794
+#: packages/admin/src/components/WordPressImport.tsx:796
 msgid "Checking {urlInput}..."
 msgstr "Memeriksa {urlInput}..."
 
@@ -2767,7 +2767,7 @@ msgstr "Koleksi"
 msgid "Collections and fields, all content with drafts, revisions, scheduled posts, and trash, translations, taxonomies, bylines, media files, menus, widgets, sections, redirects, SEO, and site settings."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2343
+#: packages/admin/src/components/WordPressImport.tsx:2347
 msgid "Collections created:"
 msgstr "Koleksi dibuat:"
 
@@ -2872,17 +2872,17 @@ msgstr ""
 msgid "Confirm with your fingerprint, face, or PIN."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:719
-#: packages/admin/src/components/WordPressImport.tsx:1072
+#: packages/admin/src/components/WordPressImport.tsx:721
+#: packages/admin/src/components/WordPressImport.tsx:1076
 msgid "Connect"
 msgstr "Hubungkan"
 
-#: packages/admin/src/components/WordPressImport.tsx:1523
+#: packages/admin/src/components/WordPressImport.tsx:1527
 msgid "Connect & Analyze"
 msgstr "Hubungkan & Analisis"
 
 #. placeholder {0}: siteTitle || "WordPress"
-#: packages/admin/src/components/WordPressImport.tsx:1473
+#: packages/admin/src/components/WordPressImport.tsx:1477
 msgid "Connect to {0}"
 msgstr "Hubungkan ke {0}"
 
@@ -2896,7 +2896,7 @@ msgstr ""
 msgid "Connect to network hosts and load external plugin admin images"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1389
+#: packages/admin/src/components/WordPressImport.tsx:1393
 msgid "Connect with WordPress"
 msgstr "Hubungkan dengan WordPress"
 
@@ -2933,11 +2933,11 @@ msgid "Content digest"
 msgstr ""
 
 #. placeholder {0}: result.errors.length
-#: packages/admin/src/components/WordPressImport.tsx:2398
+#: packages/admin/src/components/WordPressImport.tsx:2402
 msgid "Content Errors ({0})"
 msgstr "Kesalahan Konten ({0})"
 
-#: packages/admin/src/components/WordPressImport.tsx:1333
+#: packages/admin/src/components/WordPressImport.tsx:1337
 msgid "Content found:"
 msgstr "Konten ditemukan:"
 
@@ -2994,7 +2994,7 @@ msgstr ""
 msgid "Content snapshot:"
 msgstr "Snapshot konten:"
 
-#: packages/admin/src/components/WordPressImport.tsx:1747
+#: packages/admin/src/components/WordPressImport.tsx:1751
 msgid "Content to Import"
 msgstr "Konten untuk Diimpor"
 
@@ -3016,7 +3016,7 @@ msgstr ""
 msgid "Content using this media item may show a broken reference."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2326
+#: packages/admin/src/components/WordPressImport.tsx:2330
 msgid "Content was skipped because it already exists"
 msgstr "Konten dilewati karena sudah ada"
 
@@ -3035,7 +3035,7 @@ msgstr "Lanjutkan"
 msgid "Continue →"
 msgstr "Lanjutkan →"
 
-#: packages/admin/src/components/WordPressImport.tsx:2545
+#: packages/admin/src/components/WordPressImport.tsx:2549
 msgid "Continue Import"
 msgstr "Lanjutkan Impor"
 
@@ -3177,7 +3177,7 @@ msgstr ""
 msgid "Couldn’t confirm whether the media item or selected folder still exists. Try again."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1280
+#: packages/admin/src/components/WordPressImport.tsx:1284
 msgid "Couldn't detect WordPress"
 msgstr "Tidak dapat mendeteksi WordPress"
 
@@ -3363,7 +3363,7 @@ msgstr ""
 msgid "Create New Token"
 msgstr "Buat Token Baru"
 
-#: packages/admin/src/components/WordPressImport.tsx:1517
+#: packages/admin/src/components/WordPressImport.tsx:1521
 msgid "Create one in WordPress: Users → Profile → Application Passwords"
 msgstr "Buat di WordPress: Pengguna → Profil → Kata Sandi Aplikasi"
 
@@ -3403,7 +3403,7 @@ msgstr ""
 msgid "Create Relation"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1937
+#: packages/admin/src/components/WordPressImport.tsx:1941
 msgid "Create Schema & Import"
 msgstr "Buat Skema & Impor"
 
@@ -3509,7 +3509,7 @@ msgstr "Dibuat Pada"
 msgid "Creating collections and fields"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:905
+#: packages/admin/src/components/WordPressImport.tsx:907
 msgid "Creating collections and fields..."
 msgstr "Membuat koleksi dan field..."
 
@@ -3585,7 +3585,7 @@ msgstr "Konten robots.txt kustom. Kosongkan untuk menggunakan bawaan."
 msgid "Custom Section"
 msgstr "Bagian Kustom"
 
-#: packages/admin/src/components/WordPressImport.tsx:1165
+#: packages/admin/src/components/WordPressImport.tsx:1169
 msgid "Custom Taxonomies"
 msgstr "Taksonomi Kustom"
 
@@ -4216,7 +4216,7 @@ msgstr ""
 #: packages/admin/src/components/ContentList.tsx:1126
 #: packages/admin/src/components/MediaUploadDialog.tsx:353
 #: packages/admin/src/components/users/InviteUserModal.tsx:142
-#: packages/admin/src/components/WordPressImport.tsx:2144
+#: packages/admin/src/components/WordPressImport.tsx:2148
 msgid "Done"
 msgstr "Selesai"
 
@@ -4274,7 +4274,7 @@ msgstr ""
 msgid "Downloaded"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2142
+#: packages/admin/src/components/WordPressImport.tsx:2146
 msgid "Downloading"
 msgstr "Mengunduh"
 
@@ -4305,7 +4305,7 @@ msgstr "draf, dipublikasikan, atau diarsipkan"
 msgid "Drafts"
 msgstr "Draf"
 
-#: packages/admin/src/components/WordPressImport.tsx:1184
+#: packages/admin/src/components/WordPressImport.tsx:1188
 msgid "Drafts & Private"
 msgstr "Draf & Privat"
 
@@ -4313,7 +4313,7 @@ msgstr "Draf & Privat"
 msgid "Drag and drop files here"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1137
+#: packages/admin/src/components/WordPressImport.tsx:1141
 msgid "Drag and drop or click to browse (.xml)"
 msgstr "Seret dan lepas atau klik untuk menelusuri (.xml)"
 
@@ -4369,7 +4369,7 @@ msgstr ""
 msgid "Drop to add widget"
 msgstr "Lepas untuk menambah widget"
 
-#: packages/admin/src/components/WordPressImport.tsx:1604
+#: packages/admin/src/components/WordPressImport.tsx:1608
 msgid "Drop your WordPress export file here"
 msgstr "Letakkan file ekspor WordPress Anda di sini"
 
@@ -4595,7 +4595,7 @@ msgstr ""
 msgid "Editors can select a second image that the site shows in dark mode."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1062
+#: packages/admin/src/components/WordPressImport.tsx:1066
 msgid "em1.…"
 msgstr "em1.…"
 
@@ -4664,7 +4664,7 @@ msgstr ""
 msgid "EmDash does not keep the uncropped image."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1323
+#: packages/admin/src/components/WordPressImport.tsx:1327
 msgid "EmDash Exporter plugin detected! You can import directly."
 msgstr "Plugin Eksportir EmDash terdeteksi! Anda dapat mengimpor langsung."
 
@@ -4750,7 +4750,7 @@ msgstr "Masukkan URL (https://…) atau jalur relatif (/…)"
 msgid "Enter a valid URL (e.g. https://example.com)"
 msgstr "Masukkan URL yang valid (mis. https://contoh.com)"
 
-#: packages/admin/src/components/WordPressImport.tsx:1396
+#: packages/admin/src/components/WordPressImport.tsx:1400
 msgid "Enter credentials manually"
 msgstr "Masukkan kredensial secara manual"
 
@@ -4787,11 +4787,11 @@ msgstr "Masukkan URL..."
 msgid "Enter your handle to sign in."
 msgstr "Masukkan handle Anda untuk masuk."
 
-#: packages/admin/src/components/WordPressImport.tsx:1475
+#: packages/admin/src/components/WordPressImport.tsx:1479
 msgid "Enter your WordPress credentials to import content directly."
 msgstr "Masukkan kredensial WordPress Anda untuk mengimpor konten langsung."
 
-#: packages/admin/src/components/WordPressImport.tsx:1100
+#: packages/admin/src/components/WordPressImport.tsx:1104
 msgid "Enter your WordPress site URL"
 msgstr "Masukkan URL situs WordPress Anda"
 
@@ -4884,7 +4884,7 @@ msgstr ""
 msgid "Existing tags stay in place."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2026
+#: packages/admin/src/components/WordPressImport.tsx:2030
 msgid "Exists"
 msgstr "Ada"
 
@@ -4923,7 +4923,7 @@ msgstr "Kedaluwarsa"
 msgid "Export"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1289
+#: packages/admin/src/components/WordPressImport.tsx:1293
 msgid "Export from WordPress manually"
 msgstr "Ekspor dari WordPress secara manual"
 
@@ -4939,7 +4939,7 @@ msgstr ""
 msgid "Export site"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1413
+#: packages/admin/src/components/WordPressImport.tsx:1417
 msgid "Export your content from WordPress to import everything including drafts."
 msgstr "Ekspor konten Anda dari WordPress untuk mengimpor semuanya termasuk draf."
 
@@ -4973,7 +4973,7 @@ msgstr "Gagal"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:63
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:306
-#: packages/admin/src/components/WordPressImport.tsx:2146
+#: packages/admin/src/components/WordPressImport.tsx:2150
 msgid "Failed"
 msgstr "Gagal"
 
@@ -4997,7 +4997,7 @@ msgstr "Gagal menambahkan passkey"
 msgid "Failed to analyze import"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:431
+#: packages/admin/src/components/WordPressImport.tsx:433
 msgid "Failed to analyze WordPress site"
 msgstr "Gagal menganalisis situs WordPress"
 
@@ -5055,7 +5055,7 @@ msgstr ""
 msgid "Failed to create section"
 msgstr "Gagal membuat bagian"
 
-#: packages/admin/src/components/WordPressImport.tsx:1730
+#: packages/admin/src/components/WordPressImport.tsx:1734
 msgid "Failed to create some collections"
 msgstr "Gagal membuat beberapa koleksi"
 
@@ -5212,7 +5212,7 @@ msgstr "Gagal mengaktifkan pencarian"
 msgid "Failed to enable user"
 msgstr "Gagal mengaktifkan pengguna"
 
-#: packages/admin/src/components/WordPressImport.tsx:358
+#: packages/admin/src/components/WordPressImport.tsx:360
 msgid "Failed to execute import"
 msgstr "Gagal menjalankan impor"
 
@@ -5339,12 +5339,12 @@ msgstr "Gagal mendapatkan opsi registrasi"
 msgid "Failed to get upload URL"
 msgstr "Gagal mendapatkan URL unggah"
 
-#: packages/admin/src/components/WordPressImport.tsx:454
+#: packages/admin/src/components/WordPressImport.tsx:456
 msgid "Failed to import from WordPress"
 msgstr "Gagal mengimpor dari WordPress"
 
-#: packages/admin/src/components/WordPressImport.tsx:383
-#: packages/admin/src/lib/api/import.ts:422
+#: packages/admin/src/components/WordPressImport.tsx:385
+#: packages/admin/src/lib/api/import.ts:531
 msgid "Failed to import media"
 msgstr "Gagal mengimpor media"
 
@@ -5551,7 +5551,7 @@ msgstr "Gagal memulihkan revisi"
 msgid "Failed to revoke API token"
 msgstr "Gagal mencabut token API"
 
-#: packages/admin/src/components/WordPressImport.tsx:396
+#: packages/admin/src/components/WordPressImport.tsx:398
 msgid "Failed to rewrite URLs"
 msgstr "Gagal menulis ulang URL"
 
@@ -5713,11 +5713,11 @@ msgstr "FAQ"
 msgid "Favicon"
 msgstr "Favicon"
 
-#: packages/admin/src/components/WordPressImport.tsx:1198
+#: packages/admin/src/components/WordPressImport.tsx:1202
 msgid "Feature"
 msgstr "Fitur"
 
-#: packages/admin/src/components/WordPressImport.tsx:1166
+#: packages/admin/src/components/WordPressImport.tsx:1170
 msgid "Featured Images"
 msgstr "Gambar Unggulan"
 
@@ -5726,7 +5726,7 @@ msgstr "Gambar Unggulan"
 msgid "Features"
 msgstr "Fitur"
 
-#: packages/admin/src/components/WordPressImport.tsx:829
+#: packages/admin/src/components/WordPressImport.tsx:831
 msgid "Fetching content from the EmDash Exporter API."
 msgstr "Mengambil konten dari API Eksportir EmDash."
 
@@ -5764,7 +5764,7 @@ msgstr "Bidang diperbarui"
 msgid "Fields"
 msgstr "Bidang"
 
-#: packages/admin/src/components/WordPressImport.tsx:2349
+#: packages/admin/src/components/WordPressImport.tsx:2353
 msgid "Fields created:"
 msgstr "Field dibuat:"
 
@@ -5773,7 +5773,7 @@ msgid "File"
 msgstr "File"
 
 #. placeholder {0}: progress.current
-#: packages/admin/src/components/WordPressImport.tsx:2174
+#: packages/admin/src/components/WordPressImport.tsx:2178
 msgid "File {0}"
 msgstr "File {0}"
 
@@ -5925,7 +5925,7 @@ msgstr ""
 msgid "Fonts"
 msgstr "Font"
 
-#: packages/admin/src/components/WordPressImport.tsx:1414
+#: packages/admin/src/components/WordPressImport.tsx:1418
 msgid "For a complete import including drafts and all content, export from WordPress."
 msgstr "Untuk impor lengkap termasuk draf dan semua konten, ekspor dari WordPress."
 
@@ -5963,7 +5963,7 @@ msgid "From URL"
 msgstr ""
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:279
-#: packages/admin/src/components/WordPressImport.tsx:1173
+#: packages/admin/src/components/WordPressImport.tsx:1177
 msgid "Full"
 msgstr "Penuh"
 
@@ -6017,7 +6017,7 @@ msgstr "Beri passkey ini nama untuk mengidentifikasinya nanti."
 msgid "Go"
 msgstr "Go"
 
-#: packages/admin/src/components/WordPressImport.tsx:2434
+#: packages/admin/src/components/WordPressImport.tsx:2438
 #: packages/admin/src/router.tsx:3159
 msgid "Go to Dashboard"
 msgstr "Buka Dasbor"
@@ -6212,7 +6212,7 @@ msgstr ""
 msgid "How many"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1536
+#: packages/admin/src/components/WordPressImport.tsx:1540
 msgid "How to create an Application Password"
 msgstr "Cara membuat Kata Sandi Aplikasi"
 
@@ -6243,7 +6243,7 @@ msgstr ""
 msgid "https://example.com/image.jpg"
 msgstr "https://example.com/image.jpg"
 
-#: packages/admin/src/components/WordPressImport.tsx:1107
+#: packages/admin/src/components/WordPressImport.tsx:1111
 msgid "https://yoursite.com"
 msgstr "https://situsanda.com"
 
@@ -6345,12 +6345,12 @@ msgstr "Gambar"
 #: packages/admin/src/components/AdminCommandPalette.tsx:227
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:210
 #: packages/admin/src/components/Sidebar.tsx:483
-#: packages/admin/src/components/WordPressImport.tsx:756
+#: packages/admin/src/components/WordPressImport.tsx:758
 msgid "Import"
 msgstr "Impor"
 
 #. placeholder {0}: postType.name
-#: packages/admin/src/components/WordPressImport.tsx:1974
+#: packages/admin/src/components/WordPressImport.tsx:1978
 msgid "Import {0}"
 msgstr "Impor {0}"
 
@@ -6362,7 +6362,7 @@ msgstr ""
 msgid "Import a site package into this site while it is empty, overwriting its initial setup. Admin includes this; choose it instead of Admin to give an agent narrower access."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1382
+#: packages/admin/src/components/WordPressImport.tsx:1386
 msgid "Import all content directly including drafts, custom post types, ACF fields, and SEO data. No file download needed."
 msgstr "Impor semua konten langsung termasuk draf, tipe pos kustom, field ACF, dan data SEO. Tanpa perlu unduh file."
 
@@ -6370,11 +6370,11 @@ msgstr "Impor semua konten langsung termasuk draf, tipe pos kustom, field ACF, d
 msgid "Import an existing EmDash site"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2432
+#: packages/admin/src/components/WordPressImport.tsx:2436
 msgid "Import Another File"
 msgstr "Impor File Lain"
 
-#: packages/admin/src/components/WordPressImport.tsx:1192
+#: packages/admin/src/components/WordPressImport.tsx:1196
 msgid "Import Capabilities"
 msgstr "Kapabilitas Impor"
 
@@ -6383,31 +6383,31 @@ msgstr "Kapabilitas Impor"
 msgid "Import complete"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2320
+#: packages/admin/src/components/WordPressImport.tsx:2324
 msgid "Import Complete"
 msgstr "Impor Selesai"
 
-#: packages/admin/src/components/WordPressImport.tsx:2321
+#: packages/admin/src/components/WordPressImport.tsx:2325
 msgid "Import Completed with Errors"
 msgstr "Impor Selesai dengan Kesalahan"
 
-#: packages/admin/src/components/WordPressImport.tsx:1715
+#: packages/admin/src/components/WordPressImport.tsx:1719
 msgid "Import failed"
 msgstr "Impor gagal"
 
-#: packages/admin/src/components/WordPressImport.tsx:709
+#: packages/admin/src/components/WordPressImport.tsx:711
 msgid "Import from WordPress"
 msgstr "Impor dari WordPress"
 
-#: packages/admin/src/components/WordPressImport.tsx:2123
+#: packages/admin/src/components/WordPressImport.tsx:2127
 msgid "Import Media"
 msgstr "Impor Media"
 
-#: packages/admin/src/components/WordPressImport.tsx:2076
+#: packages/admin/src/components/WordPressImport.tsx:2080
 msgid "Import Media Files"
 msgstr "Impor File Media"
 
-#: packages/admin/src/components/WordPressImport.tsx:711
+#: packages/admin/src/components/WordPressImport.tsx:713
 msgid "Import posts, pages, and custom post types from WordPress."
 msgstr "Impor pos, halaman, dan tipe pos kustom dari WordPress."
 
@@ -6415,7 +6415,7 @@ msgstr "Impor pos, halaman, dan tipe pos kustom dari WordPress."
 msgid "Import requested by {requester}"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1830
+#: packages/admin/src/components/WordPressImport.tsx:1834
 msgid "Import site configuration from WordPress."
 msgstr "Impor konfigurasi situs dari WordPress."
 
@@ -6423,7 +6423,7 @@ msgstr "Impor konfigurasi situs dari WordPress."
 msgid "Import this package?"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1380
+#: packages/admin/src/components/WordPressImport.tsx:1384
 msgid "Import via EmDash Exporter"
 msgstr "Impor melalui Eksportir EmDash"
 
@@ -6431,7 +6431,7 @@ msgstr "Impor melalui Eksportir EmDash"
 msgid "Imported"
 msgstr "Diimpor"
 
-#: packages/admin/src/components/WordPressImport.tsx:2360
+#: packages/admin/src/components/WordPressImport.tsx:2364
 msgid "Imported by Collection"
 msgstr "Diimpor per Koleksi"
 
@@ -6440,7 +6440,7 @@ msgid "Importing"
 msgstr ""
 
 #. placeholder {0}: wpImportProgress.comments
-#: packages/admin/src/components/WordPressImport.tsx:921
+#: packages/admin/src/components/WordPressImport.tsx:924
 msgid "Importing comments... {0}"
 msgstr "Mengimpor komentar... {0}"
 
@@ -6448,30 +6448,34 @@ msgstr "Mengimpor komentar... {0}"
 msgid "Importing content"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:938
+#: packages/admin/src/components/WordPressImport.tsx:942
 msgid "Importing content..."
 msgstr "Mengimpor konten..."
 
 #. placeholder {0}: wpImportProgress.processed
-#: packages/admin/src/components/WordPressImport.tsx:919
+#: packages/admin/src/components/WordPressImport.tsx:922
 msgid "Importing content... {0}"
 msgstr "Mengimpor konten... {0}"
 
 #. placeholder {0}: wpImportProgress.processed
-#: packages/admin/src/components/WordPressImport.tsx:918
+#: packages/admin/src/components/WordPressImport.tsx:921
 msgid "Importing content... {0} of {totalSelectedPosts}"
 msgstr "Mengimpor konten... {0} dari {totalSelectedPosts}"
 
-#: packages/admin/src/components/WordPressImport.tsx:2155
+#: packages/admin/src/components/WordPressImport.tsx:2159
 msgid "Importing Media"
 msgstr "Mengimpor Media"
 
-#: packages/admin/src/components/WordPressImport.tsx:922
+#: packages/admin/src/components/WordPressImport.tsx:925
 msgid "Importing menus and site settings..."
 msgstr "Mengimpor menu dan pengaturan situs..."
 
 #: packages/admin/src/components/settings/transfer/labels.ts:63
 msgid "Importing menus, widgets, and settings"
+msgstr ""
+
+#: packages/admin/src/components/WordPressImport.tsx:926
+msgid "Importing reusable blocks..."
 msgstr ""
 
 #: packages/admin/src/components/settings/transfer/labels.ts:60
@@ -6499,7 +6503,7 @@ msgstr ""
 msgid "Include inferred bylines"
 msgstr "Sertakan byline tersirat"
 
-#: packages/admin/src/components/WordPressImport.tsx:1996
+#: packages/admin/src/components/WordPressImport.tsx:2000
 msgid "Incompatible"
 msgstr "Tidak Kompatibel"
 
@@ -6633,7 +6637,7 @@ msgstr "Pasang dan aktifkan plugin penyedia email untuk mengaktifkan fitur email
 msgid "Install blocked"
 msgstr "Pemasangan diblokir"
 
-#: packages/admin/src/components/WordPressImport.tsx:1057
+#: packages/admin/src/components/WordPressImport.tsx:1061
 msgid "Install the EmDash Exporter plugin on your WordPress site and generate a key under Tools → EmDash Migration."
 msgstr "Instal plugin EmDash Exporter di situs WordPress Anda dan buat kunci melalui Alat → Migrasi EmDash."
 
@@ -6822,7 +6826,7 @@ msgstr ""
 msgid "Keep this site’s: “{targetValue}”"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:934
+#: packages/admin/src/components/WordPressImport.tsx:938
 msgid "Keep this tab open. The import runs in small steps and can be safely re-run if interrupted."
 msgstr "Biarkan tab ini tetap terbuka. Impor berjalan dalam langkah-langkah kecil dan dapat dijalankan ulang dengan aman jika terhenti."
 
@@ -6919,7 +6923,7 @@ msgstr ""
 msgid "Learn more"
 msgstr "Pelajari selengkapnya"
 
-#: packages/admin/src/components/WordPressImport.tsx:2513
+#: packages/admin/src/components/WordPressImport.tsx:2517
 msgid "Leave unassigned"
 msgstr "Biarkan tidak ditetapkan"
 
@@ -7275,7 +7279,7 @@ msgstr "Keluar"
 msgid "Logo"
 msgstr "Logo"
 
-#: packages/admin/src/components/WordPressImport.tsx:1848
+#: packages/admin/src/components/WordPressImport.tsx:1852
 msgid "Logo & favicon"
 msgstr "Logo & favicon"
 
@@ -7364,12 +7368,12 @@ msgstr "Dikelola oleh penyedia media eksternal"
 msgid "Manual"
 msgstr "Manual"
 
-#: packages/admin/src/components/WordPressImport.tsx:2470
+#: packages/admin/src/components/WordPressImport.tsx:2474
 msgid "Map Authors"
 msgstr "Petakan Penulis"
 
 #. placeholder {0}: mapping.wpLogin
-#: packages/admin/src/components/WordPressImport.tsx:2518
+#: packages/admin/src/components/WordPressImport.tsx:2522
 msgid "Map WordPress user {0} to EmDash user"
 msgstr "Petakan pengguna WordPress {0} ke pengguna EmDash"
 
@@ -7445,9 +7449,9 @@ msgstr "MDX"
 #: packages/admin/src/components/settings/transfer/labels.ts:17
 #: packages/admin/src/components/settings/transfer/labels.ts:84
 #: packages/admin/src/components/Sidebar.tsx:408
-#: packages/admin/src/components/WordPressImport.tsx:770
-#: packages/admin/src/components/WordPressImport.tsx:1163
-#: packages/admin/src/components/WordPressImport.tsx:1350
+#: packages/admin/src/components/WordPressImport.tsx:772
+#: packages/admin/src/components/WordPressImport.tsx:1167
+#: packages/admin/src/components/WordPressImport.tsx:1354
 msgid "Media"
 msgstr "Media"
 
@@ -7456,7 +7460,7 @@ msgid "Media details"
 msgstr ""
 
 #. placeholder {0}: mediaResult.failed.length
-#: packages/admin/src/components/WordPressImport.tsx:2416
+#: packages/admin/src/components/WordPressImport.tsx:2420
 msgid "Media Errors ({0})"
 msgstr "Kesalahan Media ({0})"
 
@@ -7465,15 +7469,15 @@ msgstr "Kesalahan Media ({0})"
 msgid "Media folders"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2378
+#: packages/admin/src/components/WordPressImport.tsx:2382
 msgid "Media Import"
 msgstr "Impor Media"
 
-#: packages/admin/src/components/WordPressImport.tsx:2319
+#: packages/admin/src/components/WordPressImport.tsx:2323
 msgid "Media Import Complete"
 msgstr "Impor Media Selesai"
 
-#: packages/admin/src/components/WordPressImport.tsx:2330
+#: packages/admin/src/components/WordPressImport.tsx:2334
 msgid "Media import was skipped"
 msgstr "Impor media dilewati"
 
@@ -7590,12 +7594,12 @@ msgstr "Urutan menu telah diperbarui."
 #: packages/admin/src/components/MenuList.tsx:104
 #: packages/admin/src/components/settings/transfer/labels.ts:28
 #: packages/admin/src/components/Sidebar.tsx:422
-#: packages/admin/src/components/WordPressImport.tsx:1167
+#: packages/admin/src/components/WordPressImport.tsx:1171
 msgid "Menus"
 msgstr "Menu"
 
 #. placeholder {0}: navMenus.length
-#: packages/admin/src/components/WordPressImport.tsx:1783
+#: packages/admin/src/components/WordPressImport.tsx:1787
 msgid "Menus ({0})"
 msgstr "Menu ({0})"
 
@@ -7620,7 +7624,7 @@ msgstr "Konten tag meta untuk verifikasi Bing Webmaster Tools"
 msgid "Meta tag content for Google Search Console verification"
 msgstr "Konten tag meta untuk verifikasi Google Search Console"
 
-#: packages/admin/src/components/WordPressImport.tsx:1861
+#: packages/admin/src/components/WordPressImport.tsx:1865
 msgid "Meta titles, descriptions, and social images"
 msgstr "Judul meta, deskripsi, dan gambar sosial"
 
@@ -7628,7 +7632,7 @@ msgstr "Judul meta, deskripsi, dan gambar sosial"
 msgid "Migration guide"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1069
+#: packages/admin/src/components/WordPressImport.tsx:1073
 msgid "Migration key"
 msgstr "Kunci migrasi"
 
@@ -7954,7 +7958,7 @@ msgstr ""
 msgid "New byline field"
 msgstr "Bidang byline baru"
 
-#: packages/admin/src/components/WordPressImport.tsx:1998
+#: packages/admin/src/components/WordPressImport.tsx:2002
 msgid "New collection"
 msgstr "Koleksi baru"
 
@@ -8190,7 +8194,7 @@ msgstr "Tidak ada penyedia email yang dikonfigurasi"
 msgid "No email provider configured. Share this link manually."
 msgstr "Tidak ada penyedia email. Bagikan tautan ini secara manual."
 
-#: packages/admin/src/components/WordPressImport.tsx:2532
+#: packages/admin/src/components/WordPressImport.tsx:2536
 msgid "No EmDash users found"
 msgstr "Tidak ada pengguna EmDash yang ditemukan"
 
@@ -8498,7 +8502,7 @@ msgstr "Jumlah pos per halaman di tampilan daftar"
 msgid "Numbered List"
 msgstr "Daftar Bernomor"
 
-#: packages/admin/src/components/WordPressImport.tsx:512
+#: packages/admin/src/components/WordPressImport.tsx:514
 msgid "OAuth authorization requires HTTPS. Please use manual credentials."
 msgstr "Otorisasi OAuth memerlukan HTTPS. Gunakan kredensial manual."
 
@@ -8598,7 +8602,7 @@ msgstr ""
 msgid "Open Windows settings"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1550
+#: packages/admin/src/components/WordPressImport.tsx:1554
 msgid "Open WordPress Profile"
 msgstr "Buka Profil WordPress"
 
@@ -8646,11 +8650,11 @@ msgstr "Opsi (satu per baris)"
 msgid "Or browse files from your computer"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1606
+#: packages/admin/src/components/WordPressImport.tsx:1610
 msgid "Or click to browse. Accepts .xml files exported from WordPress."
 msgstr "Atau klik untuk menelusuri. Menerima file .xml yang diekspor dari WordPress."
 
-#: packages/admin/src/components/WordPressImport.tsx:1089
+#: packages/admin/src/components/WordPressImport.tsx:1093
 msgid "or connect by URL"
 msgstr "atau hubungkan dengan URL"
 
@@ -8660,11 +8664,11 @@ msgstr "atau hubungkan dengan URL"
 msgid "Or continue with"
 msgstr "Atau lanjutkan dengan"
 
-#: packages/admin/src/components/WordPressImport.tsx:1407
+#: packages/admin/src/components/WordPressImport.tsx:1411
 msgid "Or upload an export file"
 msgstr "Atau unggah file ekspor"
 
-#: packages/admin/src/components/WordPressImport.tsx:1125
+#: packages/admin/src/components/WordPressImport.tsx:1129
 msgid "or upload directly"
 msgstr "atau unggah langsung"
 
@@ -8741,7 +8745,7 @@ msgid "Page size"
 msgstr ""
 
 #: packages/admin/src/components/PluginManager.tsx:472
-#: packages/admin/src/components/WordPressImport.tsx:1344
+#: packages/admin/src/components/WordPressImport.tsx:1348
 msgid "Pages"
 msgstr "Halaman"
 
@@ -8767,7 +8771,7 @@ msgstr "Induk"
 msgid "Part of a redirect loop"
 msgstr "Bagian dari loop pengalihan"
 
-#: packages/admin/src/components/WordPressImport.tsx:1171
+#: packages/admin/src/components/WordPressImport.tsx:1175
 msgid "Partial"
 msgstr "Sebagian"
 
@@ -8831,7 +8835,7 @@ msgstr ""
 msgid "Passkeys require HTTPS or http://localhost (with your port); this hostname is not a secure browser context."
 msgstr "Passkey memerlukan HTTPS atau http://localhost (dengan port Anda); hostname ini bukan konteks browser yang aman."
 
-#: packages/admin/src/components/WordPressImport.tsx:1055
+#: packages/admin/src/components/WordPressImport.tsx:1059
 msgid "Paste your migration key"
 msgstr "Tempel kunci migrasi Anda"
 
@@ -8954,7 +8958,7 @@ msgstr "Masukkan alamat email yang valid"
 msgid "Please enter a valid URL"
 msgstr "Masukkan URL yang valid"
 
-#: packages/admin/src/components/WordPressImport.tsx:1200
+#: packages/admin/src/components/WordPressImport.tsx:1204
 msgid "Plugin"
 msgstr "Plugin"
 
@@ -9116,11 +9120,11 @@ msgstr ""
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:450
 #: packages/admin/src/components/RelationForm.tsx:301
-#: packages/admin/src/components/WordPressImport.tsx:1338
+#: packages/admin/src/components/WordPressImport.tsx:1342
 msgid "Posts"
 msgstr "Pos"
 
-#: packages/admin/src/components/WordPressImport.tsx:1162
+#: packages/admin/src/components/WordPressImport.tsx:1166
 msgid "Posts & Pages"
 msgstr "Pos & Halaman"
 
@@ -9132,6 +9136,10 @@ msgstr "Pos Per Halaman"
 msgid "Pre-release"
 msgstr "Pra-rilis"
 
+#: packages/admin/src/components/WordPressImport.tsx:918
+msgid "Preparing categories and tags..."
+msgstr ""
+
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:326
 msgid "Preparing registration..."
 msgstr "Menyiapkan pendaftaran..."
@@ -9140,7 +9148,7 @@ msgstr "Menyiapkan pendaftaran..."
 msgid "Preparing this site"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2195
+#: packages/admin/src/components/WordPressImport.tsx:2199
 msgid "Preparing to download files from WordPress..."
 msgstr "Menyiapkan pengunduhan file dari WordPress..."
 
@@ -9348,7 +9356,7 @@ msgstr "Edit cepat teks alternatif"
 msgid "Quote"
 msgstr "Kutipan"
 
-#: packages/admin/src/components/WordPressImport.tsx:1180
+#: packages/admin/src/components/WordPressImport.tsx:1184
 msgid "Raw meta"
 msgstr "Meta mentah"
 
@@ -9430,7 +9438,7 @@ msgstr ""
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:481
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:492
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:301
-#: packages/admin/src/components/WordPressImport.tsx:2002
+#: packages/admin/src/components/WordPressImport.tsx:2006
 msgid "Ready"
 msgstr "Siap"
 
@@ -9864,7 +9872,7 @@ msgstr "Wajibkan slug sebelum konten dapat dipublikasikan"
 msgid "Required"
 msgstr "Wajib"
 
-#: packages/admin/src/components/WordPressImport.tsx:2015
+#: packages/admin/src/components/WordPressImport.tsx:2019
 msgid "Required fields:"
 msgstr "Field wajib:"
 
@@ -10060,7 +10068,7 @@ msgstr "Blok konten yang dapat digunakan kembali yang dapat Anda sisipkan ke kon
 msgid "Reverted to published version"
 msgstr "Dikembalikan ke versi terbit"
 
-#: packages/admin/src/components/WordPressImport.tsx:742
+#: packages/admin/src/components/WordPressImport.tsx:744
 msgid "Review"
 msgstr "Tinjau"
 
@@ -10386,11 +10394,11 @@ msgstr ""
 msgid "Scheduled publishing needs attention"
 msgstr "Publikasi terjadwal perlu perhatian"
 
-#: packages/admin/src/components/WordPressImport.tsx:2338
+#: packages/admin/src/components/WordPressImport.tsx:2342
 msgid "Schema Changes"
 msgstr "Perubahan Skema"
 
-#: packages/admin/src/components/WordPressImport.tsx:1715
+#: packages/admin/src/components/WordPressImport.tsx:1719
 msgid "Schema preparation failed"
 msgstr "Persiapan skema gagal"
 
@@ -10849,7 +10857,7 @@ msgstr ""
 msgid "Select up to 50 posts to add a tag."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1748
+#: packages/admin/src/components/WordPressImport.tsx:1752
 msgid "Select which content types to import."
 msgstr "Pilih tipe konten mana yang akan diimpor."
 
@@ -10943,7 +10951,7 @@ msgstr ""
 msgid "SEO Settings"
 msgstr "Pengaturan SEO"
 
-#: packages/admin/src/components/WordPressImport.tsx:1859
+#: packages/admin/src/components/WordPressImport.tsx:1863
 msgid "SEO settings (Yoast)"
 msgstr "Pengaturan SEO (Yoast)"
 
@@ -11014,7 +11022,7 @@ msgstr "Mengatur..."
 #: packages/admin/src/components/PluginManager.tsx:530
 #: packages/admin/src/components/Settings.tsx:46
 #: packages/admin/src/components/Sidebar.tsx:487
-#: packages/admin/src/components/WordPressImport.tsx:1827
+#: packages/admin/src/components/WordPressImport.tsx:1831
 msgid "Settings"
 msgstr "Pengaturan"
 
@@ -11178,7 +11186,7 @@ msgstr ""
 msgid "Site Identity"
 msgstr "Identitas Situs"
 
-#: packages/admin/src/components/WordPressImport.tsx:2286
+#: packages/admin/src/components/WordPressImport.tsx:2290
 msgid "site identity applied (title, tagline, logo)"
 msgstr "identitas situs diterapkan (judul, slogan, logo)"
 
@@ -11201,7 +11209,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaUsedIn.tsx:298
 #: packages/admin/src/components/SetupWizard.tsx:405
-#: packages/admin/src/components/WordPressImport.tsx:1169
+#: packages/admin/src/components/WordPressImport.tsx:1173
 msgid "Site Settings"
 msgstr "Pengaturan Situs"
 
@@ -11214,7 +11222,7 @@ msgstr ""
 msgid "Site Title"
 msgstr "Judul Situs"
 
-#: packages/admin/src/components/WordPressImport.tsx:1839
+#: packages/admin/src/components/WordPressImport.tsx:1843
 msgid "Site title & tagline"
 msgstr "Judul & tagline situs"
 
@@ -11247,11 +11255,11 @@ msgstr ""
 msgid "Size:"
 msgstr "Ukuran:"
 
-#: packages/admin/src/components/WordPressImport.tsx:2120
+#: packages/admin/src/components/WordPressImport.tsx:2124
 msgid "Skip Media Import"
 msgstr "Lewati Impor Media"
 
-#: packages/admin/src/components/WordPressImport.tsx:2145
+#: packages/admin/src/components/WordPressImport.tsx:2149
 msgid "Skipped"
 msgstr "Dilewati"
 
@@ -11324,7 +11332,7 @@ msgstr ""
 msgid "Some content may not appear here yet."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1876
+#: packages/admin/src/components/WordPressImport.tsx:1880
 msgid "Some content types cannot be imported"
 msgstr "Beberapa tipe konten tidak dapat diimpor"
 
@@ -11423,7 +11431,7 @@ msgstr ""
 msgid "Start import"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1938
+#: packages/admin/src/components/WordPressImport.tsx:1942
 msgid "Start Import"
 msgstr "Mulai Impor"
 
@@ -11502,11 +11510,11 @@ msgstr "Disimpan per lokal - setiap terjemahan byline memiliki nilainya sendiri.
 msgid "Strikethrough"
 msgstr "Coret"
 
-#: packages/admin/src/components/WordPressImport.tsx:1768
+#: packages/admin/src/components/WordPressImport.tsx:1772
 msgid "Structure"
 msgstr "Struktur"
 
-#: packages/admin/src/components/WordPressImport.tsx:1182
+#: packages/admin/src/components/WordPressImport.tsx:1186
 msgid "Structured"
 msgstr "Terstruktur"
 
@@ -11607,7 +11615,7 @@ msgid "Tags"
 msgstr "Tag"
 
 #. placeholder {0}: analysis.tags
-#: packages/admin/src/components/WordPressImport.tsx:1813
+#: packages/admin/src/components/WordPressImport.tsx:1817
 msgid "Tags ({0})"
 msgstr "Tag ({0})"
 
@@ -11778,7 +11786,7 @@ msgstr "Perangkat tidak akan diberikan akses."
 msgid "The download stopped"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1878
+#: packages/admin/src/components/WordPressImport.tsx:1882
 msgid "The existing collection has fields with incompatible types."
 msgstr "Koleksi yang ada memiliki field dengan tipe tidak kompatibel."
 
@@ -11812,6 +11820,14 @@ msgstr ""
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:433
 msgid "The import can’t start until these are resolved."
+msgstr ""
+
+#: packages/admin/src/lib/api/import.ts:467
+msgid "The import did not return a completion cursor"
+msgstr ""
+
+#: packages/admin/src/lib/api/import.ts:452
+msgid "The import did not return a preparation cursor"
 msgstr ""
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:513
@@ -12138,7 +12154,7 @@ msgstr ""
 msgid "This device is requesting permission to use:"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1077
+#: packages/admin/src/components/WordPressImport.tsx:1081
 msgid "This doesn't look like a valid migration key. Generate a new one in the plugin and paste the full string starting with \"em1.\"."
 msgstr "Ini tidak tampak seperti kunci migrasi yang valid. Buat yang baru di plugin dan tempel string lengkap yang diawali dengan \"em1.\"."
 
@@ -12247,7 +12263,7 @@ msgstr ""
 msgid "This is a custom section."
 msgstr "Ini adalah bagian kustom."
 
-#: packages/admin/src/components/WordPressImport.tsx:1324
+#: packages/admin/src/components/WordPressImport.tsx:1328
 msgid "This is a WordPress site."
 msgstr "Ini adalah situs WordPress."
 
@@ -12267,7 +12283,7 @@ msgstr "Tautan ini kedaluwarsa dalam 7 hari dan hanya dapat digunakan sekali."
 msgid "This link expires in 7 days."
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:939
+#: packages/admin/src/components/WordPressImport.tsx:943
 msgid "This may take a while for large exports."
 msgstr "Proses ini mungkin memerlukan waktu untuk ekspor berukuran besar."
 
@@ -12662,7 +12678,7 @@ msgstr "Coba sesuaikan pencarian atau filter Anda."
 msgid "Try again"
 msgstr "Coba lagi"
 
-#: packages/admin/src/components/WordPressImport.tsx:1598
+#: packages/admin/src/components/WordPressImport.tsx:1602
 msgid "Try Again"
 msgstr "Coba Lagi"
 
@@ -12687,8 +12703,8 @@ msgstr "Coba nama berkas lain atau bersihkan pencarian Anda."
 msgid "Try another filename, or clear your search and filters."
 msgstr "Coba nama berkas lain, atau bersihkan pencarian dan filter Anda."
 
-#: packages/admin/src/components/WordPressImport.tsx:1302
-#: packages/admin/src/components/WordPressImport.tsx:1424
+#: packages/admin/src/components/WordPressImport.tsx:1306
+#: packages/admin/src/components/WordPressImport.tsx:1428
 msgid "Try Another URL"
 msgstr "Coba URL Lain"
 
@@ -12738,7 +12754,7 @@ msgid "Type"
 msgstr "Tipe"
 
 #. placeholder {0}: status.existingType
-#: packages/admin/src/components/WordPressImport.tsx:2034
+#: packages/admin/src/components/WordPressImport.tsx:2038
 msgid "Type mismatch ({0})"
 msgstr "Ketidakcocokan tipe ({0})"
 
@@ -12930,7 +12946,7 @@ msgstr "Diperbarui"
 msgid "Updated At"
 msgstr "Diperbarui Pada"
 
-#: packages/admin/src/components/WordPressImport.tsx:964
+#: packages/admin/src/components/WordPressImport.tsx:968
 msgid "Updating content URLs..."
 msgstr "Memperbarui URL konten..."
 
@@ -12955,7 +12971,7 @@ msgstr "Unggah"
 msgid "Upload a file to get started"
 msgstr "Unggah file untuk memulai"
 
-#: packages/admin/src/components/WordPressImport.tsx:1407
+#: packages/admin/src/components/WordPressImport.tsx:1411
 msgid "Upload an export file"
 msgstr "Unggah file ekspor"
 
@@ -12972,8 +12988,8 @@ msgstr "Unggah dan hapus media"
 msgid "Upload and manage media"
 msgstr "Mengunggah dan mengelola media"
 
-#: packages/admin/src/components/WordPressImport.tsx:1300
-#: packages/admin/src/components/WordPressImport.tsx:1421
+#: packages/admin/src/components/WordPressImport.tsx:1304
+#: packages/admin/src/components/WordPressImport.tsx:1425
 msgid "Upload Export File"
 msgstr "Unggah File Ekspor"
 
@@ -13021,7 +13037,7 @@ msgstr "Unggah ke {0}"
 msgid "Upload to {providerName}"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1136
+#: packages/admin/src/components/WordPressImport.tsx:1140
 msgid "Upload WordPress export file"
 msgstr "Unggah file ekspor WordPress"
 
@@ -13035,7 +13051,7 @@ msgstr "Diunggah:"
 
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:209
 #: packages/admin/src/components/MediaUploadDialog.tsx:78
-#: packages/admin/src/components/WordPressImport.tsx:2143
+#: packages/admin/src/components/WordPressImport.tsx:2147
 msgid "Uploading"
 msgstr "Mengunggah"
 
@@ -13381,11 +13397,11 @@ msgid "We checked before opening the browser's passkey prompt so you can choose 
 msgstr ""
 
 #. placeholder {0}: result.url
-#: packages/admin/src/components/WordPressImport.tsx:1282
+#: packages/admin/src/components/WordPressImport.tsx:1286
 msgid "We couldn't connect to a WordPress site at {0}. This could mean the site isn't WordPress, the REST API is disabled, or the site isn't accessible."
 msgstr "Kami tidak dapat terhubung ke situs WordPress di {0}. Ini bisa berarti situs bukan WordPress, REST API yang dinonaktifkan, atau situs tidak dapat diakses."
 
-#: packages/admin/src/components/WordPressImport.tsx:1102
+#: packages/admin/src/components/WordPressImport.tsx:1106
 msgid "We'll check what import options are available for your site."
 msgstr "Kami akan memeriksa opsi impor apa yang tersedia untuk situs Anda."
 
@@ -13432,7 +13448,7 @@ msgstr ""
 msgid "What happens next?"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:2107
+#: packages/admin/src/components/WordPressImport.tsx:2111
 msgid "What happens when you import:"
 msgstr "Yang terjadi saat Anda mengimpor:"
 
@@ -13456,7 +13472,7 @@ msgstr ""
 msgid "What will be imported"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1890
+#: packages/admin/src/components/WordPressImport.tsx:1894
 msgid "What will happen when you import"
 msgstr "Yang akan terjadi saat Anda mengimpor"
 
@@ -13576,7 +13592,7 @@ msgstr "Widget diperbarui"
 #: packages/admin/src/components/settings/transfer/labels.ts:91
 #: packages/admin/src/components/Sidebar.tsx:429
 #: packages/admin/src/components/Widgets.tsx:388
-#: packages/admin/src/components/WordPressImport.tsx:1175
+#: packages/admin/src/components/WordPressImport.tsx:1179
 msgid "Widgets"
 msgstr "Widget"
 
@@ -13593,7 +13609,7 @@ msgstr ""
 msgid "Will be cleared on save"
 msgstr "Akan dibersihkan saat disimpan"
 
-#: packages/admin/src/components/WordPressImport.tsx:2030
+#: packages/admin/src/components/WordPressImport.tsx:2034
 msgid "Will create"
 msgstr "Akan membuat"
 
@@ -13617,7 +13633,7 @@ msgstr "Tanpa penyedia email, tautan undangan harus dibagikan secara manual."
 msgid "WordPress authorization was rejected"
 msgstr "Otorisasi WordPress ditolak"
 
-#: packages/admin/src/components/WordPressImport.tsx:1492
+#: packages/admin/src/components/WordPressImport.tsx:1496
 msgid "WordPress Username"
 msgstr "Nama Pengguna WordPress"
 
@@ -13637,7 +13653,7 @@ msgstr "Tulis konten widget..."
 msgid "Writing the file index"
 msgstr ""
 
-#: packages/admin/src/components/WordPressImport.tsx:1199
+#: packages/admin/src/components/WordPressImport.tsx:1203
 msgid "WXR File"
 msgstr "File WXR"
 
@@ -13645,7 +13661,7 @@ msgstr "File WXR"
 msgid "XML"
 msgstr "XML"
 
-#: packages/admin/src/components/WordPressImport.tsx:1513
+#: packages/admin/src/components/WordPressImport.tsx:1517
 msgid "xxxx xxxx xxxx xxxx xxxx xxxx"
 msgstr "xxxx xxxx xxxx xxxx xxxx xxxx"
 
@@ -13664,7 +13680,7 @@ msgstr "Tahunan"
 msgid "Yes"
 msgstr "Ya"
 
-#: packages/admin/src/components/WordPressImport.tsx:1178
+#: packages/admin/src/components/WordPressImport.tsx:1182
 msgid "Yoast/RankMath"
 msgstr "Yoast/RankMath"
 
@@ -13747,7 +13763,7 @@ msgstr "Anda akan bergabung sebagai <0>{0}</0>"
 msgid "You'll be prompted to use your device's biometric authentication, security key, or PIN."
 msgstr "Anda akan diminta menggunakan autentikasi biometrik, kunci keamanan, atau PIN perangkat Anda."
 
-#: packages/admin/src/components/WordPressImport.tsx:1385
+#: packages/admin/src/components/WordPressImport.tsx:1389
 msgid "You'll be redirected to WordPress to authorize the connection."
 msgstr "Anda akan dialihkan ke WordPress untuk mengotorisasi koneksi."
 
@@ -13867,7 +13883,7 @@ msgid "Your unsaved media changes will be lost."
 msgstr "Perubahan media Anda yang belum disimpan akan hilang."
 
 #. placeholder {0}: attachments.count
-#: packages/admin/src/components/WordPressImport.tsx:2078
+#: packages/admin/src/components/WordPressImport.tsx:2082
 msgid "Your WordPress export contains {0} media files."
 msgstr "Ekspor WordPress Anda berisi {0} file media."
 
