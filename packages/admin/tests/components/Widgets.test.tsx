@@ -301,8 +301,13 @@ describe("Widgets", () => {
 
 		await screen.getByRole("button", { name: "Edit settings for Recent Posts" }).click();
 
-		// Content widget should show the Save button and Title input in the editor
-		await expect.element(screen.getByText("Save")).toBeInTheDocument();
+		await vi.waitFor(() => {
+			expect(
+				screen.container.querySelector(
+					'[data-emdash-editor-surface] .ProseMirror[contenteditable="true"]',
+				),
+			).not.toBeNull();
+		});
 	});
 
 	it("menu widget editor shows menu select", async () => {
