@@ -382,6 +382,35 @@ describe("ContentList", () => {
 			expect(screen.getByText("Pending changes").query()).toBeNull();
 		});
 
+		it("does not show pending badge for a never-published scheduled entry with a draft revision", async () => {
+			const items = [
+				makeItem({
+					id: "1",
+					status: "scheduled",
+					scheduledAt: "2099-01-01T00:00:00Z",
+					draftRevisionId: "rev_draft",
+					liveRevisionId: null,
+				}),
+			];
+			const screen = await render(<ContentList {...defaultProps} items={items} />);
+			await expect.element(screen.getByText("Scheduled")).toBeInTheDocument();
+			expect(screen.getByText("Pending changes").query()).toBeNull();
+		});
+
+		it("does not show pending badge for a never-published draft with a draft revision", async () => {
+			const items = [
+				makeItem({
+					id: "1",
+					status: "draft",
+					draftRevisionId: "rev_draft",
+					liveRevisionId: null,
+				}),
+			];
+			const screen = await render(<ContentList {...defaultProps} items={items} />);
+			await expect.element(screen.getByText("Draft")).toBeInTheDocument();
+			expect(screen.getByText("Pending changes").query()).toBeNull();
+		});
+
 		it("renders unknown status names without treating object properties as lifecycle states", async () => {
 			const items = [makeItem({ id: "1", status: "toString" })];
 			const screen = await render(<ContentList {...defaultProps} items={items} />);

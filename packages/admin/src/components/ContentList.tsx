@@ -1345,7 +1345,11 @@ function ContentListItem({
 			<td className="px-4 py-3">
 				<StatusBadge
 					status={item.status}
-					hasPendingChanges={!!item.draftRevisionId && item.draftRevisionId !== item.liveRevisionId}
+					hasPendingChanges={
+						!!item.liveRevisionId &&
+						!!item.draftRevisionId &&
+						item.draftRevisionId !== item.liveRevisionId
+					}
 				/>
 			</td>
 			{showLocale && (
