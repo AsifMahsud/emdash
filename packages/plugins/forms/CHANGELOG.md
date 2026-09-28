@@ -1,5 +1,9 @@
 # @emdash-cms/plugin-forms
 
+## 0.2.9
+
+No changes in this release.
+
 ## 0.2.9-rc.0
 
 ### Patch Changes
