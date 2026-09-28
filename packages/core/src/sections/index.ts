@@ -9,7 +9,7 @@ import type { Kysely } from "kysely";
 import { encodeCursor, decodeCursor, type FindManyResult } from "../database/repositories/types.js";
 import type { Database } from "../database/types.js";
 import { getDb } from "../loader.js";
-import { INTERNAL_MEDIA_PREFIX } from "../media/normalize.js";
+import { localMediaFileUrl } from "../media/url.js";
 import type { Section, SectionRow, GetSectionsOptions } from "./types.js";
 
 export type {
@@ -195,8 +195,7 @@ async function rowToSection(row: SectionRow, db: Kysely<Database>): Promise<Sect
 		}
 	}
 
-	// Preview image, as the media file route the admin can load it from
-	// (`/_emdash/media/<key>` is not served by anything).
+	// Build the preview URL from the served media file route.
 	let previewUrl: string | undefined;
 	if (row.preview_media_id) {
 		const media = await db
@@ -206,7 +205,7 @@ async function rowToSection(row: SectionRow, db: Kysely<Database>): Promise<Sect
 			.executeTakeFirst();
 
 		if (media) {
-			previewUrl = `${INTERNAL_MEDIA_PREFIX}${media.storage_key}`;
+			previewUrl = localMediaFileUrl(media.storage_key);
 		}
 	}
 

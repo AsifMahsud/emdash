@@ -80,6 +80,40 @@ describe("section preview URL", () => {
 		expect(listed?.previewUrl).toBe(`${INTERNAL_MEDIA_PREFIX}${STORAGE_KEY}`);
 	});
 
+	it("encodes a folder-style storage key segment by segment", async () => {
+		const now = new Date().toISOString();
+		await db
+			.insertInto("media")
+			.values({
+				id: "media-section-preview-folder",
+				filename: "hero preview.png",
+				mime_type: "image/png",
+				storage_key: "sections/hero preview#1.png",
+				status: "ready",
+			})
+			.execute();
+		await db
+			.insertInto("_emdash_sections")
+			.values({
+				id: "section-folder-preview",
+				slug: "hero-folder-preview",
+				title: "Hero with folder preview",
+				description: null,
+				keywords: null,
+				content: JSON.stringify([]),
+				preview_media_id: "media-section-preview-folder",
+				source: "user",
+				theme_id: null,
+				created_at: now,
+				updated_at: now,
+			})
+			.execute();
+
+		const section = await getSectionWithDb("hero-folder-preview", db);
+
+		expect(section?.previewUrl).toBe(`${INTERNAL_MEDIA_PREFIX}sections/hero%20preview%231.png`);
+	});
+
 	it("leaves the preview URL unset when the section has no preview image", async () => {
 		const section = await getSectionWithDb("hero-without-preview", db);
 
