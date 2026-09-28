@@ -1,5 +1,9 @@
 # @emdash-cms/plugin-color
 
+## 0.2.1
+
+No changes in this release.
+
 ## 0.2.1-rc.0
 
 ### Patch Changes

@@ -1,5 +1,9 @@
 # @emdash-cms/plugin-audit-log
 
+## 0.2.3
+
+No changes in this release.
+
 ## 0.2.3-rc.0
 
 ### Patch Changes

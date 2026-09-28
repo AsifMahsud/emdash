@@ -1,5 +1,9 @@
 # @emdash-cms/plugin-field-kit
 
+## 0.1.2
+
+No changes in this release.
+
 ## 0.1.2-rc.0
 
 ### Patch Changes
