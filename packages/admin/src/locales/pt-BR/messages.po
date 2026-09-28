@@ -137,7 +137,7 @@ msgid "{0, plural, one {# link} other {# links}}"
 msgstr ""
 
 #. placeholder {0}: tagMatches?.matchCount ?? 0
-#: packages/admin/src/components/TaxonomyManager.tsx:1388
+#: packages/admin/src/components/TaxonomyManager.tsx:1389
 msgid "{0, plural, one {# matching tag} other {# matching tags}}"
 msgstr ""
 
@@ -305,7 +305,7 @@ msgid "{0} banner"
 msgstr "Banner de {0}"
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:439
+#: packages/admin/src/components/TaxonomyManager.tsx:440
 msgid "{0} can't be moved here — its parent has no translation in this locale, so this list isn't the group it belongs to."
 msgstr "{0} não pode ser movido para cá: o ascendente não tem tradução neste idioma do conteúdo, então esta lista não é o grupo ao qual ele pertence."
 
@@ -315,7 +315,7 @@ msgid "{0} detected"
 msgstr "{0} detectado"
 
 #. placeholder {0}: term.locale.toUpperCase()
-#: packages/admin/src/components/TaxonomySidebar.tsx:619
+#: packages/admin/src/components/TaxonomySidebar.tsx:620
 msgid "{0} fallback"
 msgstr "{0} como alternativa"
 
@@ -435,7 +435,7 @@ msgid "{0} system + {1} custom {2}"
 msgstr "{0} {2} do sistema + {1} personalizados"
 
 #. placeholder {0}: taxonomy.label
-#: packages/admin/src/components/TaxonomySidebar.tsx:679
+#: packages/admin/src/components/TaxonomySidebar.tsx:680
 msgid "{0} updated"
 msgstr "Atualizado: {0}"
 
@@ -454,12 +454,12 @@ msgstr ""
 msgid "{0}/160 characters"
 msgstr "{0}/160 caracteres"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:426
+#: packages/admin/src/components/BulkTagDialog.tsx:427
 msgid "{added} posts updated"
 msgstr ""
 
 #. placeholder {0}: failed.length
-#: packages/admin/src/components/BulkTagDialog.tsx:423
+#: packages/admin/src/components/BulkTagDialog.tsx:424
 msgid "{added} updated · {0} failed"
 msgstr ""
 
@@ -512,7 +512,7 @@ msgstr ""
 
 #. placeholder {0}: hasMore ? "+" : ""
 #. placeholder {1}: hasMore ? "+" : ""
-#: packages/admin/src/components/ContentList.tsx:1273
+#: packages/admin/src/components/ContentList.tsx:1274
 msgid "{filteredCount, plural, one {#{0} item} other {#{1} items}}"
 msgstr "{filteredCount, plural, one {#{0} item} other {#{1} itens}}"
 
@@ -543,11 +543,11 @@ msgstr "{label} movido para a posição {0} de {1}."
 msgid "{label} moved to position {0}."
 msgstr "{label} movido para a posição {0}."
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:532
+#: packages/admin/src/components/TaxonomySidebar.tsx:533
 msgid "{label} options"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1262
+#: packages/admin/src/components/ContentList.tsx:1263
 msgid "{matchCount, plural, one {# item matching \"{searchQuery}\"} other {# items matching \"{searchQuery}\"}}"
 msgstr "{matchCount, plural, one {# item correspondente a \"{searchQuery}\"} other {# itens correspondentes a \"{searchQuery}\"}}"
 
@@ -649,7 +649,7 @@ msgstr "{pluginName} requer as seguintes permissões:"
 msgid "{pluginName} Settings"
 msgstr "Configurações de {pluginName}"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:487
+#: packages/admin/src/components/BulkTagDialog.tsx:488
 msgid "{plural} go live now; draft edits stay unpublished."
 msgstr ""
 
@@ -670,7 +670,7 @@ msgid "{readingTime, plural, one {# min read} other {# min read}}"
 msgstr "{readingTime, plural, one {# min de leitura} other {# min de leitura}}"
 
 #. placeholder {0}: results.length
-#: packages/admin/src/components/BulkTagDialog.tsx:438
+#: packages/admin/src/components/BulkTagDialog.tsx:439
 msgid "{ready} of {0} ready"
 msgstr ""
 
@@ -698,11 +698,11 @@ msgstr ""
 msgid "{rows} × {columns} table pasted"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:506
+#: packages/admin/src/components/ContentList.tsx:507
 msgid "{selectedCount, plural, one {# selected} other {# selected}}"
 msgstr "{selectedCount, plural, one {# selecionado} other {# selecionados}}"
 
-#: packages/admin/src/components/ContentList.tsx:580
+#: packages/admin/src/components/ContentList.tsx:581
 msgid "{selectedCount, plural, one {Move # item to trash? You can restore it later.} other {Move # items to trash? You can restore them later.}}"
 msgstr "{selectedCount, plural, one {Mover # item para a lixeira? Você pode restaurá-lo depois.} other {Mover # itens para a lixeira? Você pode restaurá-los depois.}}"
 
@@ -710,7 +710,7 @@ msgstr "{selectedCount, plural, one {Mover # item para a lixeira? Você pode res
 msgid "{subLabel} ({label}, item {position})"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1268
+#: packages/admin/src/components/ContentList.tsx:1269
 msgid "{total, plural, one {# item} other {# items}}"
 msgstr "{total, plural, one {# item} other {# itens}}"
 
@@ -780,7 +780,7 @@ msgstr ""
 msgid "<0>{name}</0> now holds this entry, so your changes are no longer being saved. Take it back to carry on."
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:425
+#: packages/admin/src/components/BulkTagDialog.tsx:426
 msgid "1 post updated"
 msgstr ""
 
@@ -958,7 +958,7 @@ msgstr ""
 msgid "A short description of your site"
 msgstr "Uma breve descrição do seu site"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:761
+#: packages/admin/src/components/TaxonomySidebar.tsx:762
 msgid "A source and target locale are required"
 msgstr "Um idioma de origem e um de destino são obrigatórios"
 
@@ -1041,12 +1041,12 @@ msgid "ACF Fields"
 msgstr "Campos do ACF"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:337
-#: packages/admin/src/components/ContentList.tsx:702
-#: packages/admin/src/components/ContentList.tsx:834
+#: packages/admin/src/components/ContentList.tsx:703
+#: packages/admin/src/components/ContentList.tsx:835
 #: packages/admin/src/components/ContentTypeList.tsx:210
 #: packages/admin/src/components/RelationList.tsx:102
-#: packages/admin/src/components/TaxonomyManager.tsx:1409
-#: packages/admin/src/components/TaxonomyManager.tsx:1462
+#: packages/admin/src/components/TaxonomyManager.tsx:1410
+#: packages/admin/src/components/TaxonomyManager.tsx:1463
 #: packages/admin/src/routes/byline-schema.tsx:249
 #: packages/admin/src/routes/bylines.tsx:535
 msgid "Actions"
@@ -1074,26 +1074,26 @@ msgstr ""
 msgid "Add"
 msgstr "Adicionar"
 
-#. placeholder {0}: (soleBulkTagTaxonomy.labelSingular || soleBulkTagTaxonomy.label).toLowerCase()
 #. placeholder {0}: field.item_label
+#. placeholder {0}: inlineLabel(soleBulkTagTaxonomy.labelSingular || soleBulkTagTaxonomy.label, lingui.locale)
 #. placeholder {0}: option.byline.displayName
 #: packages/admin/src/components/BylineCreditsEditor.tsx:503
-#: packages/admin/src/components/ContentList.tsx:553
+#: packages/admin/src/components/ContentList.tsx:554
 #: packages/admin/src/components/PortableTextEditor.tsx:2414
-#: packages/admin/src/components/TaxonomyManager.tsx:755
-#: packages/admin/src/components/TaxonomyManager.tsx:1329
+#: packages/admin/src/components/TaxonomyManager.tsx:756
+#: packages/admin/src/components/TaxonomyManager.tsx:1330
 msgid "Add {0}"
 msgstr "Adicionar {0}"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:562
+#: packages/admin/src/components/BulkTagDialog.tsx:563
 msgid "Add {singularLower} to {ready} posts"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:561
+#: packages/admin/src/components/BulkTagDialog.tsx:562
 msgid "Add {singularLower} to 1 post"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:263
+#: packages/admin/src/components/BulkTagDialog.tsx:264
 msgid "Add {singularLower} to posts"
 msgstr ""
 
@@ -1208,7 +1208,7 @@ msgstr "Adicione links para construir seu menu de navegação"
 msgid "Add MIME type or extension"
 msgstr "Adicionar tipo MIME ou extensão"
 
-#: packages/admin/src/components/ContentList.tsx:444
+#: packages/admin/src/components/ContentList.tsx:445
 msgid "Add New"
 msgstr "Adicionar novo"
 
@@ -1256,16 +1256,16 @@ msgstr "Adicionar campos de metadados de SEO (título, descrição, imagem) e in
 msgid "Add Sub-Field"
 msgstr "Adicionar subcampo"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1313
+#: packages/admin/src/components/TaxonomyManager.tsx:1314
 msgid "Add tag"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:554
+#: packages/admin/src/components/ContentList.tsx:555
 msgid "Add term"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1320
-#: packages/admin/src/components/TaxonomyManager.tsx:1336
+#: packages/admin/src/components/TaxonomyManager.tsx:1321
+#: packages/admin/src/components/TaxonomyManager.tsx:1337
 msgid "Add to posts"
 msgstr ""
 
@@ -1277,7 +1277,7 @@ msgstr "Adicionar área de widgets"
 msgid "Add your social media profiles. These are available to your site's theme and can be displayed in headers, footers, or author bios."
 msgstr "Adicione seus perfis de redes sociais. Eles estão disponíveis para o tema do seu site e podem ser exibidos em cabeçalhos, rodapés ou biografias de autores."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:65
+#: packages/admin/src/components/BulkTagDialog.tsx:66
 msgid "Added"
 msgstr ""
 
@@ -1286,7 +1286,7 @@ msgstr ""
 msgid "Adding..."
 msgstr "Adicionando..."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:559
+#: packages/admin/src/components/BulkTagDialog.tsx:560
 msgid "Adding…"
 msgstr ""
 
@@ -1367,12 +1367,12 @@ msgstr "Alinhar à direita"
 msgid "Alignment"
 msgstr "Alinhamento"
 
-#: packages/admin/src/components/ContentList.tsx:456
+#: packages/admin/src/components/ContentList.tsx:457
 msgid "All"
 msgstr "Todos"
 
-#: packages/admin/src/components/ContentList.tsx:984
-#: packages/admin/src/components/ContentList.tsx:988
+#: packages/admin/src/components/ContentList.tsx:985
+#: packages/admin/src/components/ContentList.tsx:989
 msgid "All authors"
 msgstr "Todos os autores"
 
@@ -1410,7 +1410,7 @@ msgstr "Todas as funções"
 msgid "All sources"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:923
+#: packages/admin/src/components/ContentList.tsx:924
 #: packages/admin/src/components/Redirects.tsx:391
 msgid "All statuses"
 msgstr "Todos os status"
@@ -1454,7 +1454,7 @@ msgstr "Domínios permitidos"
 msgid "Allowed types"
 msgstr "Tipos permitidos"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:67
+#: packages/admin/src/components/BulkTagDialog.tsx:68
 msgid "Already assigned or duplicate"
 msgstr ""
 
@@ -1546,8 +1546,8 @@ msgstr ""
 #: packages/admin/src/components/settings/SocialSettings.tsx:111
 #: packages/admin/src/components/settings/SocialSettings.tsx:112
 #: packages/admin/src/components/settings/TransferSettings.tsx:85
-#: packages/admin/src/components/TaxonomySidebar.tsx:686
-#: packages/admin/src/components/TaxonomySidebar.tsx:782
+#: packages/admin/src/components/TaxonomySidebar.tsx:687
+#: packages/admin/src/components/TaxonomySidebar.tsx:783
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:114
 #: packages/admin/src/router.tsx:536
 #: packages/admin/src/router.tsx:551
@@ -1688,7 +1688,7 @@ msgstr ""
 msgid "Arbitrary JSON data"
 msgstr "Dados JSON arbitrários"
 
-#: packages/admin/src/components/ContentList.tsx:927
+#: packages/admin/src/components/ContentList.tsx:928
 #: packages/admin/src/components/ContentStatusBadge.tsx:65
 msgid "Archived"
 msgstr "Arquivado"
@@ -1846,7 +1846,7 @@ msgstr "Automático (alteração de slug)"
 msgid "Auto-approve authenticated users"
 msgstr "Aprovar automaticamente usuários autenticados"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:791
+#: packages/admin/src/components/TaxonomyManager.tsx:792
 msgid "Auto-generated from name (you can edit)"
 msgstr "Gerado automaticamente a partir do nome (você pode editar)"
 
@@ -1877,7 +1877,7 @@ msgid "Available bylines"
 msgstr "Créditos disponíveis"
 
 #. placeholder {0}: assignment.availableLocales.map((locale) => locale.toUpperCase()).join(", ")
-#: packages/admin/src/components/TaxonomySidebar.tsx:845
+#: packages/admin/src/components/TaxonomySidebar.tsx:846
 msgid "Available in {0}"
 msgstr "Disponível em {0}"
 
@@ -1898,7 +1898,7 @@ msgstr "Avatar"
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:665
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:702
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:748
-#: packages/admin/src/components/BulkTagDialog.tsx:498
+#: packages/admin/src/components/BulkTagDialog.tsx:499
 #: packages/admin/src/components/editor/BlockMenu.tsx:266
 #: packages/admin/src/components/FieldEditor.tsx:651
 #: packages/admin/src/components/MediaDetailPanel.tsx:1793
@@ -2203,15 +2203,15 @@ msgstr "Pode publicar seu próprio conteúdo"
 msgid "Can view content"
 msgstr "Pode visualizar conteúdo"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:323
-#: packages/admin/src/components/BulkTagDialog.tsx:503
+#: packages/admin/src/components/BulkTagDialog.tsx:324
+#: packages/admin/src/components/BulkTagDialog.tsx:504
 #: packages/admin/src/components/BylineCreditsEditor.tsx:1021
 #: packages/admin/src/components/BylineFieldEditor.tsx:315
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:348
 #: packages/admin/src/components/ConfirmDialog.tsx:102
-#: packages/admin/src/components/ContentList.tsx:589
-#: packages/admin/src/components/ContentList.tsx:1443
-#: packages/admin/src/components/ContentList.tsx:1625
+#: packages/admin/src/components/ContentList.tsx:590
+#: packages/admin/src/components/ContentList.tsx:1444
+#: packages/admin/src/components/ContentList.tsx:1626
 #: packages/admin/src/components/ContentPickerModal.tsx:386
 #: packages/admin/src/components/ContentSettingsPanel.tsx:317
 #: packages/admin/src/components/ContentSettingsPanel.tsx:497
@@ -2239,9 +2239,9 @@ msgstr "Pode visualizar conteúdo"
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:216
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:249
 #: packages/admin/src/components/settings/SecuritySettings.tsx:166
-#: packages/admin/src/components/TaxonomyManager.tsx:580
-#: packages/admin/src/components/TaxonomyManager.tsx:880
-#: packages/admin/src/components/TaxonomyManager.tsx:1098
+#: packages/admin/src/components/TaxonomyManager.tsx:581
+#: packages/admin/src/components/TaxonomyManager.tsx:881
+#: packages/admin/src/components/TaxonomyManager.tsx:1099
 #: packages/admin/src/components/users/InviteUserModal.tsx:198
 #: packages/admin/src/components/Widgets.tsx:451
 #: packages/admin/src/components/WordPressImport.tsx:1937
@@ -2396,7 +2396,7 @@ msgstr "As alterações se aplicam em todos os lugares onde este crédito aparec
 msgid "Changes discarded"
 msgstr "Alterações descartadas"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:477
+#: packages/admin/src/components/BulkTagDialog.tsx:478
 msgid "Changes were saved, but cached pages may still show old {pluralLower}. Retry the cache refresh."
 msgstr ""
 
@@ -2483,9 +2483,9 @@ msgstr ""
 msgid "Checking this site"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:394
 #: packages/admin/src/components/TaxonomySidebar.tsx:395
-#: packages/admin/src/components/TaxonomySidebar.tsx:488
+#: packages/admin/src/components/TaxonomySidebar.tsx:396
+#: packages/admin/src/components/TaxonomySidebar.tsx:489
 msgid "Choose {label}"
 msgstr ""
 
@@ -2493,8 +2493,8 @@ msgstr ""
 msgid "Choose a credential manager on this device, another device, or a security key."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1110
-#: packages/admin/src/components/ContentList.tsx:1116
+#: packages/admin/src/components/ContentList.tsx:1111
+#: packages/admin/src/components/ContentList.tsx:1117
 msgid "Choose a date range"
 msgstr "Escolher um intervalo de datas"
 
@@ -2511,7 +2511,7 @@ msgstr "Escolha um novo horário de publicação para este rascunho."
 msgid "Choose a non-empty {0} image."
 msgstr "Escolha uma imagem {0} que não esteja vazia."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:183
+#: packages/admin/src/components/BulkTagDialog.tsx:184
 msgid "Choose a term and enter between 1 and 50 posts."
 msgstr ""
 
@@ -2565,7 +2565,7 @@ msgstr ""
 msgid "Choose your preferred admin language"
 msgstr "Escolha o idioma preferido do painel"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:332
+#: packages/admin/src/components/BulkTagDialog.tsx:333
 msgid "Choose…"
 msgstr ""
 
@@ -2573,8 +2573,8 @@ msgstr ""
 msgid "Choosing a byline replaces this automatic credit."
 msgstr "Escolher um crédito substitui este crédito automático."
 
-#: packages/admin/src/components/ContentList.tsx:615
-#: packages/admin/src/components/ContentList.tsx:1124
+#: packages/admin/src/components/ContentList.tsx:616
+#: packages/admin/src/components/ContentList.tsx:1125
 msgid "Clear"
 msgstr "Limpar"
 
@@ -2582,7 +2582,7 @@ msgstr "Limpar"
 msgid "Clear completed"
 msgstr "Limpar concluídos"
 
-#: packages/admin/src/components/ContentList.tsx:1029
+#: packages/admin/src/components/ContentList.tsx:1030
 #: packages/admin/src/components/MediaLibrary.tsx:1084
 #: packages/admin/src/components/Sections.tsx:298
 #: packages/admin/src/components/users/UserList.tsx:122
@@ -2592,7 +2592,7 @@ msgstr "Limpar filtros"
 
 #: packages/admin/src/components/MediaLibrary.tsx:1084
 #: packages/admin/src/components/MediaLibrary.tsx:1119
-#: packages/admin/src/components/TaxonomyManager.tsx:1432
+#: packages/admin/src/components/TaxonomyManager.tsx:1433
 msgid "Clear search"
 msgstr "Limpar pesquisa"
 
@@ -2628,7 +2628,7 @@ msgstr ""
 msgid "Click this link to sign in to {siteName}:"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:273
+#: packages/admin/src/components/BulkTagDialog.tsx:274
 #: packages/admin/src/components/BylineFieldEditor.tsx:212
 #: packages/admin/src/components/BylineFieldEditor.tsx:218
 #: packages/admin/src/components/BylineFieldEditor.tsx:222
@@ -2669,12 +2669,12 @@ msgstr ""
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:337
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:343
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:347
-#: packages/admin/src/components/TaxonomyManager.tsx:557
-#: packages/admin/src/components/TaxonomyManager.tsx:764
-#: packages/admin/src/components/TaxonomyManager.tsx:772
-#: packages/admin/src/components/TaxonomyManager.tsx:1019
-#: packages/admin/src/components/TaxonomyManager.tsx:1027
-#: packages/admin/src/components/TaxonomySidebar.tsx:605
+#: packages/admin/src/components/TaxonomyManager.tsx:558
+#: packages/admin/src/components/TaxonomyManager.tsx:765
+#: packages/admin/src/components/TaxonomyManager.tsx:773
+#: packages/admin/src/components/TaxonomyManager.tsx:1020
+#: packages/admin/src/components/TaxonomyManager.tsx:1028
+#: packages/admin/src/components/TaxonomySidebar.tsx:606
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:298
 #: packages/admin/src/components/users/InviteUserModal.tsx:88
 #: packages/admin/src/components/users/InviteUserModal.tsx:94
@@ -2760,7 +2760,7 @@ msgid "Collection:"
 msgstr "Coleção:"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:11
-#: packages/admin/src/components/TaxonomyManager.tsx:1068
+#: packages/admin/src/components/TaxonomyManager.tsx:1069
 msgid "Collections"
 msgstr "Coleções"
 
@@ -3121,7 +3121,7 @@ msgstr "Copiar URL"
 msgid "Copying media"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:240
+#: packages/admin/src/components/BulkTagDialog.tsx:241
 msgid "Could not add {singularLower}"
 msgstr ""
 
@@ -3137,7 +3137,7 @@ msgstr ""
 msgid "Could not copy automatically. Please select the URL above and copy manually."
 msgstr "Não foi possível copiar automaticamente. Selecione a URL acima e copie manualmente."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:175
+#: packages/admin/src/components/BulkTagDialog.tsx:176
 msgid "Could not create {singularLower}"
 msgstr ""
 
@@ -3145,7 +3145,7 @@ msgstr ""
 msgid "Could not insert section"
 msgstr "Não foi possível inserir a seção"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:363
+#: packages/admin/src/components/BulkTagDialog.tsx:364
 msgid "Could not load {pluralLower}."
 msgstr ""
 
@@ -3165,7 +3165,7 @@ msgstr "Não foi possível carregar a mídia."
 msgid "Could not load this folder."
 msgstr "Não foi possível carregar esta pasta."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:193
+#: packages/admin/src/components/BulkTagDialog.tsx:194
 msgid "Could not review posts"
 msgstr ""
 
@@ -3254,8 +3254,8 @@ msgstr ""
 msgid "Couldn't verify how many values reference \"{0}\". Deleting will still remove every stored value for this field — but the count above could not be checked."
 msgstr "Não foi possível verificar quantos valores fazem referência a \"{0}\". A exclusão ainda vai remover todos os valores armazenados deste campo, mas a contagem acima não pôde ser verificada."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1407
-#: packages/admin/src/components/TaxonomyManager.tsx:1461
+#: packages/admin/src/components/TaxonomyManager.tsx:1408
+#: packages/admin/src/components/TaxonomyManager.tsx:1462
 msgid "Count"
 msgstr "Contagem"
 
@@ -3263,7 +3263,7 @@ msgstr "Contagem"
 #: packages/admin/src/components/MediaFolderDialog.tsx:171
 #: packages/admin/src/components/MenuList.tsx:185
 #: packages/admin/src/components/Redirects.tsx:194
-#: packages/admin/src/components/TaxonomyManager.tsx:891
+#: packages/admin/src/components/TaxonomyManager.tsx:892
 #: packages/admin/src/components/Widgets.tsx:454
 #: packages/admin/src/routes/bylines.tsx:859
 msgid "Create"
@@ -3274,7 +3274,7 @@ msgstr "Criar"
 msgid "Create “{0}”"
 msgstr "Criar “{0}”"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:583
+#: packages/admin/src/components/TaxonomySidebar.tsx:584
 msgid "Create \"{trimmedInput}\""
 msgstr "Criar \"{trimmedInput}\""
 
@@ -3284,11 +3284,11 @@ msgid "Create {0}"
 msgstr "Criar {0}"
 
 #. placeholder {0}: resolvedEntryLocale.toUpperCase()
-#: packages/admin/src/components/TaxonomySidebar.tsx:856
+#: packages/admin/src/components/TaxonomySidebar.tsx:857
 msgid "Create {0} translation"
 msgstr "Criar tradução em {0}"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:320
+#: packages/admin/src/components/BulkTagDialog.tsx:321
 msgid "Create {singularLower}"
 msgstr ""
 
@@ -3300,12 +3300,12 @@ msgstr ""
 msgid "Create a bullet list"
 msgstr "Criar uma lista com marcadores"
 
-#. placeholder {0}: taxonomyDef.labelSingular?.toLowerCase() || "term"
-#: packages/admin/src/components/TaxonomyManager.tsx:760
+#. placeholder {0}: inlineLabel(taxonomyDef.labelSingular || t`Term`, lingui.locale)
+#: packages/admin/src/components/TaxonomyManager.tsx:761
 msgid "Create a new {0}"
 msgstr "Criar um novo {0}"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:583
+#: packages/admin/src/components/TaxonomySidebar.tsx:584
 msgid "Create a new {singularLabel}"
 msgstr ""
 
@@ -3354,7 +3354,7 @@ msgstr ""
 msgid "Create Menu"
 msgstr "Criar menu"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:354
+#: packages/admin/src/components/BulkTagDialog.tsx:355
 msgid "Create new {singularLower}"
 msgstr ""
 
@@ -3416,8 +3416,8 @@ msgstr ""
 msgid "Create sections in the Sections library to use them here"
 msgstr "Crie seções na biblioteca de Seções para usá-las aqui"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1013
-#: packages/admin/src/components/TaxonomyManager.tsx:1101
+#: packages/admin/src/components/TaxonomyManager.tsx:1014
+#: packages/admin/src/components/TaxonomyManager.tsx:1102
 msgid "Create Taxonomy"
 msgstr "Criar taxonomia"
 
@@ -3446,7 +3446,7 @@ msgstr "Crie seu primeiro tipo de conteúdo"
 msgid "Create your first navigation menu to get started"
 msgstr "Crie seu primeiro menu de navegação para começar"
 
-#: packages/admin/src/components/ContentList.tsx:730
+#: packages/admin/src/components/ContentList.tsx:731
 msgid "Create your first one"
 msgstr "Crie o primeiro"
 
@@ -3471,7 +3471,7 @@ msgstr "Criar, atualizar e excluir termos de taxonomia"
 msgid "Create, update, delete content"
 msgstr "Criar, atualizar, excluir conteúdo"
 
-#: packages/admin/src/components/ContentList.tsx:933
+#: packages/admin/src/components/ContentList.tsx:934
 #: packages/admin/src/components/ContentSettingsPanel.tsx:990
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:373
 #: packages/admin/src/components/users/UserDetail.tsx:219
@@ -3518,7 +3518,7 @@ msgstr "Criando cópia recortada..."
 #: packages/admin/src/components/RelationFormPanel.tsx:109
 #: packages/admin/src/components/Sections.tsx:234
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:555
-#: packages/admin/src/components/TaxonomyManager.tsx:1101
+#: packages/admin/src/components/TaxonomyManager.tsx:1102
 msgid "Creating..."
 msgstr "Criando..."
 
@@ -3607,7 +3607,7 @@ msgid "Database-owned definitions available to blocks fields."
 msgstr ""
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:334
-#: packages/admin/src/components/ContentList.tsx:691
+#: packages/admin/src/components/ContentList.tsx:692
 msgid "Date"
 msgstr "Data"
 
@@ -3620,7 +3620,7 @@ msgstr "Data e hora"
 msgid "Date and time picker"
 msgstr "Seletor de data e hora"
 
-#: packages/admin/src/components/ContentList.tsx:1006
+#: packages/admin/src/components/ContentList.tsx:1007
 msgid "Date field to filter on"
 msgstr "Campo de data para filtrar"
 
@@ -3628,7 +3628,7 @@ msgstr "Campo de data para filtrar"
 msgid "Date Format"
 msgstr "Formato de data"
 
-#: packages/admin/src/components/ContentList.tsx:1056
+#: packages/admin/src/components/ContentList.tsx:1057
 msgid "Date range"
 msgstr "Intervalo de datas"
 
@@ -3662,7 +3662,7 @@ msgstr "Imagem social padrão"
 msgid "Default Social Image"
 msgstr "Imagem social padrão"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1015
+#: packages/admin/src/components/TaxonomyManager.tsx:1016
 msgid "Define a new taxonomy for classifying content"
 msgstr "Defina uma nova taxonomia para classificar conteúdo"
 
@@ -3697,8 +3697,8 @@ msgstr "Definido no código"
 #: packages/admin/src/components/RelationDeleteDialog.tsx:40
 #: packages/admin/src/components/Sections.tsx:349
 #: packages/admin/src/components/settings/BackupSettings.tsx:367
-#: packages/admin/src/components/TaxonomyManager.tsx:1532
-#: packages/admin/src/components/TaxonomyManager.tsx:1548
+#: packages/admin/src/components/TaxonomyManager.tsx:1533
+#: packages/admin/src/components/TaxonomyManager.tsx:1549
 #: packages/admin/src/components/Widgets.tsx:716
 #: packages/admin/src/routes/byline-schema.tsx:378
 #: packages/admin/src/routes/bylines.tsx:847
@@ -3724,7 +3724,7 @@ msgstr "Excluir “{0}”?"
 #: packages/admin/src/components/Sections.tsx:465
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:275
 #: packages/admin/src/components/settings/BackupSettings.tsx:327
-#: packages/admin/src/components/TaxonomyManager.tsx:491
+#: packages/admin/src/components/TaxonomyManager.tsx:492
 #: packages/admin/src/components/Widgets.tsx:817
 #: packages/admin/src/routes/byline-schema.tsx:458
 msgid "Delete {0}"
@@ -3746,8 +3746,8 @@ msgid "Delete {0} widget area"
 msgstr "Excluir área de widgets {0}"
 
 #. placeholder {0}: deleteTarget?.displayName ?? t`byline`
-#. placeholder {0}: taxonomyDef.labelSingular || "Term"
-#: packages/admin/src/components/TaxonomyManager.tsx:1528
+#. placeholder {0}: taxonomyDef.labelSingular || t`Term`
+#: packages/admin/src/components/TaxonomyManager.tsx:1529
 #: packages/admin/src/routes/bylines.tsx:874
 msgid "Delete {0}?"
 msgstr "Excluir {0}?"
@@ -3831,11 +3831,11 @@ msgid "Delete permanently"
 msgstr "Excluir permanentemente"
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:182
-#: packages/admin/src/components/ContentList.tsx:1636
+#: packages/admin/src/components/ContentList.tsx:1637
 msgid "Delete Permanently"
 msgstr "Excluir permanentemente"
 
-#: packages/admin/src/components/ContentList.tsx:1616
+#: packages/admin/src/components/ContentList.tsx:1617
 msgid "Delete Permanently?"
 msgstr "Excluir permanentemente?"
 
@@ -3872,20 +3872,20 @@ msgstr "Excluir seção?"
 msgid "Delete table"
 msgstr "Excluir tabela"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:365
+#: packages/admin/src/components/TaxonomyManager.tsx:366
 msgid "Delete tag"
 msgstr ""
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:362
+#: packages/admin/src/components/TaxonomyManager.tsx:363
 msgid "Delete tag {0}"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1369
+#: packages/admin/src/components/TaxonomyManager.tsx:1370
 msgid "Delete taxonomy"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1546
+#: packages/admin/src/components/TaxonomyManager.tsx:1547
 msgid "Delete Taxonomy"
 msgstr ""
 
@@ -3893,12 +3893,12 @@ msgstr ""
 msgid "Delete Widget Area?"
 msgstr "Excluir área de widgets?"
 
-#: packages/admin/src/components/ContentList.tsx:831
+#: packages/admin/src/components/ContentList.tsx:832
 msgid "Deleted"
 msgstr "Excluídos"
 
 #. placeholder {0}: taxonomyDef.label
-#: packages/admin/src/components/TaxonomyManager.tsx:1547
+#: packages/admin/src/components/TaxonomyManager.tsx:1548
 msgid "Deleting \"{0}\" also deletes every term in it, in all languages, and removes those terms from the content filed under them. The entries themselves are kept. This cannot be undone."
 msgstr ""
 
@@ -3919,8 +3919,8 @@ msgstr "Excluir \"{0}\" também remove {1, plural, one {# valor armazenado} othe
 #: packages/admin/src/components/RelationDeleteDialog.tsx:41
 #: packages/admin/src/components/Sections.tsx:350
 #: packages/admin/src/components/settings/BackupSettings.tsx:368
-#: packages/admin/src/components/TaxonomyManager.tsx:1533
-#: packages/admin/src/components/TaxonomyManager.tsx:1549
+#: packages/admin/src/components/TaxonomyManager.tsx:1534
+#: packages/admin/src/components/TaxonomyManager.tsx:1550
 #: packages/admin/src/components/Widgets.tsx:717
 #: packages/admin/src/routes/bylines.tsx:877
 msgid "Deleting..."
@@ -3982,7 +3982,7 @@ msgstr "Descreva para que serve esta seção..."
 msgid "Description"
 msgstr "Descrição"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:842
+#: packages/admin/src/components/TaxonomyManager.tsx:843
 msgid "Description (optional)"
 msgstr "Descrição (opcional)"
 
@@ -4207,9 +4207,9 @@ msgstr "Não tem uma conta? <0>Cadastre-se</0>"
 msgid "Don’t map"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:503
+#: packages/admin/src/components/BulkTagDialog.tsx:504
 #: packages/admin/src/components/BylineCreditsEditor.tsx:920
-#: packages/admin/src/components/ContentList.tsx:1132
+#: packages/admin/src/components/ContentList.tsx:1133
 #: packages/admin/src/components/MediaUploadDialog.tsx:353
 #: packages/admin/src/components/users/InviteUserModal.tsx:142
 #: packages/admin/src/components/WordPressImport.tsx:2148
@@ -4278,7 +4278,7 @@ msgstr "Baixando"
 msgid "Downloading the package"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:925
+#: packages/admin/src/components/ContentList.tsx:926
 #: packages/admin/src/components/ContentStatusBadge.tsx:61
 msgid "Draft"
 msgstr "Rascunho"
@@ -4373,7 +4373,7 @@ msgstr "Solte seu arquivo de exportação do WordPress aqui"
 msgid "Duplicate"
 msgstr "Duplicar"
 
-#: packages/admin/src/components/ContentList.tsx:1416
+#: packages/admin/src/components/ContentList.tsx:1417
 msgid "Duplicate {title}"
 msgstr "Duplicar {title}"
 
@@ -4434,9 +4434,9 @@ msgstr "Editar"
 #: packages/admin/src/components/RelationsPanel.tsx:201
 #: packages/admin/src/components/Sections.tsx:437
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:263
-#: packages/admin/src/components/TaxonomyManager.tsx:310
-#: packages/admin/src/components/TaxonomyManager.tsx:483
-#: packages/admin/src/components/TaxonomyManager.tsx:754
+#: packages/admin/src/components/TaxonomyManager.tsx:311
+#: packages/admin/src/components/TaxonomyManager.tsx:484
+#: packages/admin/src/components/TaxonomyManager.tsx:755
 #: packages/admin/src/routes/byline-schema.tsx:449
 #: packages/admin/src/routes/bylines.tsx:588
 msgid "Edit {0}"
@@ -4451,12 +4451,12 @@ msgstr "Editar campo {0}"
 msgid "Edit {itemLabel}"
 msgstr "Editar {itemLabel}"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:414
-#: packages/admin/src/components/TaxonomySidebar.tsx:423
+#: packages/admin/src/components/TaxonomySidebar.tsx:415
+#: packages/admin/src/components/TaxonomySidebar.tsx:424
 msgid "Edit {label}"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1408
+#: packages/admin/src/components/ContentList.tsx:1409
 msgid "Edit {title}"
 msgstr "Editar {title}"
 
@@ -4828,7 +4828,7 @@ msgstr ""
 #: packages/admin/src/components/MenuEditor.tsx:194
 #: packages/admin/src/components/MenuEditor.tsx:234
 #: packages/admin/src/components/SetupWizard.tsx:606
-#: packages/admin/src/components/TaxonomyManager.tsx:1206
+#: packages/admin/src/components/TaxonomyManager.tsx:1207
 #: packages/admin/src/components/Widgets.tsx:769
 #: packages/admin/src/router.tsx:3138
 msgid "Error"
@@ -4850,7 +4850,7 @@ msgstr "Erro ao salvar seção"
 msgid "Error updating widget"
 msgstr "Erro ao atualizar widget"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:603
+#: packages/admin/src/components/TaxonomySidebar.tsx:604
 msgid "Esc"
 msgstr ""
 
@@ -4883,7 +4883,7 @@ msgstr "Exemplo: {0} → 23 de janeiro de 2026"
 msgid "example.com"
 msgstr "example.com"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:265
+#: packages/admin/src/components/BulkTagDialog.tsx:266
 msgid "Existing {pluralLower} stay in place."
 msgstr ""
 
@@ -4978,7 +4978,7 @@ msgstr "Facebook"
 msgid "Fail"
 msgstr "Falhar"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:69
+#: packages/admin/src/components/BulkTagDialog.tsx:70
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:306
 #: packages/admin/src/components/WordPressImport.tsx:2150
 msgid "Failed"
@@ -5033,7 +5033,7 @@ msgid "Failed to continue import"
 msgstr ""
 
 #. placeholder {0}: failedLabels.join(", ")
-#: packages/admin/src/components/TaxonomySidebar.tsx:752
+#: packages/admin/src/components/TaxonomySidebar.tsx:753
 msgid "Failed to create {0}"
 msgstr ""
 
@@ -5066,11 +5066,11 @@ msgstr "Falha ao criar seção"
 msgid "Failed to create some collections"
 msgstr "Falha ao criar algumas coleções"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:731
+#: packages/admin/src/components/TaxonomySidebar.tsx:732
 msgid "Failed to create term"
 msgstr "Falha ao criar termo"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:781
+#: packages/admin/src/components/TaxonomySidebar.tsx:782
 #: packages/admin/src/router.tsx:1471
 msgid "Failed to create translation"
 msgstr "Falha ao criar tradução"
@@ -5244,7 +5244,7 @@ msgstr "Falha ao carregar estatísticas do painel"
 msgid "Failed to fetch email settings"
 msgstr "Falha ao carregar configurações de e-mail"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:159
+#: packages/admin/src/components/TaxonomySidebar.tsx:160
 msgid "Failed to fetch entry terms"
 msgstr "Falha ao carregar termos da entrada"
 
@@ -5314,7 +5314,7 @@ msgstr "Falha ao carregar configurações"
 msgid "Failed to fetch setup status"
 msgstr "Falha ao carregar status da configuração"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:143
+#: packages/admin/src/components/TaxonomySidebar.tsx:144
 msgid "Failed to fetch terms"
 msgstr "Falha ao carregar termos"
 
@@ -5609,7 +5609,7 @@ msgstr "Falha ao enviar e-mail de teste"
 msgid "Failed to send verification email"
 msgstr "Falha ao enviar e-mail de verificação"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:178
+#: packages/admin/src/components/TaxonomySidebar.tsx:179
 msgid "Failed to set entry terms"
 msgstr "Falha ao definir termos da entrada"
 
@@ -5639,8 +5639,8 @@ msgstr "Falha ao cancelar o agendamento"
 msgid "Failed to update"
 msgstr "Falha ao atualizar"
 
-#. placeholder {0}: taxonomy.label.toLowerCase()
-#: packages/admin/src/components/TaxonomySidebar.tsx:685
+#. placeholder {0}: inlineLabel(taxonomy.label, lingui.locale)
+#: packages/admin/src/components/TaxonomySidebar.tsx:686
 msgid "Failed to update {0}"
 msgstr "Falha ao atualizar {0}"
 
@@ -5806,7 +5806,7 @@ msgstr "O nome do arquivo não pode ser alterado após o envio"
 msgid "Files upload as soon as you add them."
 msgstr "Os arquivos são enviados assim que você os adiciona."
 
-#: packages/admin/src/components/ContentList.tsx:980
+#: packages/admin/src/components/ContentList.tsx:981
 msgid "Filter by author"
 msgstr "Filtrar por autor"
 
@@ -5822,7 +5822,7 @@ msgstr "Filtrar por capacidade"
 msgid "Filter by collection"
 msgstr "Filtrar por coleção"
 
-#: packages/admin/src/components/ContentList.tsx:1102
+#: packages/admin/src/components/ContentList.tsx:1103
 msgid "Filter by date range: {rangeLabel}"
 msgstr "Filtrar por período: {rangeLabel}"
 
@@ -5834,7 +5834,7 @@ msgstr "Filtrar por função"
 msgid "Filter by source"
 msgstr "Filtrar por origem"
 
-#: packages/admin/src/components/ContentList.tsx:962
+#: packages/admin/src/components/ContentList.tsx:963
 #: packages/admin/src/components/Redirects.tsx:392
 msgid "Filter by status"
 msgstr "Filtrar por status"
@@ -5953,7 +5953,7 @@ msgid "Freeform"
 msgstr "Livre"
 
 #. placeholder {0}: formatter.format(from)
-#: packages/admin/src/components/ContentList.tsx:1053
+#: packages/admin/src/components/ContentList.tsx:1054
 msgid "From {0}"
 msgstr "De {0}"
 
@@ -6008,7 +6008,7 @@ msgstr "Configurações gerais"
 msgid "Generated automatically."
 msgstr "Gerado automaticamente."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1038
+#: packages/admin/src/components/TaxonomyManager.tsx:1039
 msgid "Genres"
 msgstr "Gêneros"
 
@@ -6180,7 +6180,7 @@ msgstr ""
 msgid "Hide toolbar"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1061
+#: packages/admin/src/components/TaxonomyManager.tsx:1062
 msgid "Hierarchical (like categories, with parent/child relationships)"
 msgstr "Hierárquico (como categorias, com relações ascendente/descendentes)"
 
@@ -6223,7 +6223,7 @@ msgstr "Hora"
 msgid "How do you want to start?"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:793
+#: packages/admin/src/components/TaxonomyManager.tsx:794
 msgid "How is the slug generated?"
 msgstr ""
 
@@ -6254,7 +6254,7 @@ msgstr "https://example.com ou /about"
 msgid "https://example.com or /page"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:403
+#: packages/admin/src/components/BulkTagDialog.tsx:404
 msgid "https://example.com/blog/my-post"
 msgstr ""
 
@@ -6873,7 +6873,7 @@ msgstr "Kotlin"
 #: packages/admin/src/components/MenuEditor.tsx:418
 #: packages/admin/src/components/MenuEditor.tsx:599
 #: packages/admin/src/components/MenuList.tsx:153
-#: packages/admin/src/components/TaxonomyManager.tsx:1035
+#: packages/admin/src/components/TaxonomyManager.tsx:1036
 #: packages/admin/src/components/Widgets.tsx:436
 #: packages/admin/src/routes/byline-schema.tsx:234
 msgid "Label"
@@ -7078,8 +7078,8 @@ msgstr "Visualização ao vivo"
 msgid "Load more"
 msgstr "Carregar mais"
 
-#: packages/admin/src/components/ContentList.tsx:810
-#: packages/admin/src/components/ContentList.tsx:874
+#: packages/admin/src/components/ContentList.tsx:811
+#: packages/admin/src/components/ContentList.tsx:875
 #: packages/admin/src/components/MediaLibrary.tsx:1352
 #: packages/admin/src/components/users/UserList.tsx:162
 msgid "Load More"
@@ -7096,7 +7096,7 @@ msgstr "Carregar mais pastas"
 msgid "Loading"
 msgstr "Carregando"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:359
+#: packages/admin/src/components/BulkTagDialog.tsx:360
 msgid "Loading {pluralLower}…"
 msgstr ""
 
@@ -7205,8 +7205,8 @@ msgstr "Carregando configurações..."
 msgid "Loading setup..."
 msgstr "Carregando configuração..."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1395
-#: packages/admin/src/components/TaxonomyManager.tsx:1466
+#: packages/admin/src/components/TaxonomyManager.tsx:1396
+#: packages/admin/src/components/TaxonomyManager.tsx:1467
 msgid "Loading terms..."
 msgstr "Carregando termos..."
 
@@ -7222,10 +7222,10 @@ msgstr "Carregando uso"
 msgid "Loading widgets..."
 msgstr "Carregando widgets..."
 
-#: packages/admin/src/components/ContentList.tsx:712
-#: packages/admin/src/components/ContentList.tsx:810
-#: packages/admin/src/components/ContentList.tsx:844
-#: packages/admin/src/components/ContentList.tsx:874
+#: packages/admin/src/components/ContentList.tsx:713
+#: packages/admin/src/components/ContentList.tsx:811
+#: packages/admin/src/components/ContentList.tsx:845
+#: packages/admin/src/components/ContentList.tsx:875
 #: packages/admin/src/components/ContentPickerModal.tsx:371
 #: packages/admin/src/components/MarketplaceBrowse.tsx:200
 #: packages/admin/src/components/MediaDetailPanel.tsx:596
@@ -7243,7 +7243,7 @@ msgstr "Carregando widgets..."
 #: packages/admin/src/components/settings/EmailSettings.tsx:69
 #: packages/admin/src/components/settings/SecuritySettings.tsx:99
 #: packages/admin/src/components/settings/TransferSettings.tsx:57
-#: packages/admin/src/components/TaxonomyManager.tsx:1273
+#: packages/admin/src/components/TaxonomyManager.tsx:1274
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:170
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:244
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:143
@@ -7261,8 +7261,8 @@ msgstr "Carregando…"
 msgid "Local time"
 msgstr "Horário local"
 
-#: packages/admin/src/components/ContentList.tsx:684
-#: packages/admin/src/components/ContentList.tsx:827
+#: packages/admin/src/components/ContentList.tsx:685
+#: packages/admin/src/components/ContentList.tsx:828
 #: packages/admin/src/components/LocaleSwitcher.tsx:61
 msgid "Locale"
 msgstr "Idioma do conteúdo"
@@ -7323,7 +7323,7 @@ msgstr ""
 msgid "Lowercase letters, numbers, and hyphens only"
 msgstr "Apenas letras minúsculas, números e hífens"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1053
+#: packages/admin/src/components/TaxonomyManager.tsx:1054
 msgid "Lowercase letters, numbers, and underscores only, starting with a letter"
 msgstr "Apenas letras minúsculas, números e underlines, começando com uma letra"
 
@@ -7344,9 +7344,9 @@ msgstr "Barra lateral principal"
 msgid "Manage"
 msgstr "Gerenciar"
 
-#. placeholder {0}: taxonomyDef.label.toLowerCase()
+#. placeholder {0}: inlineLabel(taxonomyDef.label, lingui.locale)
 #. placeholder {1}: taxonomyDef.collections.join(", ")
-#: packages/admin/src/components/TaxonomyManager.tsx:1290
+#: packages/admin/src/components/TaxonomyManager.tsx:1291
 msgid "Manage {0} for {1}"
 msgstr "Gerenciar {0} para {1}"
 
@@ -7712,8 +7712,8 @@ msgstr "Arquivos mensais/anuais"
 #. placeholder {0}: section.title
 #: packages/admin/src/components/BylineCreditsEditor.tsx:862
 #: packages/admin/src/components/Sections.tsx:450
-#: packages/admin/src/components/TaxonomyManager.tsx:322
-#: packages/admin/src/components/TaxonomyManager.tsx:1348
+#: packages/admin/src/components/TaxonomyManager.tsx:323
+#: packages/admin/src/components/TaxonomyManager.tsx:1349
 #: packages/admin/src/routes/bylines.tsx:600
 msgid "More actions for {0}"
 msgstr "Mais ações para {0}"
@@ -7738,7 +7738,7 @@ msgstr ""
 msgid "More table actions"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:463
+#: packages/admin/src/components/BulkTagDialog.tsx:464
 msgid "More than one post matches this link"
 msgstr ""
 
@@ -7756,7 +7756,7 @@ msgstr "Mover \"{0}\" para baixo"
 msgid "Move \"{0}\" up"
 msgstr "Mover \"{0}\" para cima"
 
-#: packages/admin/src/components/ContentList.tsx:1437
+#: packages/admin/src/components/ContentList.tsx:1438
 msgid "Move \"{title}\" to trash? You can restore it later."
 msgstr "Mover \"{title}\" para a lixeira? Você pode restaurá-lo depois."
 
@@ -7765,12 +7765,12 @@ msgstr "Mover \"{title}\" para a lixeira? Você pode restaurá-lo depois."
 #. placeholder {0}: term.label
 #: packages/admin/src/components/ContentEditor.tsx:2751
 #: packages/admin/src/components/FieldEditor.tsx:1129
-#: packages/admin/src/components/TaxonomyManager.tsx:462
+#: packages/admin/src/components/TaxonomyManager.tsx:463
 msgid "Move {0} down"
 msgstr "Mover {0} para baixo"
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:461
+#: packages/admin/src/components/TaxonomyManager.tsx:462
 msgid "Move {0} down — unavailable, its parent has no translation in this locale"
 msgstr "Mover {0} para baixo: indisponível, o ascendente não tem tradução neste idioma do conteúdo"
 
@@ -7789,26 +7789,26 @@ msgstr "Mover {0} para depois"
 #. placeholder {0}: term.label
 #: packages/admin/src/components/ContentEditor.tsx:2740
 #: packages/admin/src/components/FieldEditor.tsx:1112
-#: packages/admin/src/components/TaxonomyManager.tsx:449
+#: packages/admin/src/components/TaxonomyManager.tsx:450
 msgid "Move {0} up"
 msgstr "Mover {0} para cima"
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:448
+#: packages/admin/src/components/TaxonomyManager.tsx:449
 msgid "Move {0} up — unavailable, its parent has no translation in this locale"
 msgstr "Mover {0} para cima: indisponível, o ascendente não tem tradução neste idioma do conteúdo"
 
-#: packages/admin/src/components/ContentList.tsx:1428
+#: packages/admin/src/components/ContentList.tsx:1429
 msgid "Move {title} to trash"
 msgstr "Mover {title} para a lixeira"
 
 #: packages/admin/src/components/MenuEditor.tsx:543
-#: packages/admin/src/components/TaxonomyManager.tsx:346
+#: packages/admin/src/components/TaxonomyManager.tsx:347
 msgid "Move down"
 msgstr "Mover para baixo"
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:342
+#: packages/admin/src/components/TaxonomyManager.tsx:343
 msgid "Move down {0}"
 msgstr ""
 
@@ -7828,30 +7828,30 @@ msgstr ""
 msgid "Move this site to another EmDash installation, or import a site package into this one."
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:573
+#: packages/admin/src/components/ContentList.tsx:574
 msgid "Move to trash"
 msgstr "Mover para a lixeira"
 
-#: packages/admin/src/components/ContentList.tsx:600
-#: packages/admin/src/components/ContentList.tsx:1450
+#: packages/admin/src/components/ContentList.tsx:601
+#: packages/admin/src/components/ContentList.tsx:1451
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1300
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1320
 msgid "Move to Trash"
 msgstr "Mover para a lixeira"
 
-#: packages/admin/src/components/ContentList.tsx:578
-#: packages/admin/src/components/ContentList.tsx:1435
+#: packages/admin/src/components/ContentList.tsx:579
+#: packages/admin/src/components/ContentList.tsx:1436
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1305
 msgid "Move to Trash?"
 msgstr "Mover para a lixeira?"
 
 #: packages/admin/src/components/MenuEditor.tsx:534
-#: packages/admin/src/components/TaxonomyManager.tsx:338
+#: packages/admin/src/components/TaxonomyManager.tsx:339
 msgid "Move up"
 msgstr "Mover para cima"
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:334
+#: packages/admin/src/components/TaxonomyManager.tsx:335
 msgid "Move up {0}"
 msgstr ""
 
@@ -7917,21 +7917,21 @@ msgstr "Meu Blog Incrível"
 #: packages/admin/src/components/MarketplaceBrowse.tsx:45
 #: packages/admin/src/components/MediaFolderDialog.tsx:131
 #: packages/admin/src/components/MenuList.tsx:162
-#: packages/admin/src/components/TaxonomyManager.tsx:780
-#: packages/admin/src/components/TaxonomyManager.tsx:1044
-#: packages/admin/src/components/TaxonomyManager.tsx:1406
-#: packages/admin/src/components/TaxonomyManager.tsx:1460
+#: packages/admin/src/components/TaxonomyManager.tsx:781
+#: packages/admin/src/components/TaxonomyManager.tsx:1045
+#: packages/admin/src/components/TaxonomyManager.tsx:1407
+#: packages/admin/src/components/TaxonomyManager.tsx:1461
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:37
 #: packages/admin/src/components/users/UserDetail.tsx:148
 #: packages/admin/src/components/Widgets.tsx:430
 msgid "Name"
 msgstr "Nome"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:971
+#: packages/admin/src/components/TaxonomyManager.tsx:972
 msgid "Name and label are required"
 msgstr "Nome e rótulo são obrigatórios"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:977
+#: packages/admin/src/components/TaxonomyManager.tsx:978
 msgid "Name must start with a letter and contain only lowercase letters, numbers, and underscores"
 msgstr "O nome deve começar com uma letra e conter apenas letras minúsculas, números e sublinhados"
 
@@ -7939,7 +7939,7 @@ msgstr "O nome deve começar com uma letra e conter apenas letras minúsculas, n
 msgid "Name your section, then add its content in the editor."
 msgstr ""
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:593
+#: packages/admin/src/components/TaxonomySidebar.tsx:594
 msgid "Navigate"
 msgstr ""
 
@@ -7976,7 +7976,7 @@ msgstr "NOVO"
 msgid "New {itemLabel}"
 msgstr "Novo {itemLabel}"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:308
+#: packages/admin/src/components/BulkTagDialog.tsx:309
 msgid "New {singularLower} name"
 msgstr ""
 
@@ -8038,11 +8038,11 @@ msgstr ""
 msgid "new tab"
 msgstr "nova aba"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1359
+#: packages/admin/src/components/TaxonomyManager.tsx:1360
 msgid "New taxonomy"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1326
+#: packages/admin/src/components/TaxonomyManager.tsx:1327
 msgid "New Taxonomy"
 msgstr "Nova taxonomia"
 
@@ -8058,7 +8058,7 @@ msgstr "Nova janela"
 msgid "Newest"
 msgstr "Mais recentes"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:783
+#: packages/admin/src/components/TaxonomyManager.tsx:784
 msgid "News"
 msgstr "Notícias"
 
@@ -8068,7 +8068,7 @@ msgid "Next"
 msgstr "Próximo"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:396
-#: packages/admin/src/components/ContentList.tsx:798
+#: packages/admin/src/components/ContentList.tsx:799
 #: packages/admin/src/components/MediaLibrary.tsx:1316
 #: packages/admin/src/components/MediaPickerModal.tsx:1546
 msgid "Next page"
@@ -8088,7 +8088,7 @@ msgstr ""
 msgid "Next, the browser's passkey window will open"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1473
+#: packages/admin/src/components/ContentList.tsx:1474
 #: packages/admin/src/components/users/UserDetail.tsx:236
 #: packages/admin/src/routes/byline-schema.tsx:422
 msgid "No"
@@ -8098,18 +8098,18 @@ msgstr "Não"
 msgid "No (shared across translations)"
 msgstr "Não (compartilhado entre traduções)"
 
-#. placeholder {0}: collectionLabel.toLowerCase()
-#: packages/admin/src/components/ContentList.tsx:723
+#. placeholder {0}: inlineLabel(collectionLabel, lingui.locale)
+#: packages/admin/src/components/ContentList.tsx:724
 msgid "No {0} yet."
 msgstr "Nenhum {0} ainda."
 
-#. placeholder {0}: taxonomyDef.label.toLowerCase()
-#: packages/admin/src/components/TaxonomyManager.tsx:1398
-#: packages/admin/src/components/TaxonomyManager.tsx:1469
+#. placeholder {0}: inlineLabel(taxonomyDef.label, lingui.locale)
+#: packages/admin/src/components/TaxonomyManager.tsx:1399
+#: packages/admin/src/components/TaxonomyManager.tsx:1470
 msgid "No {0} yet. Create one to get started."
 msgstr "Nenhum {0} ainda. Crie um para começar."
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:567
+#: packages/admin/src/components/TaxonomySidebar.tsx:568
 msgid "No {label} found."
 msgstr ""
 
@@ -8226,7 +8226,7 @@ msgstr "Nenhum provedor de e-mail configurado. Compartilhe este link manualmente
 msgid "No EmDash users found"
 msgstr "Nenhum usuário do EmDash encontrado"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:464
+#: packages/admin/src/components/BulkTagDialog.tsx:465
 msgid "No exact match on this site"
 msgstr ""
 
@@ -8317,7 +8317,7 @@ msgstr "Nenhuma mídia correspondente"
 msgid "No matching passkey found for this account."
 msgstr "Nenhuma chave de acesso correspondente encontrada para esta conta."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1423
+#: packages/admin/src/components/TaxonomyManager.tsx:1424
 msgid "No matching tags"
 msgstr ""
 
@@ -8413,8 +8413,8 @@ msgstr ""
 msgid "No results"
 msgstr "Nenhum resultado"
 
-#: packages/admin/src/components/ContentList.tsx:720
-#: packages/admin/src/components/ContentList.tsx:739
+#: packages/admin/src/components/ContentList.tsx:721
+#: packages/admin/src/components/ContentList.tsx:740
 msgid "No results for \"{activeSearch}\""
 msgstr "Nenhum resultado para \"{activeSearch}\""
 
@@ -8485,8 +8485,8 @@ msgstr ""
 msgid "None"
 msgstr "Nenhum"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:820
-#: packages/admin/src/components/TaxonomyManager.tsx:829
+#: packages/admin/src/components/TaxonomyManager.tsx:821
+#: packages/admin/src/components/TaxonomyManager.tsx:830
 msgid "None (top level)"
 msgstr "Nenhum (nível superior)"
 
@@ -8494,11 +8494,11 @@ msgstr "Nenhum (nível superior)"
 msgid "Not compatible with this environment"
 msgstr "Não compatível com este ambiente"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:70
+#: packages/admin/src/components/BulkTagDialog.tsx:71
 msgid "Not matched"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1472
+#: packages/admin/src/components/ContentList.tsx:1473
 #: packages/admin/src/components/PluginSettings.tsx:341
 msgid "Not set"
 msgstr "Não definido"
@@ -8653,7 +8653,7 @@ msgstr "Legenda opcional exibida abaixo da imagem"
 msgid "Optional caption for display"
 msgstr "Legenda opcional para exibição"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:845
+#: packages/admin/src/components/TaxonomyManager.tsx:846
 msgid "Optional description"
 msgstr "Descrição opcional"
 
@@ -8786,7 +8786,7 @@ msgid "Paragraph inserted before table"
 msgstr ""
 
 #: packages/admin/src/components/MenuEditor.tsx:621
-#: packages/admin/src/components/TaxonomyManager.tsx:816
+#: packages/admin/src/components/TaxonomyManager.tsx:817
 msgid "Parent"
 msgstr "Ascendente"
 
@@ -8922,11 +8922,11 @@ msgstr "Por página"
 msgid "Period"
 msgstr "Período"
 
-#: packages/admin/src/components/ContentList.tsx:1619
+#: packages/admin/src/components/ContentList.tsx:1620
 msgid "Permanently delete \"{title}\"? This cannot be undone."
 msgstr "Excluir \"{title}\" permanentemente? Isso não pode ser desfeito."
 
-#: packages/admin/src/components/ContentList.tsx:1608
+#: packages/admin/src/components/ContentList.tsx:1609
 msgid "Permanently delete {title}"
 msgstr "Excluir {title} permanentemente"
 
@@ -9142,7 +9142,7 @@ msgstr "Retrato"
 msgid "Post"
 msgstr "Post"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:398
+#: packages/admin/src/components/BulkTagDialog.tsx:399
 msgid "Post URLs (one per line)"
 msgstr ""
 
@@ -9214,7 +9214,7 @@ msgid "Previous"
 msgstr "Anterior"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:377
-#: packages/admin/src/components/ContentList.tsx:786
+#: packages/admin/src/components/ContentList.tsx:787
 #: packages/admin/src/components/MediaLibrary.tsx:1315
 #: packages/admin/src/components/MediaPickerModal.tsx:1545
 msgid "Previous page"
@@ -9285,7 +9285,7 @@ msgstr ""
 msgid "visualEditing.publish"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:517
+#: packages/admin/src/components/ContentList.tsx:518
 #: packages/admin/src/components/ContentSettingsPanel.tsx:900
 #: packages/admin/src/components/ContentSettingsPanel.tsx:903
 msgid "Publish"
@@ -9316,8 +9316,8 @@ msgstr ""
 msgid "Publish, unpublish, schedule, and unschedule content"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:924
-#: packages/admin/src/components/ContentList.tsx:935
+#: packages/admin/src/components/ContentList.tsx:925
+#: packages/admin/src/components/ContentList.tsx:936
 #: packages/admin/src/components/ContentStatusBadge.tsx:59
 #: packages/admin/src/components/Dashboard.tsx:477
 #: packages/admin/src/router.tsx:1310
@@ -9479,7 +9479,7 @@ msgstr ""
 msgid "Reading the package"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:63
+#: packages/admin/src/components/BulkTagDialog.tsx:64
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:481
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:492
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:301
@@ -9690,7 +9690,7 @@ msgstr "Remover"
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:220
 #: packages/admin/src/components/MediaUploadDialog.tsx:162
 #: packages/admin/src/components/settings/PasskeyItem.tsx:161
-#: packages/admin/src/components/TaxonomySidebar.tsx:457
+#: packages/admin/src/components/TaxonomySidebar.tsx:458
 msgid "Remove {0}"
 msgstr "Remover {0}"
 
@@ -9707,7 +9707,7 @@ msgstr "Remover {entry}"
 msgid "Remove {label}"
 msgstr "Remover {label}"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:865
+#: packages/admin/src/components/TaxonomySidebar.tsx:866
 msgid "Remove assignment"
 msgstr "Remover atribuição"
 
@@ -10016,7 +10016,7 @@ msgstr "Reiniciar numeração"
 msgid "Restore"
 msgstr "Restaurar"
 
-#: packages/admin/src/components/ContentList.tsx:1596
+#: packages/admin/src/components/ContentList.tsx:1597
 msgid "Restore {title}"
 msgstr "Restaurar {title}"
 
@@ -10042,7 +10042,7 @@ msgstr "Restaurar esta versão de {0}? Isso atualizará o conteúdo atual para o
 msgid "Restoring..."
 msgstr "Restaurando..."
 
-#: packages/admin/src/components/BulkTagDialog.tsx:443
+#: packages/admin/src/components/BulkTagDialog.tsx:444
 msgid "Results"
 msgstr ""
 
@@ -10080,7 +10080,7 @@ msgstr "Tentar novamente"
 msgid "Retry {0}"
 msgstr "Tentar novamente {0}"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:540
+#: packages/admin/src/components/BulkTagDialog.tsx:541
 msgid "Retry cache refresh"
 msgstr ""
 
@@ -10093,11 +10093,11 @@ msgstr "Tentar copiar novamente"
 msgid "Retry failed"
 msgstr "Tentar novamente os que falharam"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:521
+#: packages/admin/src/components/BulkTagDialog.tsx:522
 msgid "Retry failures"
 msgstr ""
 
-#: packages/admin/src/components/BulkTagDialog.tsx:370
+#: packages/admin/src/components/BulkTagDialog.tsx:371
 msgid "Retry loading {pluralLower}"
 msgstr ""
 
@@ -10138,8 +10138,8 @@ msgstr ""
 msgid "Review New Permissions"
 msgstr "Revisar novas permissões"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:443
-#: packages/admin/src/components/BulkTagDialog.tsx:572
+#: packages/admin/src/components/BulkTagDialog.tsx:444
+#: packages/admin/src/components/BulkTagDialog.tsx:573
 msgid "Review posts"
 msgstr ""
 
@@ -10163,7 +10163,7 @@ msgstr "Revisar plugin verificado"
 msgid "Review Verified Update"
 msgstr "Revisar atualização verificada"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:572
+#: packages/admin/src/components/BulkTagDialog.tsx:573
 msgid "Reviewing…"
 msgstr ""
 
@@ -10370,7 +10370,7 @@ msgstr "Salvo"
 msgid "Saved \"{0}\"."
 msgstr "\"{0}\" salvo."
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:680
+#: packages/admin/src/components/TaxonomySidebar.tsx:681
 msgid "Saved immediately; term changes do not wait for Publish changes."
 msgstr ""
 
@@ -10387,7 +10387,7 @@ msgstr ""
 #: packages/admin/src/components/Redirects.tsx:190
 #: packages/admin/src/components/RelationFormPanel.tsx:112
 #: packages/admin/src/components/SaveButton.tsx:33
-#: packages/admin/src/components/TaxonomyManager.tsx:888
+#: packages/admin/src/components/TaxonomyManager.tsx:889
 #: packages/admin/src/components/users/UserDetail.tsx:311
 #: packages/admin/src/components/Widgets.tsx:983
 #: packages/admin/src/routes/bylines.tsx:859
@@ -10429,7 +10429,7 @@ msgstr "Data do agendamento"
 msgid "Schedule publication"
 msgstr "Agendar publicação"
 
-#: packages/admin/src/components/ContentList.tsx:926
+#: packages/admin/src/components/ContentList.tsx:927
 #: packages/admin/src/components/ContentStatusBadge.tsx:63
 #: packages/admin/src/router.tsx:1414
 msgid "Scheduled"
@@ -10513,21 +10513,21 @@ msgstr "SCSS"
 msgid "Search"
 msgstr "Pesquisa"
 
-#. placeholder {0}: collectionLabel.toLowerCase()
-#: packages/admin/src/components/ContentList.tsx:478
+#. placeholder {0}: inlineLabel(collectionLabel, lingui.locale)
+#: packages/admin/src/components/ContentList.tsx:479
 msgid "Search {0}"
 msgstr "Pesquisar {0}"
 
-#. placeholder {0}: collectionLabel.toLowerCase()
-#: packages/admin/src/components/ContentList.tsx:477
+#. placeholder {0}: inlineLabel(collectionLabel, lingui.locale)
+#: packages/admin/src/components/ContentList.tsx:478
 msgid "Search {0}..."
 msgstr "Pesquisar {0}..."
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:499
+#: packages/admin/src/components/TaxonomySidebar.tsx:500
 msgid "Search {label}"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:519
+#: packages/admin/src/components/TaxonomySidebar.tsx:520
 msgid "Search {label}…"
 msgstr ""
 
@@ -10642,11 +10642,11 @@ msgstr "Pesquisar seções..."
 msgid "Search source or destination..."
 msgstr "Pesquisar origem ou destino..."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1382
+#: packages/admin/src/components/TaxonomyManager.tsx:1383
 msgid "Search tags"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1381
+#: packages/admin/src/components/TaxonomyManager.tsx:1382
 msgid "Search tags…"
 msgstr ""
 
@@ -10794,7 +10794,7 @@ msgstr "Selecionar"
 msgid "Select {label}"
 msgstr "Selecionar {label}"
 
-#: packages/admin/src/components/ContentList.tsx:1328
+#: packages/admin/src/components/ContentList.tsx:1329
 msgid "Select {title}"
 msgstr "Selecionar {title}"
 
@@ -10831,7 +10831,7 @@ msgstr "Selecione uma versão antes de verificá-la"
 msgid "Select all"
 msgstr "Selecionar tudo"
 
-#: packages/admin/src/components/ContentList.tsx:652
+#: packages/admin/src/components/ContentList.tsx:653
 msgid "Select all on this page"
 msgstr "Selecionar tudo nesta página"
 
@@ -10911,7 +10911,7 @@ msgstr ""
 msgid "Select table"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:559
+#: packages/admin/src/components/ContentList.tsx:560
 msgid "Select up to 50 posts at a time."
 msgstr ""
 
@@ -10925,7 +10925,7 @@ msgstr "Selecione quais tipos de conteúdo importar."
 msgid "Select..."
 msgstr "Selecionar..."
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:428
+#: packages/admin/src/components/TaxonomySidebar.tsx:429
 msgid "Selected {label}"
 msgstr ""
 
@@ -10942,7 +10942,7 @@ msgstr "Imagem selecionada"
 msgid "Selected media"
 msgstr "Mídia selecionada"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:378
+#: packages/admin/src/components/BulkTagDialog.tsx:379
 msgid "Selected posts"
 msgstr ""
 
@@ -11046,7 +11046,7 @@ msgstr "Definir função"
 msgid "Set to 0 to never close comments automatically."
 msgstr "Defina como 0 para nunca fechar os comentários automaticamente."
 
-#: packages/admin/src/components/ContentList.tsx:528
+#: packages/admin/src/components/ContentList.tsx:529
 msgid "Set to draft"
 msgstr "Definir como rascunho"
 
@@ -11340,8 +11340,8 @@ msgstr "Ignorado"
 #: packages/admin/src/components/RelationList.tsx:90
 #: packages/admin/src/components/SectionEditor.tsx:280
 #: packages/admin/src/components/Sections.tsx:204
-#: packages/admin/src/components/TaxonomyManager.tsx:798
-#: packages/admin/src/components/TaxonomyManager.tsx:802
+#: packages/admin/src/components/TaxonomyManager.tsx:799
+#: packages/admin/src/components/TaxonomyManager.tsx:803
 #: packages/admin/src/routes/byline-schema.tsx:237
 #: packages/admin/src/routes/bylines.tsx:730
 msgid "Slug"
@@ -11536,7 +11536,7 @@ msgstr ""
 msgid "Starting…"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:677
+#: packages/admin/src/components/ContentList.tsx:678
 #: packages/admin/src/components/ContentTypeEditor.tsx:138
 #: packages/admin/src/components/Redirects.tsx:489
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:382
@@ -11699,13 +11699,13 @@ msgstr ""
 msgid "Target"
 msgstr "Destino"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:565
+#: packages/admin/src/components/TaxonomyManager.tsx:566
 msgid "Target locale"
 msgstr "Idioma de destino"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1159
 #: packages/admin/src/components/settings/transfer/labels.ts:13
-#: packages/admin/src/components/TaxonomySidebar.tsx:897
+#: packages/admin/src/components/TaxonomySidebar.tsx:898
 msgid "Taxonomies"
 msgstr "Taxonomias"
 
@@ -11713,7 +11713,7 @@ msgstr "Taxonomias"
 msgid "Taxonomies Manage"
 msgstr "Gerenciamento de taxonomias"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:284
+#: packages/admin/src/components/BulkTagDialog.tsx:285
 msgid "Taxonomy"
 msgstr ""
 
@@ -11722,15 +11722,15 @@ msgstr ""
 msgid "Taxonomy “{0}” is used by content on this site"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1560
+#: packages/admin/src/components/TaxonomyManager.tsx:1561
 msgid "Taxonomy created"
 msgstr "Taxonomia criada"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1193
+#: packages/admin/src/components/TaxonomyManager.tsx:1194
 msgid "Taxonomy deleted"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:66
+#: packages/admin/src/components/TaxonomyManager.tsx:67
 msgid "Taxonomy not found: {taxonomyName}"
 msgstr "Taxonomia não encontrada: {taxonomyName}"
 
@@ -11738,7 +11738,7 @@ msgstr "Taxonomia não encontrada: {taxonomyName}"
 msgid "Taxonomy terms"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:552
+#: packages/admin/src/components/TaxonomyManager.tsx:553
 msgid "Taxonomy: {taxonomyName}"
 msgstr "Taxonomia: {taxonomyName}"
 
@@ -11754,16 +11754,19 @@ msgstr ""
 msgid "Template:"
 msgstr "Modelo:"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:109
-#: packages/admin/src/components/TaxonomyManager.tsx:754
+#: packages/admin/src/components/BulkTagDialog.tsx:110
 #: packages/admin/src/components/TaxonomyManager.tsx:755
-#: packages/admin/src/components/TaxonomyManager.tsx:1329
+#: packages/admin/src/components/TaxonomyManager.tsx:756
+#: packages/admin/src/components/TaxonomyManager.tsx:760
+#: packages/admin/src/components/TaxonomyManager.tsx:761
+#: packages/admin/src/components/TaxonomyManager.tsx:1330
+#: packages/admin/src/components/TaxonomyManager.tsx:1529
 msgid "Term"
 msgstr "Termo"
 
 #. placeholder {0}: term.label
 #. placeholder {1}: term.locale.toUpperCase()
-#: packages/admin/src/components/TaxonomyManager.tsx:1253
+#: packages/admin/src/components/TaxonomyManager.tsx:1254
 msgid "Term \"{0}\" created in {1}."
 msgstr "Termo \"{0}\" criado em {1}."
 
@@ -11772,11 +11775,11 @@ msgstr "Termo \"{0}\" criado em {1}."
 msgid "Term assignments"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1171
+#: packages/admin/src/components/TaxonomyManager.tsx:1172
 msgid "Term deleted"
 msgstr "Termo excluído"
 
-#: packages/admin/src/components/BulkTagDialog.tsx:111
+#: packages/admin/src/components/BulkTagDialog.tsx:112
 #: packages/admin/src/components/settings/transfer/labels.ts:18
 msgid "Terms"
 msgstr ""
@@ -12527,7 +12530,7 @@ msgid "This will move the item to trash. You can restore it later from the trash
 msgstr "Isso moverá o item para a lixeira. Você poderá restaurá-lo depois."
 
 #. placeholder {0}: deleteTarget?.label
-#: packages/admin/src/components/TaxonomyManager.tsx:1530
+#: packages/admin/src/components/TaxonomyManager.tsx:1531
 msgid "This will permanently delete \"{0}\" and remove it from all content."
 msgstr "Isso excluirá permanentemente \"{0}\" e o removerá de todo o conteúdo."
 
@@ -12565,8 +12568,8 @@ msgstr "Fuso horário"
 msgid "Timezone for displaying dates (e.g., America/New_York)"
 msgstr "Fuso horário para exibição de datas (ex.: América/São_Paulo)"
 
-#: packages/admin/src/components/ContentList.tsx:662
-#: packages/admin/src/components/ContentList.tsx:823
+#: packages/admin/src/components/ContentList.tsx:663
+#: packages/admin/src/components/ContentList.tsx:824
 #: packages/admin/src/components/SectionEditor.tsx:272
 #: packages/admin/src/components/Sections.tsx:192
 #: packages/admin/src/components/Widgets.tsx:891
@@ -12593,7 +12596,7 @@ msgstr ""
 msgid "to select"
 msgstr "para selecionar"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:599
+#: packages/admin/src/components/TaxonomySidebar.tsx:600
 msgid "Toggle"
 msgstr ""
 
@@ -12650,31 +12653,31 @@ msgstr ""
 msgid "Translatable"
 msgstr "Traduzível"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:356
-#: packages/admin/src/components/TaxonomyManager.tsx:477
-#: packages/admin/src/components/TaxonomyManager.tsx:587
+#: packages/admin/src/components/TaxonomyManager.tsx:357
+#: packages/admin/src/components/TaxonomyManager.tsx:478
+#: packages/admin/src/components/TaxonomyManager.tsx:588
 #: packages/admin/src/components/TranslationsPanel.tsx:106
 msgid "Translate"
 msgstr "Traduzir"
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:549
+#: packages/admin/src/components/TaxonomyManager.tsx:550
 msgid "Translate \"{0}\""
 msgstr "Traduzir \"{0}\""
 
 #. placeholder {0}: term.label
-#: packages/admin/src/components/TaxonomyManager.tsx:474
+#: packages/admin/src/components/TaxonomyManager.tsx:475
 msgid "Translate {0}"
 msgstr "Traduzir {0}"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:587
+#: packages/admin/src/components/TaxonomyManager.tsx:588
 #: packages/admin/src/components/TranslationsPanel.tsx:106
 msgid "Translating..."
 msgstr "Traduzindo..."
 
 #: packages/admin/src/components/MenuEditor.tsx:144
-#: packages/admin/src/components/TaxonomyManager.tsx:1252
-#: packages/admin/src/components/TaxonomySidebar.tsx:777
+#: packages/admin/src/components/TaxonomyManager.tsx:1253
+#: packages/admin/src/components/TaxonomySidebar.tsx:778
 #: packages/admin/src/router.tsx:1465
 msgid "Translation created"
 msgstr "Tradução criada"
@@ -12692,11 +12695,11 @@ msgstr "lixeira"
 #: packages/admin/src/components/comments/CommentInbox.tsx:249
 #: packages/admin/src/components/comments/CommentInbox.tsx:290
 #: packages/admin/src/components/comments/CommentInbox.tsx:538
-#: packages/admin/src/components/ContentList.tsx:462
+#: packages/admin/src/components/ContentList.tsx:463
 msgid "Trash"
 msgstr "Lixeira"
 
-#: packages/admin/src/components/ContentList.tsx:851
+#: packages/admin/src/components/ContentList.tsx:852
 msgid "Trash is empty"
 msgstr "A lixeira está vazia"
 
@@ -12914,7 +12917,7 @@ msgstr "Despublicado"
 msgid "Unregistered Content Tables Found"
 msgstr "Tabelas de conteúdo não registradas encontradas"
 
-#: packages/admin/src/components/TaxonomySidebar.tsx:843
+#: packages/admin/src/components/TaxonomySidebar.tsx:844
 msgid "Unresolved assignment"
 msgstr "Atribuição não resolvida"
 
@@ -12937,7 +12940,7 @@ msgid "Unsupported widget element type: {0}"
 msgstr "Tipo de elemento de widget não suportado: {0}"
 
 #. placeholder {0}: formatter.format(to)
-#: packages/admin/src/components/ContentList.tsx:1055
+#: packages/admin/src/components/ContentList.tsx:1056
 msgid "Until {0}"
 msgstr "Até {0}"
 
@@ -12963,7 +12966,7 @@ msgstr ""
 msgid "Up to {MAX_SELECTED} bylines can be selected"
 msgstr "Até {MAX_SELECTED} créditos podem ser selecionados"
 
-#: packages/admin/src/components/TaxonomyManager.tsx:890
+#: packages/admin/src/components/TaxonomyManager.tsx:891
 msgid "Update"
 msgstr "Atualizar"
 
@@ -12980,8 +12983,8 @@ msgstr "Atualizar configurações para {0}"
 msgid "Update site settings"
 msgstr "Atualizar configurações do site"
 
-#. placeholder {0}: taxonomyDef.labelSingular?.toLowerCase() || "term"
-#: packages/admin/src/components/TaxonomyManager.tsx:759
+#. placeholder {0}: inlineLabel(taxonomyDef.labelSingular || t`Term`, lingui.locale)
+#: packages/admin/src/components/TaxonomyManager.tsx:760
 msgid "Update the {0} details"
 msgstr "Atualizar os detalhes de {0}"
 
@@ -13003,7 +13006,7 @@ msgstr "Atualize esta regra de redirecionamento."
 msgid "Update to v{0}"
 msgstr "Atualizar para v{0}"
 
-#: packages/admin/src/components/ContentList.tsx:934
+#: packages/admin/src/components/ContentList.tsx:935
 #: packages/admin/src/components/ContentSettingsPanel.tsx:997
 #: packages/admin/src/components/RegistryPluginDetail.tsx:580
 msgid "Updated"
@@ -13209,7 +13212,7 @@ msgstr "Use uma URL terminada em uma extensão de imagem reconhecida, como .jpg 
 msgid "Use another device"
 msgstr ""
 
-#: packages/admin/src/components/ContentList.tsx:1129
+#: packages/admin/src/components/ContentList.tsx:1130
 msgid "Use as end date"
 msgstr "Usar como data final"
 
@@ -13233,7 +13236,7 @@ msgstr "Use sua chave de acesso cadastrada para entrar com segurança."
 msgid "Used as the fallback Open Graph image when a page has none. Recommended size: 1200×630."
 msgstr "Usada como imagem Open Graph de reserva quando uma página não tem nenhuma. Tamanho recomendado: 1200×630."
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1056
+#: packages/admin/src/components/TaxonomyManager.tsx:1057
 msgid "Used as the identifier. Lowercase letters, numbers, and underscores only."
 msgstr "Usado como identificador. Apenas letras minúsculas, números e sublinhados."
 
@@ -13391,7 +13394,7 @@ msgstr "Verificar status do provedor de e-mail e enviar e-mails de teste"
 msgid "View mode"
 msgstr "Modo de visualização"
 
-#: packages/admin/src/components/ContentList.tsx:1400
+#: packages/admin/src/components/ContentList.tsx:1401
 msgid "View published {title}"
 msgstr "Ver {title} publicado"
 
@@ -13567,7 +13570,7 @@ msgstr "Quando a entrada foi publicada"
 msgid "Where is it saved?"
 msgstr ""
 
-#: packages/admin/src/components/TaxonomyManager.tsx:1070
+#: packages/admin/src/components/TaxonomyManager.tsx:1071
 msgid "Which content types can use this taxonomy"
 msgstr "Quais tipos de conteúdo podem usar esta taxonomia"
 
@@ -13699,7 +13702,7 @@ msgstr "A autorização do WordPress foi rejeitada"
 msgid "WordPress Username"
 msgstr "Nome de usuário do WordPress"
 
-#: packages/admin/src/components/ContentList.tsx:505
+#: packages/admin/src/components/ContentList.tsx:506
 msgid "Working on {selectedCount} items…"
 msgstr "Processando {selectedCount} itens…"
 
@@ -13735,7 +13738,7 @@ msgstr "YAML"
 msgid "Yearly"
 msgstr "Anual"
 
-#: packages/admin/src/components/ContentList.tsx:1475
+#: packages/admin/src/components/ContentList.tsx:1476
 #: packages/admin/src/components/users/UserDetail.tsx:236
 #: packages/admin/src/routes/byline-schema.tsx:420
 #: packages/admin/src/routes/byline-schema.tsx:422
